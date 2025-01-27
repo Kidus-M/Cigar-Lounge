@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <React.Fragment>
       <header className="w-full py-6 md:px-48 px-8 flex justify-between items-center bg-white relative">
-      <Link to="/" className="text-3xl font-primary text-primary hover:text-secondary">KIDUS</Link>
+      <Link to="/" className="text-3xl font-primary text-primary hover:text-secondary">Cigar Lounge</Link>
       <button
         className="text-black md:hidden focus:outline-none"
         onClick={() => setMenuOpen(!menuOpen)}
