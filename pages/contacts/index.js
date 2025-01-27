@@ -1,9 +1,10 @@
 import React from "react";
 import Footer from "../../components/Footer";
-
+import Navbar from "../../components/Navbar";
 const Contacts = () => {
   return (
     <div>
+      <Navbar />
       <section class="mb-32">
         <div
           id="map"
