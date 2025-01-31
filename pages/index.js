@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import About from "../components/About";
+import Footer from "../components/Footer";
 export default function HeroSection() {
   const heroRef = useRef(null);
 
@@ -50,6 +51,7 @@ export default function HeroSection() {
       
       {/* About Section */}
       <About />
+      <Footer />
     </div>
   );
 }
