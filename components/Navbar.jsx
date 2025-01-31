@@ -1,58 +1,73 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false);
+"use client";
+
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+import Link from "next/link";
+
+export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <React.Fragment>
-      <header className="w-full py-6 md:px-48 px-8 flex justify-between items-center bg-white relative">
-      <Link to="/" className="text-3xl font-primary text-primary hover:text-secondary">Cigar Lounge</Link>
-      <button
-        className="text-black md:hidden focus:outline-none"
-        onClick={() => setMenuOpen(!menuOpen)}
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path 
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d={menuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"}
-          />
-        </svg>
-      </button>
-      <nav
-        className={`${
-          menuOpen ? "block" : "hidden"
-        } md:block absolute md:static top-16 left-1/2 transform -translate-x-1/2 font-secondary md:translate-x-0 w-full md:w-auto bg-white shadow-md md:shadow-none  md:items-center md:space-x-24 z-50`}
-      >
-        <Link
-          to="/design"
-          className="block md:inline-block text-black hover:text-primary transition-colors py-4 text-xl text-center md:text-base md:py-0"
-        >
-          Design
+    <nav className="fixed top-0 left-0 w-full bg-transparent z-50 text-white">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <Link href="/" className="text-3xl font-bold text-white hover:text-orange-600 transition-all">
+          Cigar
         </Link>
-        <Link
-          to="/dev"
-          className="block md:inline-block text-black hover:text-primary transition-colors py-4 text-xl text-center md:text-base md:py-0"
+        
+        {/* Desktop Menu */}
+        <div className="hidden md:flex space-x-12">
+          <button className="text-white text-lg font-medium relative hover:border-b-2 border-orange-600 transition-all">
+            Menu
+          </button>
+          <button className="text-white text-lg font-medium relative hover:border-b-2 border-orange-600 transition-all">
+            About
+          </button>
+          <button className="text-white text-lg font-medium relative hover:border-b-2 border-orange-600 transition-all">
+            Events
+          </button>
+          <button className="text-white text-lg font-medium relative hover:border-b-2 border-orange-600 transition-all">
+            Contact
+          </button>
+        </div>
+
+        {/* Mobile Menu Toggle */}
+        <button
+          className="md:hidden text-white"
+          onClick={() => setIsOpen(!isOpen)}
         >
-          Dev
-        </Link>
-        <Link
-          to="/contact"
-          className="block md:inline-block text-black hover:text-primary transition-colors py-4 text-xl  text-center md:text-base md:py-0"
-        >
-          Let’s Talk
-        </Link>
-      </nav>
-    </header>
-    </React.Fragment>
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="md:hidden bg-black bg-opacity-90 absolute top-full left-0 w-full flex flex-col items-center py-6 space-y-6">
+          <button
+            className="text-white text-lg font-medium relative hover:border-b-2 border-orange-600 transition-all"
+            onClick={() => setIsOpen(false)}
+          >
+            Menu
+          </button>
+          <button
+            className="text-white text-lg font-medium relative hover:border-b-2 border-orange-600 transition-all"
+            onClick={() => setIsOpen(false)}
+          >
+            About
+          </button>
+          <button
+            className="text-white text-lg font-medium relative hover:border-b-2 border-orange-600 transition-all"
+            onClick={() => setIsOpen(false)}
+          >
+            Events
+          </button>
+          <button
+            className="text-white text-lg font-medium relative hover:border-b-2 border-orange-600 transition-all"
+            onClick={() => setIsOpen(false)}
+          >
+            Contact
+          </button>
+        </div>
+      )}
+    </nav>
   );
 }
-
-export default Navbar;
