@@ -7,26 +7,42 @@ import { useRouter } from "next/router";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
- 
+  const router = useRouter();
+
   return (
     <nav className="fixed top-0 left-0 w-full bg-transparent z-50 text-white hover:bg-grey-800 transition-all">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <Link href="/" className="text-3xl font-bold text-white hover:text-orange-600 transition-all">
+        <Link
+          href="/"
+          className="text-3xl font-bold text-white hover:text-orange-600 transition-all"
+        >
           Cigar
         </Link>
-        
+
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-12">
-          <button className="text-white text-lg font-medium relative hover:border-b-2 border-orange-600 transition-all">
+          <button
+            className="text-white text-lg font-medium relative hover:border-b-2 border-orange-600 transition-all"
+            onClick={() => router.push("/menu")}
+          >
             Menu
           </button>
-          <button className="text-white text-lg font-medium relative hover:border-b-2 border-orange-600 transition-all">
+          <button
+            className="text-white text-lg font-medium relative hover:border-b-2 border-orange-600 transition-all"
+            onClick={() => router.push("/about")}
+          >
             About
           </button>
-          <button className="text-white text-lg font-medium relative hover:border-b-2 border-orange-600 transition-all">
+          <button
+            className="text-white text-lg font-medium relative hover:border-b-2 border-orange-600 transition-all"
+            onClick={() => router.push("/events")}
+          >
             Events
           </button>
-          <button className="text-white text-lg font-medium relative hover:border-b-2 border-orange-600 transition-all">
+          <button
+            className="text-white text-lg font-medium relative hover:border-b-2 border-orange-600 transition-all"
+            onClick={() => router.push("/contact")}
+          >
             Contact
           </button>
         </div>
@@ -45,25 +61,37 @@ export default function Navbar() {
         <div className="md:hidden bg-black bg-opacity-90 absolute top-full left-0 w-full flex flex-col items-center py-6 space-y-6">
           <button
             className="text-white text-lg font-medium relative hover:border-b-2 border-orange-600 transition-all"
-            onClick={() => setIsOpen(false)}
+            onClick={() => {
+              setIsOpen(false);
+              router.push("/menu");
+            }}
           >
             Menu
           </button>
           <button
             className="text-white text-lg font-medium relative hover:border-b-2 border-orange-600 transition-all"
-            onClick={() => setIsOpen(false)}
+            onClick={() => {
+              setIsOpen(false);
+              router.push("/about");
+            }}
           >
             About
           </button>
           <button
             className="text-white text-lg font-medium relative hover:border-b-2 border-orange-600 transition-all"
-            onClick={() => setIsOpen(false)}
+            onClick={() => {
+              setIsOpen(false);
+              router.push("/events");
+            }}
           >
             Events
           </button>
           <button
             className="text-white text-lg font-medium relative hover:border-b-2 border-orange-600 transition-all"
-            onClick={() => setIsOpen(false)}
+            onClick={() => {
+              setIsOpen(false);
+              router.push("/contact");
+            }}
           >
             Contact
           </button>
