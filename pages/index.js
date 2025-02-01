@@ -4,8 +4,10 @@ import Navbar from "../components/Navbar";
 import About from "../components/About";
 import Footer from "../components/Footer";
 import DrinkMenu from "../components/DrinkMenu";
+import { useRouter } from "next/router";
 export default function HeroSection() {
   const heroRef = useRef(null);
+  const route = useRouter();
 
   useEffect(() => {
     const hero = heroRef.current;
@@ -41,7 +43,8 @@ export default function HeroSection() {
             Indulge in the finest drinks, premium spirits, and an ambiance of
             timeless elegance.
           </p>
-          <button className="px-8 py-3 bg-orange-500 text-white font-semibold rounded-full hover:bg-orange-600 transition-all duration-300 transform hover:scale-105 animate-fade-in-up delay-400">
+          <button className="px-8 py-3 bg-orange-500 text-white font-semibold rounded-full hover:bg-orange-600 transition-all duration-300 transform hover:scale-105 animate-fade-in-up delay-400"
+          onClick={() => {route.push('/menu')}}>
             Explore Our Menu
           </button>
         </div>
