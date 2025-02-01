@@ -3,7 +3,7 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import About from "../components/About";
 import Footer from "../components/Footer";
-import DrinkMenu from "../components/Menu";
+import DrinkMenu from "../components/DrinkMenu";
 export default function HeroSection() {
   const heroRef = useRef(null);
 
