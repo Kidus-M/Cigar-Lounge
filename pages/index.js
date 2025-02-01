@@ -3,6 +3,7 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import About from "../components/About";
 import Footer from "../components/Footer";
+import DrinkMenu from "../components/Menu";
 export default function HeroSection() {
   const heroRef = useRef(null);
 
@@ -51,6 +52,7 @@ export default function HeroSection() {
       
       {/* About Section */}
       <About />
+      <DrinkMenu />
       <Footer />
     </div>
   );
