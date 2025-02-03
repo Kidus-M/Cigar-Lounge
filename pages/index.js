@@ -60,7 +60,7 @@ export default function HeroSection() {
       {/* About Section */}
       
       <About />
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 text-white">
           <motion.div
             whileHover={{ scale: 1.05 }}
             className="bg-gray-800 p-6 rounded-lg flex flex-col items-center text-center"
