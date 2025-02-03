@@ -4,7 +4,11 @@ import Navbar from "../components/Navbar";
 import About from "../components/About";
 import Footer from "../components/Footer";
 import DrinkMenu from "../components/DrinkMenu";
+import { motion } from "framer-motion";
+
 import { useRouter } from "next/router";
+import { FaGlobe, FaUsers, FaGlassMartiniAlt } from 'react-icons/fa';
+
 export default function HeroSection() {
   const heroRef = useRef(null);
   const route = useRouter();
@@ -54,7 +58,51 @@ export default function HeroSection() {
       </section>
       
       {/* About Section */}
+      
       <About />
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            className="bg-gray-800 p-6 rounded-lg flex flex-col items-center text-center"
+          >
+            <FaGlobe size={50} className="text-orange-600 mb-4" />
+            <h3 className="text-2xl font-semibold text-orange-600">
+              Global Standards
+            </h3>
+            <p className="mt-2">
+              We source the finest cigars and drinks from around the world,
+              ensuring a luxurious experience.
+            </p>
+          </motion.div>
+
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            className="bg-gray-800 p-6 rounded-lg flex flex-col items-center text-center"
+          >
+            <FaUsers size={50} className="text-orange-600 mb-4" />
+            <h3 className="text-2xl font-semibold text-orange-600">
+              Community
+            </h3>
+            <p className="mt-2">
+              A space designed for conversation, networking, and shared
+              appreciation of fine cigars.
+            </p>
+          </motion.div>
+
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            className="bg-gray-800 p-6 rounded-lg flex flex-col items-center text-center"
+          >
+            <FaGlassMartiniAlt size={50} className="text-orange-600 mb-4" />
+            <h3 className="text-2xl font-semibold text-orange-600">
+              Exquisite Drinks
+            </h3>
+            <p className="mt-2">
+              From rare whiskeys to signature cocktails, we craft drinks that
+              elevate your experience.
+            </p>
+          </motion.div>
+        </div>
       <DrinkMenu />
       <Footer />
     </div>
