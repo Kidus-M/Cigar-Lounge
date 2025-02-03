@@ -6,8 +6,7 @@ import Footer from "../../components/Footer";
 const drinks = [
   {
     name: "Classic Old Fashioned",
-    description:
-      "A timeless cocktail with bourbon, bitters, and a hint of citrus.",
+    description: "A timeless cocktail with bourbon, bitters, and a hint of citrus.",
     imageUrl: "/old-fashioned.jpeg",
   },
   {
@@ -22,9 +21,88 @@ const drinks = [
   },
   {
     name: "Manhattan",
-    description:
-      "A sophisticated combination of rye whiskey, sweet vermouth, and bitters.",
+    description: "A sophisticated combination of rye whiskey, sweet vermouth, and bitters.",
     imageUrl: "/manhattan.jpg",
+  },
+  {
+    name: "Margarita",
+    description: "A classic cocktail with tequila, lime juice, and triple sec.",
+    imageUrl: "/margarita.jpg",
+  },
+  {
+    name: "Mojito",
+    description: "A refreshing mix of white rum, mint, lime, sugar, and soda water.",
+    imageUrl: "/mojito.jpg",
+  },
+  {
+    name: "Martini",
+    description: "A classic cocktail with gin and dry vermouth, garnished with an olive or lemon twist.",
+    imageUrl: "/martini.jpg",
+  },
+  {
+    name: "Cosmopolitan",
+    description: "A stylish cocktail with vodka, triple sec, cranberry juice, and lime juice.",
+    imageUrl: "/cosmopolitan.jpg",
+  },
+  {
+    name: "Pina Colada",
+    description: "A tropical blend of rum, coconut cream, and pineapple juice.",
+    imageUrl: "/pina-colada.jpg",
+  },
+  {
+    name: "Daiquiri",
+    description: "A simple yet delicious mix of rum, lime juice, and sugar.",
+    imageUrl: "/daiquiri.jpg",
+  },
+  {
+    name: "Bloody Mary",
+    description: "A savory cocktail with vodka, tomato juice, and various spices and flavorings.",
+    imageUrl: "/bloody-mary.jpg",
+  },
+  {
+    name: "Mai Tai",
+    description: "A tropical cocktail with rum, lime juice, orgeat syrup, and orange liqueur.",
+    imageUrl: "/mai-tai.jpg",
+  },
+  {
+    name: "Gin and Tonic",
+    description: "A simple and refreshing mix of gin and tonic water, garnished with lime.",
+    imageUrl: "/gin-and-tonic.jpg",
+  },
+  {
+    name: "Sazerac",
+    description: "A classic New Orleans cocktail with rye whiskey, absinthe, and bitters.",
+    imageUrl: "/sazerac.jpg",
+  },
+  {
+    name: "Mint Julep",
+    description: "A refreshing cocktail with bourbon, mint, sugar, and water.",
+    imageUrl: "/mint-julep.jpg",
+  },
+  {
+    name: "Paloma",
+    description: "A Mexican cocktail with tequila, grapefruit soda, and lime juice.",
+    imageUrl: "/paloma.jpg",
+  },
+  {
+    name: "French 75",
+    description: "A sophisticated cocktail with gin, champagne, lemon juice, and sugar.",
+    imageUrl: "/french-75.jpg",
+  },
+  {
+    name: "Tom Collins",
+    description: "A refreshing mix of gin, lemon juice, sugar, and carbonated water.",
+    imageUrl: "/tom-collins.jpg",
+  },
+  {
+    name: "Sidecar",
+    description: "A classic cocktail with cognac, orange liqueur, and lemon juice.",
+    imageUrl: "/sidecar.jpg",
+  },
+  {
+    name: "Aperol Spritz",
+    description: "A light and refreshing cocktail with Aperol, prosecco, and soda water.",
+    imageUrl: "/aperol-spritz.jpg",
   },
 ];
 
