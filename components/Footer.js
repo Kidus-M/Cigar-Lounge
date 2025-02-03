@@ -1,27 +1,21 @@
-import { Facebook, Instagram, Linkedin } from 'lucide-react';
+import { Facebook, Instagram, Linkedin } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="bg-black">
       <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
           <div className="sm:col-span-2">
-            <a
-              href="/"
-              aria-label="Go home"
-              title="Company"
-              className="inline-flex items-center"
-            >
-              
-              <span className="ml-2 text-xl font-bold tracking-wide text-orange-600 uppercase">
-                Cigar Lounge
-              </span>
-            </a>
+            <span className="text-xl font-bold tracking-wide text-orange-600 uppercase">
+              Cigar Lounge
+            </span>
+
             <div className="mt-6 lg:max-w-sm">
               <p className="text-sm text-white">
-              An oasis of elegance, relaxation, and the finest drinks in the city.
+                An oasis of elegance, relaxation, and the finest drinks in the
+                city.
               </p>
               <p className="mt-4 text-sm text-white">
-              Where elegance meets relaxation, and every sip is an experience.
+                Where elegance meets relaxation, and every sip is an experience.
               </p>
             </div>
           </div>
@@ -74,31 +68,30 @@ export default function Footer() {
                 href="/"
                 className="text-white transition-colors duration-300 hover:text-white"
               >
-                <Facebook size={30} color='white'/>
+                <Facebook size={30} color="white" />
               </a>
               <a
                 href="/"
                 className="text-white transition-colors duration-300 hover:text-white"
               >
-                <Instagram size={30} color='white' />
+                <Instagram size={30} color="white" />
               </a>
               <a
                 href="/"
                 className="text-white transition-colors duration-300 hover:text-orange-600"
               >
-                <Linkedin size={30} color='white'/>
+                <Linkedin size={30} color="white" />
               </a>
             </div>
             <p className="mt-4 text-sm text-white">
-            Follow us on social media for updates and events.
+              Follow us on social media for updates and events.
             </p>
           </div>
         </div>
         <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
           <p className="text-sm text-white">
-          © 2025 Cigar Lounge. All rights reserved.
+            © 2025 Cigar Lounge. All rights reserved.
           </p>
-         
         </div>
       </div>
     </footer>

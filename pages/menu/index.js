@@ -108,7 +108,7 @@ const drinks = [
 
 const Menu = () => {
   return (
-    <div className="mt-10">
+    <div className="mt-20">
       <Navbar />
       <div className="bg-black min-h-screen flex flex-col justify-center py-12">
         <h2 className="text-4xl font-bold text-center text-orange-600 mb-8">
