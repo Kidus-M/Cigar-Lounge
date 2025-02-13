@@ -58,7 +58,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-black bg-opacity-90 absolute top-full left-0 w-full flex flex-col items-center py-6 space-y-6">
+        <div className="md:hidden bg-black bg-opacity-10 absolute top-full left-0 w-full flex flex-col items-center py-6 space-y-6">
           <button
             className="text-white text-lg font-medium relative hover:border-b-2 border-orange-600 transition-all"
             onClick={() => {
