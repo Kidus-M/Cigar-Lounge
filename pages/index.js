@@ -29,7 +29,7 @@ export default function HeroSection() {
         <Navbar />
 
         <Head>
-          <title>Cigar Lounge</title>
+          <title>WolfDen Lounge</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
         {/* Background Image */}
@@ -41,7 +41,7 @@ export default function HeroSection() {
         {/* Content */}
         <div className="relative z-10 text-center space-y-8">
           <h1 className="text-6xl md:text-8xl font-serif text-white font-bold tracking-wider animate-fade-in">
-            Cigar Lounge
+            WolfDen Lounge
           </h1>
           <p className="text-xl md:text-3xl text-white font-light max-w-2xl mx-auto animate-fade-in-up delay-200">
             Indulge in the finest drinks, premium spirits, and an ambiance of
@@ -70,7 +70,7 @@ export default function HeroSection() {
               Global Standards
             </h3>
             <p className="mt-2">
-              We source the finest cigars and drinks from around the world,
+              We source the finest drinks from around the world,
               ensuring a luxurious experience.
             </p>
           </motion.div>
@@ -85,7 +85,7 @@ export default function HeroSection() {
             </h3>
             <p className="mt-2">
               A space designed for conversation, networking, and shared
-              appreciation of fine cigars.
+              appreciation of fine beavrages.
             </p>
           </motion.div>
 

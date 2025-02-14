@@ -16,7 +16,7 @@ export default function Navbar() {
           href="/"
           className="text-3xl font-bold text-white hover:text-orange-600 transition-all"
         >
-          Cigar
+          WolfDen
         </Link>
 
         {/* Desktop Menu */}

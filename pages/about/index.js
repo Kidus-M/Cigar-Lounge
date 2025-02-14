@@ -28,10 +28,10 @@ const AboutPage = () => {
         >
           <p className="text-lg md:text-xl">
             At{" "}
-            <span className="text-orange-600 font-semibold">Cigar Lounge</span>,
+            <span className="text-orange-600 font-semibold">WolfDen Lounge</span>,
             we provide an oasis of relaxation, elegance, and the finest drinks.
             Our mission is to create a welcoming environment where guests can
-            unwind and indulge in premium cigars, handcrafted cocktails, and
+            unwind and indulge in handcrafted cocktails, drinks, and
             world-class service.
           </p>
         </motion.div>
@@ -47,7 +47,7 @@ const AboutPage = () => {
               Global Standards
             </h3>
             <p className="mt-2">
-              We source the finest cigars and drinks from around the world,
+              We source the finest drinks from around the world,
               ensuring a luxurious experience.
             </p>
           </motion.div>
@@ -62,7 +62,7 @@ const AboutPage = () => {
             </h3>
             <p className="mt-2">
               A space designed for conversation, networking, and shared
-              appreciation of fine cigars.
+              appreciation of fine beavrages.
             </p>
           </motion.div>
 
@@ -90,7 +90,7 @@ const AboutPage = () => {
         >
           <Image
             src="/hero1.jpg"
-            alt="Cigar Lounge Interior"
+            alt="WolfDen Lounge Interior"
             width={800}
             height={500}
             className="rounded-lg shadow-lg"

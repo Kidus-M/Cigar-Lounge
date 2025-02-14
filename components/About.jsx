@@ -27,7 +27,7 @@ export default function About() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          About <span className="text-orange-600">Cigar Lounge</span>
+          About <span className="text-orange-600">WolfDen</span>
         </motion.h2>
 
         {/* Image Grid */}
@@ -84,7 +84,7 @@ export default function About() {
           viewport={{ once: true }}
         >
           <p className="text-lg">
-            <span className="text-orange-600 font-semibold">Cigar</span> is more than just a bar. It is a sanctuary for those who seek
+            <span className="text-orange-600 font-semibold">WolfDen</span> is more than just a bar. It is a sanctuary for those who seek
             <span className="text-orange-600 font-semibold"> refinement and relaxation</span>. Whether for an intimate gathering or a solo escape,
             our lounge offers a perfect retreat.
           </p>

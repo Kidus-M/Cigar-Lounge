@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
-import { MailOpen, Phone, Smartphone, MessageSquareText } from 'lucide-react';
+import { MailOpen, Phone, Youtube, Instagram  } from 'lucide-react';
 const Contacts = () => {
   return (
     <div classNameName="bg-black ">
@@ -93,8 +93,8 @@ const Contacts = () => {
                           </div>
                         </div>
                         <div className="ml-6 grow">
-                          <p className="mb-2 font-bold">Phone Number</p>
-                          <p className="text-white ">+1 234-567-89</p>
+                          <p className="mb-2 font-bold text-white">Phone Number</p>
+                          <a href="tel:0979398094" className="text-white ">+251-979-398-094</a>
                         </div>
                       </div>
                     </div>
@@ -106,8 +106,8 @@ const Contacts = () => {
                           </div>
                         </div>
                         <div className="ml-6 grow">
-                          <p className="mb-2 font-bold ">Email</p>
-                          <p className="text-white ">sales@example.com</p>
+                          <p className="mb-2 font-bold text-white ">Email</p>
+                          <a className="text-white ">wolfdenaddis@gmail.com</a>
                         </div>
                       </div>
                     </div>
@@ -115,12 +115,12 @@ const Contacts = () => {
                       <div className="align-start flex">
                         <div className="shrink-0">
                           <div className="inline-block rounded-md bg-orange-600-100 p-4 text-orange-600">
-                            <MessageSquareText size={40} />
+                            <Instagram  size={40} />
                           </div>
                         </div>
                         <div className="ml-6 grow">
-                          <p className="mb-2 font-bold ">Text</p>
-                          <p className="text-white ">+1 234-567-89</p>
+                          <p className="mb-2 font-bold ">Instagram</p>
+                          <p className="text-white ">Instagram.wolfdenaddis</p>
                         </div>
                       </div>
                     </div>
@@ -128,12 +128,12 @@ const Contacts = () => {
                       <div className="align-start flex">
                         <div className="shrink-0">
                           <div className="inline-block rounded-md bg-orange-600-100 p-4 text-orange-600">
-                            <Smartphone size={40} />
+                            <Youtube size={50} />
                           </div>
                         </div>
                         <div className="ml-6 grow">
-                          <p className="mb-2 font-bold">Mobile</p>
-                          <p className="text-white">+1 234-567-89</p>
+                          <p className="mb-2 font-bold text-white">Youtube</p>
+                          <a href="https://www.youtube.com/@Wolf-f7r" className="text-white">wolfden</a>
                         </div>
                       </div>
                     </div>
