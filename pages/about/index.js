@@ -4,6 +4,7 @@ import Image from "next/image";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import { FaGlobe, FaUsers, FaGlassMartiniAlt } from 'react-icons/fa';
+import Gallery from "../../components/Gallery";
 
 const AboutPage = () => {
   return (
@@ -82,7 +83,7 @@ const AboutPage = () => {
         </div>
 
         {/* Image Section */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
@@ -95,7 +96,8 @@ const AboutPage = () => {
             height={500}
             className="rounded-lg shadow-lg"
           />
-        </motion.div>
+        </motion.div> */}
+        <Gallery />
       </div>
       <Footer />
     </div>

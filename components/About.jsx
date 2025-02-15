@@ -41,7 +41,7 @@ export default function About() {
           {/* First Image */}
           <div className="relative">
             <Image
-              src="/about1.jpg"
+              src="/about1.jpeg"
               width={500}
               height={350}
               objectFit="cover"
@@ -53,7 +53,7 @@ export default function About() {
           {/* Second Image */}
           <div className="relative">
             <Image
-              src="/about2.jpg"
+              src="/about2.jpeg"
               width={500}
               height={350}
               objectFit="cover"
