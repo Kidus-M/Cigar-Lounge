@@ -55,7 +55,7 @@ export default function Footer() {
                 title="Our address"
                 className="transition-colors duration-300 text-white hover:text-orange-600"
               >
-                312 Lovely Street, NY
+                From Gazebo to Wollo Sefer road, Addis Ababa
               </a>
             </div>
           </div>

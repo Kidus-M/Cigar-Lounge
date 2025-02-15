@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
-import { MailOpen, Phone, Youtube, Instagram  } from 'lucide-react';
+import { MailOpen, Phone, Youtube, Instagram } from "lucide-react";
 const Contacts = () => {
   return (
     <div classNameName="bg-black ">
@@ -12,7 +12,7 @@ const Contacts = () => {
           className="relative h-[300px] overflow-hidden bg-cover bg-[50%] bg-no-repeat bg-black"
         >
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11672.945750644447!2d-122.42107853750231!3d37.7730507907087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858070cc2fbd55%3A0xa71491d736f62d5c!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1619524992238!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3940.735504050806!2d38.770424999999996!3d8.996468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwNTknNDcuMyJOIDM4wrA0NicxMy41IkU!5e0!3m2!1sen!2set!4v1739611609218!5m2!1sen!2set"
             width="100%"
             height="480"
             allowfullscreen=""
@@ -25,12 +25,19 @@ const Contacts = () => {
             <div className="flex flex-wrap">
               <div className="flex justify-center">
                 <div className="text-center md:max-w-xl lg:max-w-3xl">
-                  <h2 className="mb-12 px-6 text-3xl text-orange-600 font-bold">Contact us</h2>
+                  <h2 className="mb-12 px-6 text-3xl text-orange-600 font-bold">
+                    Contact us
+                  </h2>
                 </div>
               </div>
 
               <div className="flex flex-wrap">
-                <form className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6" action="mailto:someone@example.com" method="post" enctype="text/plain">
+                <form
+                  className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6"
+                  action="mailto:someone@example.com"
+                  method="post"
+                  enctype="text/plain"
+                >
                   <div className="mb-3 w-full ">
                     <label
                       className="block font-medium mb-[2px] text-orange-600"
@@ -93,8 +100,12 @@ const Contacts = () => {
                           </div>
                         </div>
                         <div className="ml-6 grow">
-                          <p className="mb-2 font-bold text-white">Phone Number</p>
-                          <a href="tel:0979398094" className="text-white ">+251-979-398-094</a>
+                          <p className="mb-2 font-bold text-white">
+                            Phone Number
+                          </p>
+                          <a href="tel:0979398094" className="text-white ">
+                            +251-979-398-094
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -115,12 +126,14 @@ const Contacts = () => {
                       <div className="align-start flex">
                         <div className="shrink-0">
                           <div className="inline-block rounded-md bg-orange-600-100 p-4 text-orange-600">
-                            <Instagram  size={40} />
+                            <Instagram size={40} />
                           </div>
                         </div>
                         <div className="ml-6 grow">
                           <p className="mb-2 font-bold text-white">Instagram</p>
-                          <a href="" className="text-white ">Instagram.wolfdenaddis</a>
+                          <a href="" className="text-white ">
+                            Instagram.wolfdenaddis
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -133,7 +146,12 @@ const Contacts = () => {
                         </div>
                         <div className="ml-6 grow">
                           <p className="mb-2 font-bold text-white">Youtube</p>
-                          <a href="https://www.youtube.com/@Wolf-f7r" className="text-white">wolfden</a>
+                          <a
+                            href="https://www.youtube.com/@Wolf-f7r"
+                            className="text-white"
+                          >
+                            wolfden
+                          </a>
                         </div>
                       </div>
                     </div>
