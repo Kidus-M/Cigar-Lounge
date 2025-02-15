@@ -119,8 +119,8 @@ const Contacts = () => {
                           </div>
                         </div>
                         <div className="ml-6 grow">
-                          <p className="mb-2 font-bold ">Instagram</p>
-                          <p className="text-white ">Instagram.wolfdenaddis</p>
+                          <p className="mb-2 font-bold text-white">Instagram</p>
+                          <a href="" className="text-white ">Instagram.wolfdenaddis</a>
                         </div>
                       </div>
                     </div>

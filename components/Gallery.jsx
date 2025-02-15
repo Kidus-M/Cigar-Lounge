@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Gallery() {
   return (
-    <div className="w-full h-screen bg-black text-white flex flex-col items-center justify-center p-8 mt-30">
+    <div className="w-full md:h-screen bg-black text-white flex flex-col items-center justify-center p-8 md:mt-30">
       {/* Title Section */}
       <div className="text-center mb-12">
         <h2 className="text-5xl font-bold mb-6">Experience the Elegance of WolfDen Cigar Lounge</h2>
