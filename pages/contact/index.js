@@ -156,7 +156,7 @@ const Contacts = () => {
                           <div className="ml-6 grow">
                             <p className="mb-2 font-bold text-white">Instagram</p>
                             <a
-                                href="https://instagram.com/Instagram.wolfdenaddis"
+                                href="https://www.instagram.com/wolfdenaddis?igsh=ZzRmOGp4ZDdmaDRx&utm_source=qr"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="text-white"
