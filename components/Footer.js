@@ -65,22 +65,26 @@ export default function Footer() {
             </span>
               <div className="flex items-center mt-4 space-x-10">
                 <a
-                    href="/"
+                    href="https://youtube.com/@wolf-f7r?si=YSW7A5NGQX-XrbNd"
                     className="text-white transition-colors duration-300 hover:text-orange-600"
                 >
                   <Youtube size={30} color="white" />
                 </a>
                 <a
-                    href="/"
+                    href="https://www.instagram.com/wolfdenaddis?igsh=ZzRmOGp4ZDdmaDRx&utm_source=qr"
                     className="text-white transition-colors duration-300 hover:text-orange-600"
                 >
                   <Instagram size={30} color="white" />
                 </a>
                 <a
-                    href="/"
+                    href="https://www.tiktok.com/@wolfdenaddis?_t=ZM-8xpQE4larlo&_r=1"
                     className="text-white transition-colors duration-300 hover:text-orange-600"
                 >
-                  <Linkedin size={30} color="white" />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                       className="bi bi-tiktok text-white" viewBox="0 0 16 16">
+                    <path
+                        d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                  </svg>
                 </a>
               </div>
               <p className="mt-4 text-sm text-white">
