@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import About from "../components/About";
 import Footer from "../components/Footer";
 import DrinkMenu from "../components/DrinkMenu";
+import Countdown from "../components/Countdown";
 import { motion } from "framer-motion";
 
 import { useRouter } from "next/router";
@@ -56,6 +57,7 @@ export default function HeroSection() {
         {/* Decorative Elements */}
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent"></div>
       </section>
+        <Countdown />
       
       {/* About Section */}
       

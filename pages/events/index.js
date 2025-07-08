@@ -8,7 +8,7 @@ const events = [
     {
         name: "Grand Opening Celebration",
         date: "2025-07-11",
-        description: "Join us for the grand opening of our first-ever lounge dedicated to premium cigars and exquisite drinks! Enjoy exclusive cigar and cocktail pairings to celebrate this milestone.",
+        description: "Join us for the grand opening of our first-ever lounge dedicated to premium cigars and exquisite drinks! Enjoy exclusive cigar and cocktail pairings to celebrate this milestone. See you at 6pm.",
         imageUrl: "/hero1.jpg"
     }
 ];
