@@ -31,25 +31,25 @@ const Countdown = () => {
     return (
         <div className="bg-black py-8">
             <div className="max-w-7xl mx-auto px-4 text-center">
-                <h3 className="text-2xl font-semibold text-teal-600 mb-4">Countdown to Grand Opening</h3>
+                <h3 className="text-2xl font-semibold text-green-600 mb-4">Countdown to Grand Opening</h3>
                 {timeLeft.days === 0 && timeLeft.hours === 0 && timeLeft.minutes === 0 && timeLeft.seconds === 0 ? (
                     <p className="text-gray-300 text-xl">The Grand Opening has started!</p>
                 ) : (
                     <div className="flex justify-center space-x-4">
                         <div className="flex flex-col items-center">
-                            <span className="text-4xl font-bold text-teal-600">{timeLeft.days}</span>
+                            <span className="text-4xl font-bold text-green-600">{timeLeft.days}</span>
                             <span className="text-gray-400">Days</span>
                         </div>
                         <div className="flex flex-col items-center">
-                            <span className="text-4xl font-bold text-teal-600">{timeLeft.hours}</span>
+                            <span className="text-4xl font-bold text-green-600">{timeLeft.hours}</span>
                             <span className="text-gray-400">Hours</span>
                         </div>
                         <div className="flex flex-col items-center">
-                            <span className="text-4xl font-bold text-teal-600">{timeLeft.minutes}</span>
+                            <span className="text-4xl font-bold text-green-600">{timeLeft.minutes}</span>
                             <span className="text-gray-400">Minutes</span>
                         </div>
                         <div className="flex flex-col items-center">
-                            <span className="text-4xl font-bold text-teal-600">{timeLeft.seconds}</span>
+                            <span className="text-4xl font-bold text-green-600">{timeLeft.seconds}</span>
                             <span className="text-gray-400">Seconds</span>
                         </div>
                     </div>

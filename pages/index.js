@@ -48,7 +48,7 @@ export default function HeroSection() {
             Indulge in the finest drinks, premium spirits, and an ambiance of
             timeless elegance.
           </p>
-          <button className="px-8 py-3 bg-teal-500 text-white font-semibold rounded-full hover:bg-teal-600 transition-all duration-300 transform hover:scale-105 animate-fade-in-up delay-400"
+          <button className="px-8 py-3 bg-green-500 text-white font-semibold rounded-full hover:bg-green-600 transition-all duration-300 transform hover:scale-105 animate-fade-in-up delay-400"
           onClick={() => {route.push('/menu')}}>
             Explore Our Menu
           </button>
@@ -67,8 +67,8 @@ export default function HeroSection() {
             whileHover={{ scale: 1.05 }}
             className="bg-gray-800 p-6 rounded-lg flex flex-col items-center text-center"
           >
-            <FaGlobe size={50} className="text-teal-600 mb-4" />
-            <h3 className="text-2xl font-semibold text-teal-600">
+            <FaGlobe size={50} className="text-green-600 mb-4" />
+            <h3 className="text-2xl font-semibold text-green-600">
               Global Standards
             </h3>
             <p className="mt-2">
@@ -81,8 +81,8 @@ export default function HeroSection() {
             whileHover={{ scale: 1.05 }}
             className="bg-gray-800 p-6 rounded-lg flex flex-col items-center text-center"
           >
-            <FaUsers size={50} className="text-teal-600 mb-4" />
-            <h3 className="text-2xl font-semibold text-teal-600">
+            <FaUsers size={50} className="text-green-600 mb-4" />
+            <h3 className="text-2xl font-semibold text-green-600">
               Community
             </h3>
             <p className="mt-2">
@@ -95,8 +95,8 @@ export default function HeroSection() {
             whileHover={{ scale: 1.05 }}
             className="bg-gray-800 p-6 rounded-lg flex flex-col items-center text-center"
           >
-            <FaGlassMartiniAlt size={50} className="text-teal-600 mb-4" />
-            <h3 className="text-2xl font-semibold text-teal-600">
+            <FaGlassMartiniAlt size={50} className="text-green-600 mb-4" />
+            <h3 className="text-2xl font-semibold text-green-600">
               Exquisite Drinks
             </h3>
             <p className="mt-2">
