@@ -56,7 +56,7 @@ const drinks = [
   {
     name: "Bourbon Flip",
     description: "Premium whiskey, lime mixed with sugar syrup.",
-    imageUrl: "/old-fashioned.jpeg",
+    imageUrl: "/BourbonFlip.jpg",
     price: 535,
     category: "Whiskey Cocktails",
   },
