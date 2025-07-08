@@ -5,10 +5,15 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import { FaGlobe, FaUsers, FaGlassMartiniAlt } from 'react-icons/fa';
 import Gallery from "../../components/Gallery";
+import Head from "next/head";
 
 const AboutPage = () => {
   return (
     <div className="bg-black mt-20">
+      <Head>
+        <title>WolfDen Lounge</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
         <Navbar />
       <div className="bg-black min-h-screen text-gray-300 py-12 px-6 md:px-12 lg:px-24">
         <motion.h1

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import {useState} from "react";
+import Head from "next/head";
 
 const drinks = [
   {
@@ -93,6 +94,10 @@ const Menu = () => {
 
   return (
       <div className="mt-20">
+        <Head>
+          <title>WolfDen Lounge</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
         <Navbar />
         <div className="bg-black min-h-screen flex flex-col justify-center py-12">
           <h2 className="text-4xl font-bold text-center text-green-600 mb-8">

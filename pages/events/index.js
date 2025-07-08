@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import Head from "next/head";
 
 const events = [
     {
@@ -21,6 +22,10 @@ const Events = () => {
 
     return (
         <div className="bg-black mt-20">
+            <Head>
+                <title>WolfDen Lounge</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <Navbar />
             <div className="bg-black py-12">
                 <h2 className="text-4xl font-bold text-center text-green-600 mb-8">Upcoming Events</h2>

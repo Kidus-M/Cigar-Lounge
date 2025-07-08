@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import { MailOpen, Phone, Youtube, Instagram } from "lucide-react";
+import Head from "next/head";
 
 const Contacts = () => {
   const [status, setStatus] = useState(null); // 'success' | 'error'
@@ -34,6 +35,10 @@ const Contacts = () => {
 
   return (
       <div className="bg-black">
+        <Head>
+          <title>WolfDen Lounge</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
         <Navbar />
         <section className="bg-black mt-20">
           <div id="map" className="relative h-[300px] bg-black">
