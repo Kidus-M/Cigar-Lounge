@@ -134,7 +134,7 @@ const Menu = () => {
                       {drink.name}
                     </h3>
                     <p className="text-gray-300 mt-2">{drink.description}</p>
-                    <p className="text-green-600 mt-2">Price: {drink.price} ETB</p>
+                    {/*<p className="text-green-600 mt-2">Price: {drink.price} ETB</p>*/}
                   </div>
                 </div>
             ))}
