@@ -48,11 +48,11 @@ const Contacts = () => {
           </div>
 
           <div className="container px-6 md:px-12">
-            <div className="block rounded-lg bg-black px-6 py-12 border border-orange-600 -mt-[100px] shadow-md backdrop-blur-[30px]">
+            <div className="block rounded-lg bg-black px-6 py-12 border border-teal-600 -mt-[100px] shadow-md backdrop-blur-[30px]">
               <div className="flex flex-wrap">
                 <div className="flex justify-center w-full">
                   <div className="text-center md:max-w-xl lg:max-w-3xl">
-                    <h2 className="mb-12 px-6 text-3xl text-orange-600 font-bold">
+                    <h2 className="mb-12 px-6 text-3xl text-teal-600 font-bold">
                       Contact us
                     </h2>
                   </div>
@@ -68,7 +68,7 @@ const Contacts = () => {
                     <input type="hidden" name="_template" value="table" />
 
                     <div className="mb-3 w-full">
-                      <label className="block font-medium mb-[2px] text-orange-600">Name</label>
+                      <label className="block font-medium mb-[2px] text-teal-600">Name</label>
                       <input
                           type="text"
                           name="name"
@@ -79,7 +79,7 @@ const Contacts = () => {
                     </div>
 
                     <div className="mb-3 w-full">
-                      <label className="block font-medium mb-[2px] text-orange-600">Email</label>
+                      <label className="block font-medium mb-[2px] text-teal-600">Email</label>
                       <input
                           type="email"
                           name="email"
@@ -90,7 +90,7 @@ const Contacts = () => {
                     </div>
 
                     <div className="mb-3 w-full">
-                      <label className="block font-medium mb-[2px] text-orange-600">Message</label>
+                      <label className="block font-medium mb-[2px] text-teal-600">Message</label>
                       <textarea
                           name="message"
                           required
@@ -101,7 +101,7 @@ const Contacts = () => {
 
                     <button
                         type="submit"
-                        className="mb-3 inline-block w-full rounded bg-orange-600 px-6 py-2.5 font-medium uppercase text-white hover:bg-orange-700"
+                        className="mb-3 inline-block w-full rounded bg-teal-600 px-6 py-2.5 font-medium uppercase text-white hover:bg-teal-700"
                     >
                       Send
                     </button>
@@ -115,11 +115,11 @@ const Contacts = () => {
                   </form>
 
                   <div className="w-full mt-10 shrink-0 grow-0 basis-auto lg:w-7/12">
-                    <div className="flex flex-wrap text-orange-600">
+                    <div className="flex flex-wrap text-teal-600">
                       <div className="mb-12 w-full md:w-6/12 md:px-3 lg:px-6">
                         <div className="flex items-start">
                           <div className="shrink-0">
-                            <div className="inline-block p-4 text-orange-600">
+                            <div className="inline-block p-4 text-teal-600">
                               <Phone size={40} />
                             </div>
                           </div>
@@ -135,7 +135,7 @@ const Contacts = () => {
                       <div className="mb-12 w-full md:w-6/12 md:px-3 lg:px-6">
                         <div className="flex items-start">
                           <div className="shrink-0">
-                            <div className="inline-block p-4 text-orange-600">
+                            <div className="inline-block p-4 text-teal-600">
                               <MailOpen size={40} />
                             </div>
                           </div>
@@ -149,7 +149,7 @@ const Contacts = () => {
                       <div className="mb-12 w-full md:w-6/12 md:px-3 lg:px-6">
                         <div className="flex items-start">
                           <div className="shrink-0">
-                            <div className="inline-block p-4 text-orange-600">
+                            <div className="inline-block p-4 text-teal-600">
                               <Instagram size={40} />
                             </div>
                           </div>
@@ -170,7 +170,7 @@ const Contacts = () => {
                       <div className="mb-12 w-full md:w-6/12 md:px-3 lg:px-6">
                         <div className="flex items-start">
                           <div className="shrink-0">
-                            <div className="inline-block p-4 text-orange-600">
+                            <div className="inline-block p-4 text-teal-600">
                               <Youtube size={50} />
                             </div>
                           </div>

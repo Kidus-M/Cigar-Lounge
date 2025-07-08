@@ -23,7 +23,7 @@ const Events = () => {
         <div className="bg-black mt-20">
             <Navbar />
             <div className="bg-black py-12">
-                <h2 className="text-4xl font-bold text-center text-orange-600 mb-8">Upcoming Events</h2>
+                <h2 className="text-4xl font-bold text-center text-teal-600 mb-8">Upcoming Events</h2>
                 <div className="max-w-7xl mx-auto space-y-8 px-4">
                     {sortedEvents.length === 0 ? (
                         <div className="text-center text-gray-300 text-xl">
@@ -51,11 +51,11 @@ const Events = () => {
                                         />
                                     </div>
                                     <div className="p-6 w-full md:w-1/2">
-                                        <h3 className="text-2xl font-semibold text-orange-600">{event.name}</h3>
+                                        <h3 className="text-2xl font-semibold text-teal-600">{event.name}</h3>
                                         <p className="text-gray-400 mt-2">{eventDate.toDateString()}</p>
                                         <p className="text-gray-300 mt-4">{event.description}</p>
                                         {!isPast && (
-                                            <Link href="/contact" className="inline-block mt-6 px-6 py-2 bg-orange-600 text-white font-semibold rounded hover:bg-orange-700 transition duration-300">
+                                            <Link href="/contact" className="inline-block mt-6 px-6 py-2 bg-teal-600 text-white font-semibold rounded hover:bg-teal-700 transition duration-300">
                                                 Contact Us
                                             </Link>
                                         )}

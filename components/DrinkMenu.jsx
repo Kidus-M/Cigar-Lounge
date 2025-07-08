@@ -27,7 +27,7 @@ const drinks = [
 const DrinkMenu = () => {
   return (
     <div className="bg-black min-h-screen flex flex-col justify-center py-12">
-      <h2 className="text-4xl font-bold text-center text-orange-600 mb-8">Our Signature Drinks</h2>
+      <h2 className="text-4xl font-bold text-center text-teal-600 mb-8">Our Signature Drinks</h2>
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
         {drinks.map((drink) => (
           <div
@@ -44,7 +44,7 @@ const DrinkMenu = () => {
               />
             </div>
             <div className="p-4">
-              <h3 className="text-xl font-semibold text-orange-600">{drink.name}</h3>
+              <h3 className="text-xl font-semibold text-teal-600">{drink.name}</h3>
               <p className="text-gray-300 mt-2">{drink.description}</p>
             </div>
           </div>

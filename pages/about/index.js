@@ -15,7 +15,7 @@ const AboutPage = () => {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-5xl font-bold text-orange-600 text-center mb-8"
+          className="text-5xl font-bold text-teal-600 text-center mb-8"
         >
           About Us
         </motion.h1>
@@ -29,7 +29,7 @@ const AboutPage = () => {
         >
           <p className="text-lg md:text-xl">
             At{" "}
-            <span className="text-orange-600 font-semibold">WolfDen Lounge</span>,
+            <span className="text-teal-600 font-semibold">WolfDen Lounge</span>,
             we provide an oasis of relaxation, elegance, and the finest drinks.
             Our mission is to create a welcoming environment where guests can
             unwind and indulge in handcrafted cocktails, drinks, and
@@ -43,8 +43,8 @@ const AboutPage = () => {
             whileHover={{ scale: 1.05 }}
             className="bg-gray-800 p-6 rounded-lg flex flex-col items-center text-center"
           >
-            <FaGlobe size={50} className="text-orange-600 mb-4" />
-            <h3 className="text-2xl font-semibold text-orange-600">
+            <FaGlobe size={50} className="text-teal-600 mb-4" />
+            <h3 className="text-2xl font-semibold text-teal-600">
               Global Standards
             </h3>
             <p className="mt-2">
@@ -57,8 +57,8 @@ const AboutPage = () => {
             whileHover={{ scale: 1.05 }}
             className="bg-gray-800 p-6 rounded-lg flex flex-col items-center text-center"
           >
-            <FaUsers size={50} className="text-orange-600 mb-4" />
-            <h3 className="text-2xl font-semibold text-orange-600">
+            <FaUsers size={50} className="text-teal-600 mb-4" />
+            <h3 className="text-2xl font-semibold text-teal-600">
               Community
             </h3>
             <p className="mt-2">
@@ -71,8 +71,8 @@ const AboutPage = () => {
             whileHover={{ scale: 1.05 }}
             className="bg-gray-800 p-6 rounded-lg flex flex-col items-center text-center"
           >
-            <FaGlassMartiniAlt size={50} className="text-orange-600 mb-4" />
-            <h3 className="text-2xl font-semibold text-orange-600">
+            <FaGlassMartiniAlt size={50} className="text-teal-600 mb-4" />
+            <h3 className="text-2xl font-semibold text-teal-600">
               Exquisite Drinks
             </h3>
             <p className="mt-2">

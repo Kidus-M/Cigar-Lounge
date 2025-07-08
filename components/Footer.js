@@ -6,7 +6,7 @@ export default function Footer() {
         <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
             <div className="sm:col-span-2">
-            <span className="text-xl font-bold tracking-wide text-orange-600 uppercase">
+            <span className="text-xl font-bold tracking-wide text-teal-600 uppercase">
               WolfDen Lounge
             </span>
               <div className="mt-6 lg:max-w-sm">
@@ -20,7 +20,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="space-y-2 text-sm">
-              <p className="text-base font-bold tracking-wide text-orange-600">
+              <p className="text-base font-bold tracking-wide text-teal-600">
                 Contacts
               </p>
               <div className="flex text-white">
@@ -29,7 +29,7 @@ export default function Footer() {
                     href="tel:0979398094"
                     aria-label="Our phone"
                     title="Our phone"
-                    className="transition-colors duration-300 text-white hover:text-orange-600"
+                    className="transition-colors duration-300 text-white hover:text-teal-600"
                 >
                   0979398094
                 </a>
@@ -40,7 +40,7 @@ export default function Footer() {
                     href="mailto:wolfdenaddis@gmail.com"
                     aria-label="Our email"
                     title="Our email"
-                    className="transition-colors duration-300 text-white hover:text-orange-600"
+                    className="transition-colors duration-300 text-white hover:text-teal-600"
                 >
                   wolfdenaddis@gmail.com
                 </a>
@@ -53,32 +53,32 @@ export default function Footer() {
                     rel="noopener noreferrer"
                     aria-label="Our address"
                     title="Our address"
-                    className="transition-colors duration-300 text-white hover:text-orange-600"
+                    className="transition-colors duration-300 text-white hover:text-teal-600"
                 >
                   From Gazebo to Wollo Sefer road, Addis Ababa
                 </a>
               </div>
             </div>
             <div>
-            <span className="text-base font-bold tracking-wide text-orange-600">
+            <span className="text-base font-bold tracking-wide text-teal-600">
               Social
             </span>
               <div className="flex items-center mt-4 space-x-10">
                 <a
                     href="https://youtube.com/@wolf-f7r?si=YSW7A5NGQX-XrbNd"
-                    className="text-white transition-colors duration-300 hover:text-orange-600"
+                    className="text-white transition-colors duration-300 hover:text-teal-600"
                 >
                   <Youtube size={30} color="white" />
                 </a>
                 <a
                     href="https://www.instagram.com/wolfdenaddis?igsh=ZzRmOGp4ZDdmaDRx&utm_source=qr"
-                    className="text-white transition-colors duration-300 hover:text-orange-600"
+                    className="text-white transition-colors duration-300 hover:text-teal-600"
                 >
                   <Instagram size={30} color="white" />
                 </a>
                 <a
                     href="https://www.tiktok.com/@wolfdenaddis?_t=ZM-8xpQE4larlo&_r=1"
-                    className="text-white transition-colors duration-300 hover:text-orange-600"
+                    className="text-white transition-colors duration-300 hover:text-teal-600"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                        className="bi bi-tiktok text-white" viewBox="0 0 16 16">

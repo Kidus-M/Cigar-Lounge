@@ -54,7 +54,7 @@ export default function Navbar() {
           <div className="backdrop-blur-md bg-black/70 border-b border-white/10 px-6 sm:px-8 lg:px-12 py-4 flex justify-between items-center">
             <Link
                 href="/"
-                className="text-2xl font-bold text-white tracking-tight hover:text-orange-500 transition duration-200"
+                className="text-2xl font-bold text-white tracking-tight hover:text-teal-500 transition duration-200"
             >
               WolfDen
             </Link>
@@ -68,12 +68,12 @@ export default function Navbar() {
                         key={link.name}
                         href={link.path}
                         className={`relative text-sm uppercase font-medium tracking-wide transition-colors duration-200 ${
-                            isActive ? "text-orange-500" : "text-white hover:text-orange-400"
+                            isActive ? "text-teal-500" : "text-white hover:text-teal-400"
                         }`}
                     >
                       {link.name}
                       <span
-                          className={`absolute bottom-0 left-0 h-0.5 bg-orange-500 transition-all duration-300 ease-out ${
+                          className={`absolute bottom-0 left-0 h-0.5 bg-teal-500 transition-all duration-300 ease-out ${
                               isActive ? "w-full" : "w-0 group-hover:w-full"
                           }`}
                       />
@@ -108,8 +108,8 @@ export default function Navbar() {
                       href={link.path}
                       className={`text-lg font-semibold transition-all duration-200 ${
                           isActive
-                              ? "text-orange-500 border-l-4 border-orange-500 pl-4"
-                              : "text-white hover:text-orange-400"
+                              ? "text-teal-500 border-l-4 border-teal-500 pl-4"
+                              : "text-white hover:text-teal-400"
                       }`}
                       onClick={() => setIsOpen(false)}
                   >

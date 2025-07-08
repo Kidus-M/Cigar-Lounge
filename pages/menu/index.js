@@ -61,7 +61,7 @@ const drinks = [
   },
   {
     name: "Mai Tai",
-    description: "A tropical cocktail with rum, lime juice, orgeat syrup, and orange liqueur.",
+    description: "A tropical cocktail with rum, lime juice, orgeat syrup, and teal liqueur.",
     imageUrl: "/mai-tai.jpg",
   },
   {
@@ -96,7 +96,7 @@ const drinks = [
   },
   {
     name: "Sidecar",
-    description: "A classic cocktail with cognac, orange liqueur, and lemon juice.",
+    description: "A classic cocktail with cognac, teal liqueur, and lemon juice.",
     imageUrl: "/sidecar.jpg",
   },
   {
@@ -111,7 +111,7 @@ const Menu = () => {
     <div className="mt-20">
       <Navbar />
       <div className="bg-black min-h-screen flex flex-col justify-center py-12">
-        <h2 className="text-4xl font-bold text-center text-orange-600 mb-8">
+        <h2 className="text-4xl font-bold text-center text-teal-600 mb-8">
           Our Full Drink Menu
         </h2>
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-4">
@@ -130,7 +130,7 @@ const Menu = () => {
                 />
               </div>
               <div className="p-4">
-                <h3 className="text-xl font-semibold text-orange-600">
+                <h3 className="text-xl font-semibold text-teal-600">
                   {drink.name}
                 </h3>
                 <p className="text-gray-300 mt-2">{drink.description}</p>
