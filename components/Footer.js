@@ -11,7 +11,7 @@ export default function Footer() {
             </span>
               <div className="mt-6 lg:max-w-sm">
                 <p className="text-sm text-white">
-                  An oasis of elegance, relaxation, and the finest drinks in the
+                  Elegance, relaxation, and the finest drinks in the
                   city.
                 </p>
                 <p className="mt-4 text-sm text-white">
