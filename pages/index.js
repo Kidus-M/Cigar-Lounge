@@ -30,7 +30,7 @@ export default function HeroSection() {
         <Navbar />
 
         <Head>
-          <title>WolfDen Lounge</title>
+          <title>Wolf Den Lounge</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
         {/* Background Image */}
@@ -42,7 +42,7 @@ export default function HeroSection() {
         {/* Content */}
         <div className="relative z-10 text-center space-y-8">
           <h1 className="text-6xl md:text-8xl font-serif text-white font-bold tracking-wider animate-fade-in">
-            WolfDen Lounge
+            Wolf Den Lounge
           </h1>
           <p className="text-xl md:text-3xl text-white font-light max-w-2xl mx-auto animate-fade-in-up delay-200">
             Indulge in the finest drinks, premium spirits, and an ambiance of

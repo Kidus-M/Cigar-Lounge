@@ -23,7 +23,7 @@ const Events = () => {
     return (
         <div className="bg-black mt-20">
             <Head>
-                <title>WolfDen Lounge</title>
+                <title>Wolf Den Lounge</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Navbar />

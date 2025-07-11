@@ -5,7 +5,7 @@ export default function Gallery() {
     <div className="w-full md:h-screen bg-black text-white flex flex-col items-center justify-center p-8 md:mt-30">
       {/* Title Section */}
       <div className="text-center mb-12">
-        <h2 className="text-5xl font-bold mb-6">Experience the Elegance of WolfDen Cigar Lounge</h2>
+        <h2 className="text-5xl font-bold mb-6">Experience the Elegance of Wolf Den Cigar Lounge</h2>
         <p className="text-lg text-gray-400 mt-4 max-w-2xl mx-auto">
           A sophisticated ambiance, rich flavors, and the finest cigars. Explore our luxurious lounge through our gallery.
         </p>

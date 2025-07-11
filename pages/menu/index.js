@@ -95,7 +95,7 @@ const Menu = () => {
   return (
       <div className="mt-20">
         <Head>
-          <title>WolfDen Lounge</title>
+          <title>Wolf Den Lounge</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <Navbar />

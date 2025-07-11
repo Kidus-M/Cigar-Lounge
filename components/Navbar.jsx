@@ -56,7 +56,7 @@ export default function Navbar() {
                 href="/"
                 className="text-2xl font-bold text-white tracking-tight hover:text-green-500 transition duration-200"
             >
-              WolfDen
+              Wolf Den
             </Link>
 
             {/* Desktop Links */}

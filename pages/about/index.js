@@ -11,7 +11,7 @@ const AboutPage = () => {
   return (
     <div className="bg-black mt-20">
       <Head>
-        <title>WolfDen Lounge</title>
+        <title>Wolf Den Lounge</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
         <Navbar />
@@ -34,7 +34,7 @@ const AboutPage = () => {
         >
           <p className="text-lg md:text-xl">
             At{" "}
-            <span className="text-green-600 font-semibold">WolfDen Lounge</span>,
+            <span className="text-green-600 font-semibold">Wolf Den Lounge</span>,
             we provide an oasis of relaxation, elegance, and the finest drinks.
             Our mission is to create a welcoming environment where guests can
             unwind and indulge in handcrafted cocktails, drinks, and
@@ -96,7 +96,7 @@ const AboutPage = () => {
         >
           <Image
             src="/hero1.jpg"
-            alt="WolfDen Lounge Interior"
+            alt="Wolf Den Lounge Interior"
             width={800}
             height={500}
             className="rounded-lg shadow-lg"

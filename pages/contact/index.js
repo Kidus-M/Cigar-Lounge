@@ -14,7 +14,7 @@ const Contacts = () => {
     const formData = new FormData(form);
 
     try {
-      const response = await fetch("https://formsubmit.co/ajax/wolfdenaddis@gmail.com", {
+      const response = await fetch("https://formsubmit.co/ajax/Wolf Denaddis@gmail.com", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -36,7 +36,7 @@ const Contacts = () => {
   return (
       <div className="bg-black">
         <Head>
-          <title>WolfDen Lounge</title>
+          <title>Wolf Den Lounge</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <Navbar />
@@ -146,7 +146,7 @@ const Contacts = () => {
                           </div>
                           <div className="ml-6 grow">
                             <p className="mb-2 font-bold text-white">Email</p>
-                            <p className="text-white">wolfdenaddis@gmail.com</p>
+                            <p className="text-white">Wolf Denaddis@gmail.com</p>
                           </div>
                         </div>
                       </div>
@@ -161,12 +161,12 @@ const Contacts = () => {
                           <div className="ml-6 grow">
                             <p className="mb-2 font-bold text-white">Instagram</p>
                             <a
-                                href="https://www.instagram.com/wolfdenaddis?igsh=ZzRmOGp4ZDdmaDRx&utm_source=qr"
+                                href="https://www.instagram.com/Wolf Denaddis?igsh=ZzRmOGp4ZDdmaDRx&utm_source=qr"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="text-white"
                             >
-                              Instagram.wolfdenaddis
+                              Instagram.Wolf Denaddis
                             </a>
                           </div>
                         </div>
@@ -187,7 +187,7 @@ const Contacts = () => {
                                 rel="noreferrer"
                                 className="text-white"
                             >
-                              wolfden
+                              Wolf Den
                             </a>
                           </div>
                         </div>

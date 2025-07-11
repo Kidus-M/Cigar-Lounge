@@ -7,7 +7,7 @@ export default function Footer() {
           <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
             <div className="sm:col-span-2">
             <span className="text-xl font-bold tracking-wide text-green-600 uppercase">
-              WolfDen Lounge
+              Wolf Den Lounge
             </span>
               <div className="mt-6 lg:max-w-sm">
                 <p className="text-sm text-white">
@@ -37,12 +37,12 @@ export default function Footer() {
               <div className="flex text-white">
                 <p className="mr-1 text-white">Email:</p>
                 <a
-                    href="mailto:wolfdenaddis@gmail.com"
+                    href="mailto:Wolf Denaddis@gmail.com"
                     aria-label="Our email"
                     title="Our email"
                     className="transition-colors duration-300 text-white hover:text-green-600"
                 >
-                  wolfdenaddis@gmail.com
+                  Wolf Denaddis@gmail.com
                 </a>
               </div>
               <div className="flex text-white">
@@ -71,13 +71,13 @@ export default function Footer() {
                   <Youtube size={30} color="white" />
                 </a>
                 <a
-                    href="https://www.instagram.com/wolfdenaddis?igsh=ZzRmOGp4ZDdmaDRx&utm_source=qr"
+                    href="https://www.instagram.com/Wolf Denaddis?igsh=ZzRmOGp4ZDdmaDRx&utm_source=qr"
                     className="text-white transition-colors duration-300 hover:text-green-600"
                 >
                   <Instagram size={30} color="white" />
                 </a>
                 <a
-                    href="https://www.tiktok.com/@wolfdenaddis?_t=ZM-8xpQE4larlo&_r=1"
+                    href="https://www.tiktok.com/@Wolf Denaddis?_t=ZM-8xpQE4larlo&_r=1"
                     className="text-white transition-colors duration-300 hover:text-green-600"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
@@ -94,7 +94,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
             <p className="text-sm text-white">
-              © 2025 WolfDen Lounge. All rights reserved.
+              © 2025 Wolf Den Lounge. All rights reserved.
             </p>
           </div>
         </div>
