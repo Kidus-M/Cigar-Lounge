@@ -71,7 +71,7 @@ export default function Footer() {
                   <Youtube size={30} color="white" />
                 </a>
                 <a
-                    href="https://www.instagram.com/wolfdenenaddis?igsh=ZzRmOGp4ZDdmaDRx&utm_source=qr"
+                    href="https://www.instagram.com/wolfdenaddis?igsh=ZzRmOGp4ZDdmaDRx&utm_source=qr"
                     className="text-white transition-colors duration-300 hover:text-green-600"
                 >
                   <Instagram size={30} color="white" />
