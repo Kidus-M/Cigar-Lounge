@@ -146,7 +146,7 @@ const Contacts = () => {
                           </div>
                           <div className="ml-6 grow">
                             <p className="mb-2 font-bold text-white">Email</p>
-                            <p className="text-white">Wolf Denaddis@gmail.com</p>
+                            <p className="text-white">Wolfdenaddis@gmail.com</p>
                           </div>
                         </div>
                       </div>
@@ -161,12 +161,12 @@ const Contacts = () => {
                           <div className="ml-6 grow">
                             <p className="mb-2 font-bold text-white">Instagram</p>
                             <a
-                                href="https://www.instagram.com/Wolf Denaddis?igsh=ZzRmOGp4ZDdmaDRx&utm_source=qr"
+                                href="https://www.instagram.com/wolfdenaddis?igsh=ZzRmOGp4ZDdmaDRx&utm_source=qr"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="text-white"
                             >
-                              Instagram.Wolf Denaddis
+                              Instagram.WolfDenaddis
                             </a>
                           </div>
                         </div>
