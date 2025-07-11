@@ -37,12 +37,12 @@ export default function Footer() {
               <div className="flex text-white">
                 <p className="mr-1 text-white">Email:</p>
                 <a
-                    href="mailto:Wolf Denaddis@gmail.com"
+                    href="mailto:wolfdenaddis@gmail.com"
                     aria-label="Our email"
                     title="Our email"
                     className="transition-colors duration-300 text-white hover:text-green-600"
                 >
-                  Wolf Denaddis@gmail.com
+                  wolfdenaddis@gmail.com
                 </a>
               </div>
               <div className="flex text-white">
@@ -71,13 +71,13 @@ export default function Footer() {
                   <Youtube size={30} color="white" />
                 </a>
                 <a
-                    href="https://www.instagram.com/Wolf Denaddis?igsh=ZzRmOGp4ZDdmaDRx&utm_source=qr"
+                    href="https://www.instagram.com/wolfdenenaddis?igsh=ZzRmOGp4ZDdmaDRx&utm_source=qr"
                     className="text-white transition-colors duration-300 hover:text-green-600"
                 >
                   <Instagram size={30} color="white" />
                 </a>
                 <a
-                    href="https://www.tiktok.com/@Wolf Denaddis?_t=ZM-8xpQE4larlo&_r=1"
+                    href="https://www.tiktok.com/@wolfdenaddis?_t=ZM-8xpQE4larlo&_r=1"
                     className="text-white transition-colors duration-300 hover:text-green-600"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
