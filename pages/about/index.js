@@ -56,32 +56,33 @@ const AboutPage = () => {
               <div className="md:w-1/2 text-center md:text-left">
                 <p className="text-lg md:text-xl">
                   Wolves live in packs (family).
+                  <span className={"text-green-600"}> At the Wolf Den we consider, and treat, all who enter as family. </span>
                 </p>
               </div>
             </motion.div>
 
             {/* Paragraph 3 and Image */}
-            <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                className="flex flex-col md:flex-row items-center gap-6"
-            >
-              <div className="md:w-1/2 relative h-64 w-full rounded-lg overflow-hidden">
-                <Image
-                    src="/w2.png"
-                    alt="Wolf Leaders"
-                    layout="fill"
-                    objectFit="contain"
-                    className="opacity-90 hover:opacity-100 transition duration-500"
-                />
-              </div>
-              <div className="md:w-1/2 text-center md:text-left">
-                <p className="text-lg md:text-xl">
-                  Wolf packs are led by a dominant pair (a male and female).
-                </p>
-              </div>
-            </motion.div>
+            {/*<motion.div*/}
+            {/*    initial={{ opacity: 0, x: -50 }}*/}
+            {/*    whileInView={{ opacity: 1, x: 0 }}*/}
+            {/*    transition={{ duration: 0.8 }}*/}
+            {/*    className="flex flex-col md:flex-row items-center gap-6"*/}
+            {/*>*/}
+            {/*  <div className="md:w-1/2 relative h-64 w-full rounded-lg overflow-hidden">*/}
+            {/*    <Image*/}
+            {/*        src="/w2.png"*/}
+            {/*        alt="Wolf Leaders"*/}
+            {/*        layout="fill"*/}
+            {/*        objectFit="contain"*/}
+            {/*        className="opacity-90 hover:opacity-100 transition duration-500"*/}
+            {/*    />*/}
+            {/*  </div>*/}
+            {/*  <div className="md:w-1/2 text-center md:text-left">*/}
+            {/*    <p className="text-lg md:text-xl">*/}
+            {/*      Wolf packs are led by a dominant pair (a male and female).*/}
+            {/*    </p>*/}
+            {/*  </div>*/}
+            {/*</motion.div>*/}
 
             {/* Paragraph 4 and Image */}
             <motion.div
@@ -102,32 +103,34 @@ const AboutPage = () => {
               <div className="md:w-1/2 text-center md:text-left">
                 <p className="text-lg md:text-xl">
                   Wolves are extremely loyal to their family.
+                  <span className={"text-green-600"}> Our staff at the Wolf Den is committed to excellent customer service. We understand that our surival is not only based on the loyalty we receive, but its embedded in the loyalty we give.  </span>
                 </p>
               </div>
             </motion.div>
 
             {/* Paragraph 5 and Image */}
-            <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                className="flex flex-col md:flex-row items-center gap-6"
-            >
-              <div className="md:w-1/2 relative h-64 w-full rounded-lg overflow-hidden">
-                <Image
-                    src="/w4.png"
-                    alt="Wolf Hunt"
-                    layout="fill"
-                    objectFit="contain"
-                    className="opacity-90 hover:opacity-100 transition duration-500"
-                />
-              </div>
-              <div className="md:w-1/2 text-center md:text-left">
-                <p className="text-lg md:text-xl">
-                  Wolves always hunt together in a coordinated effort.
-                </p>
-              </div>
-            </motion.div>
+            {/*<motion.div*/}
+            {/*    initial={{ opacity: 0, x: -50 }}*/}
+            {/*    whileInView={{ opacity: 1, x: 0 }}*/}
+            {/*    transition={{ duration: 0.8 }}*/}
+            {/*    className="flex flex-col md:flex-row items-center gap-6"*/}
+            {/*>*/}
+            {/*  <div className="md:w-1/2 relative h-64 w-full rounded-lg overflow-hidden">*/}
+            {/*    <Image*/}
+            {/*        src="/w4.png"*/}
+            {/*        alt="Wolf Hunt"*/}
+            {/*        layout="fill"*/}
+            {/*        objectFit="contain"*/}
+            {/*        className="opacity-90 hover:opacity-100 transition duration-500"*/}
+            {/*    />*/}
+            {/*  </div>*/}
+            {/*  <div className="md:w-1/2 text-center md:text-left">*/}
+            {/*    <p className="text-lg md:text-xl">*/}
+            {/*      Wolves always hunt together in a coordinated effort.*/}
+            {/*      <span className={"text-green-600"}> At the Wolf Den, we follow the same code. All who enter are treated as kin, because here, the pack eats, drinks, and thrives together. </span>*/}
+            {/*    </p>*/}
+            {/*  </div>*/}
+            {/*</motion.div>*/}
 
             {/* Paragraph 6 and Image */}
             <motion.div
@@ -148,6 +151,7 @@ const AboutPage = () => {
               <div className="md:w-1/2 text-center md:text-left">
                 <p className="text-lg md:text-xl">
                   Nothing hunts the wolf.
+                  <span className={"text-green-600"}> The Wolf Den has no competition nor competitors. We strive everyday to be the best because we offer the best in class, elegance, service, and product.  </span>
                 </p>
               </div>
             </motion.div>
@@ -171,6 +175,7 @@ const AboutPage = () => {
               <div className="md:w-1/2 text-center md:text-left">
                 <p className="text-lg md:text-xl">
                   A den is not where a wolf lives but where they protect their own.
+                  <span className={"text-green-600"}> There are many different types of wolves, but there is only one wolf. There are many different types of Ethiopians, but there is only one Ethiopian. At the Wolf Den we advocate for a safe environment for our customers and for our staff.  </span>
                 </p>
 
               </div>
