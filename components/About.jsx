@@ -27,7 +27,7 @@ export default function About() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          About <span className="text-green-600">Wolf Den</span>
+          Welcome to Our<span className="text-green-600"> Den</span>
         </motion.h2>
 
         {/* Image Grid */}
