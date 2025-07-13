@@ -33,7 +33,7 @@ const AboutPage = () => {
                 className="text-center"
             >
               <p className="text-lg md:text-xl mb-16">
-                Wolves are fascinating creatures. A wolf does not talk about strength, loyalty, or leadership—it lives it.
+                Wolves are fascinating creatures. A wolf does not talk about strength, loyalty, or leadership. It lives it...
               </p>
             </motion.div>
 
