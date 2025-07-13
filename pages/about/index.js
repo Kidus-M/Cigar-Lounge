@@ -223,7 +223,7 @@ const AboutPage = () => {
                     transition={{ duration: 0.8 }}
                     viewport={{ once: true }}
                 >
-                  {/*About <span className="text-green-600">Wolf Den</span>*/}
+                  <span className="text-green-600">Wolf Den</span>
                 </motion.h2>
 
                 {/* Image Grid */}
