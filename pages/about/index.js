@@ -24,103 +24,157 @@ const AboutPage = () => {
             About Us
           </motion.h1>
 
-          <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-              className="max-w-4xl mx-auto"
-          >
-            <p className="text-lg md:text-xl text-center mb-6">
-              Wolves are fascinating creatures. A wolf does not talk about strength, loyalty, or leadership—it lives it.
-            </p>
-            <div className="relative h-64 w-full max-w-4xl mx-auto rounded-lg overflow-hidden mb-12">
-              <Image
-                  src="/w1.png"
-                  alt="Wolf Spirit"
-                  layout="fill"
-                  objectFit="contain"
-                  className="opacity-90 hover:opacity-100 transition duration-500"
-              />
-            </div>
+          <div className="max-w-4xl mx-auto space-y-12">
+            {/* First Paragraph (Unpaired) */}
+            <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="text-center"
+            >
+              <p className="text-lg md:text-xl mb-16">
+                Wolves are fascinating creatures. A wolf does not talk about strength, loyalty, or leadership—it lives it.
+              </p>
+            </motion.div>
 
-            <p className="text-lg md:text-xl text-center mb-6">
-              Wolves live in packs (family).
-            </p>
-            <div className="relative h-64 w-full max-w-4xl mx-auto rounded-lg overflow-hidden mb-12">
-              <Image
-                  src="/w2.png"
-                  alt="Wolf Pack"
-                  layout="fill"
-                  objectFit="contain"
-                  className="opacity-90 hover:opacity-100 transition duration-500"
-              />
-            </div>
+            {/* Paragraph 2 and Image */}
+            <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                className="flex flex-col md:flex-row items-center gap-6"
+            >
+              <div className="md:w-1/2 relative h-64 w-full rounded-lg overflow-hidden">
+                <Image
+                    src="/w1.png"
+                    alt="Wolf Pack"
+                    layout="fill"
+                    objectFit="contain"
+                    className="opacity-90 hover:opacity-100 transition duration-500"
+                />
+              </div>
+              <div className="md:w-1/2 text-center md:text-left">
+                <p className="text-lg md:text-xl">
+                  Wolves live in packs (family).
+                </p>
+              </div>
+            </motion.div>
 
-            <p className="text-lg md:text-xl text-center mb-6">
-              Wolf packs are led by a dominant pair (a male and female).
-            </p>
-            <div className="relative h-64 w-full max-w-4xl mx-auto rounded-lg overflow-hidden mb-12">
-              <Image
-                  src="/w3.png"
-                  alt="Wolf Leaders"
-                  layout="fill"
-                  objectFit="contain"
-                  className="opacity-90 hover:opacity-100 transition duration-500"
-              />
-            </div>
+            {/* Paragraph 3 and Image */}
+            <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                className="flex flex-col md:flex-row items-center gap-6"
+            >
+              <div className="md:w-1/2 relative h-64 w-full rounded-lg overflow-hidden">
+                <Image
+                    src="/w2.png"
+                    alt="Wolf Leaders"
+                    layout="fill"
+                    objectFit="contain"
+                    className="opacity-90 hover:opacity-100 transition duration-500"
+                />
+              </div>
+              <div className="md:w-1/2 text-center md:text-left">
+                <p className="text-lg md:text-xl">
+                  Wolf packs are led by a dominant pair (a male and female).
+                </p>
+              </div>
+            </motion.div>
 
-            <p className="text-lg md:text-xl text-center mb-6">
-              Wolves are extremely loyal to their family.
-            </p>
-            <div className="relative h-64 w-full max-w-4xl mx-auto rounded-lg overflow-hidden mb-12">
-              <Image
-                  src="/w4.png"
-                  alt="Wolf Loyalty"
-                  layout="fill"
-                  objectFit="contain"
-                  className="opacity-90 hover:opacity-100 transition duration-500"
-              />
-            </div>
+            {/* Paragraph 4 and Image */}
+            <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                className="flex flex-col md:flex-row items-center gap-6"
+            >
+              <div className="md:w-1/2 relative h-64 w-full rounded-lg overflow-hidden">
+                <Image
+                    src="/w3.png"
+                    alt="Wolf Loyalty"
+                    layout="fill"
+                    objectFit="contain"
+                    className="opacity-90 hover:opacity-100 transition duration-500"
+                />
+              </div>
+              <div className="md:w-1/2 text-center md:text-left">
+                <p className="text-lg md:text-xl">
+                  Wolves are extremely loyal to their family.
+                </p>
+              </div>
+            </motion.div>
 
-            <p className="text-lg md:text-xl text-center mb-6">
-              Wolves always hunt together in a coordinated effort.
-            </p>
-            <div className="relative h-64 w-full max-w-4xl mx-auto rounded-lg overflow-hidden mb-12">
-              <Image
-                  src="/w5.png"
-                  alt="Wolf Hunt"
-                  layout="fill"
-                  objectFit="contain"
-                  className="opacity-90 hover:opacity-100 transition duration-500"
-              />
-            </div>
+            {/* Paragraph 5 and Image */}
+            <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                className="flex flex-col md:flex-row items-center gap-6"
+            >
+              <div className="md:w-1/2 relative h-64 w-full rounded-lg overflow-hidden">
+                <Image
+                    src="/w4.png"
+                    alt="Wolf Hunt"
+                    layout="fill"
+                    objectFit="contain"
+                    className="opacity-90 hover:opacity-100 transition duration-500"
+                />
+              </div>
+              <div className="md:w-1/2 text-center md:text-left">
+                <p className="text-lg md:text-xl">
+                  Wolves always hunt together in a coordinated effort.
+                </p>
+              </div>
+            </motion.div>
 
-            <p className="text-lg md:text-xl text-center mb-6">
-              Nothing hunts the wolf.
-            </p>
-            <div className="relative h-64 w-full max-w-4xl mx-auto rounded-lg overflow-hidden mb-12">
-              <Image
-                  src="/w6.png"
-                  alt="Alpha Wolf"
-                  layout="fill"
-                  objectFit="contain"
-                  className="opacity-90 hover:opacity-100 transition duration-500"
-              />
-            </div>
+            {/* Paragraph 6 and Image */}
+            <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                className="flex flex-col md:flex-row items-center gap-6"
+            >
+              <div className="md:w-1/2 relative h-64 w-full rounded-lg overflow-hidden">
+                <Image
+                    src="/w5.png"
+                    alt="Alpha Wolf"
+                    layout="fill"
+                    objectFit="contain"
+                    className="opacity-90 hover:opacity-100 transition duration-500"
+                />
+              </div>
+              <div className="md:w-1/2 text-center md:text-left">
+                <p className="text-lg md:text-xl">
+                  Nothing hunts the wolf.
+                </p>
+              </div>
+            </motion.div>
 
-            <p className="text-lg md:text-xl text-center mb-6">
-              A den is not where a wolf lives but where they protect their own. When you add strength + loyalty + leadership, it equals what is at the core of every wolf - family. Here at our lounge we embrace the wolf. We can welcome you in, but we can also welcome you out. Choose your path.....Welcome to the Wolf Den!
-            </p>
-            <div className="relative h-64 w-full max-w-4xl mx-auto rounded-lg overflow-hidden mb-12">
-              <Image
-                  src="/w7.png"
-                  alt="Wolf Den"
-                  layout="fill"
-                  objectFit="contain"
-                  className="opacity-90 hover:opacity-100 transition duration-500"
-              />
-            </div>
-          </motion.div>
+            {/* Paragraph 7 and Image */}
+            <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                className="flex flex-col md:flex-row items-center gap-6"
+            >
+              <div className="md:w-1/2 relative h-64 w-full rounded-lg overflow-hidden">
+                <Image
+                    src="/w6.png"
+                    alt="Wolf Den"
+                    layout="fill"
+                    objectFit="contain"
+                    className="opacity-90 hover:opacity-100 transition duration-500"
+                />
+              </div>
+              <div className="md:w-1/2 text-center md:text-left">
+                <p className="text-lg md:text-xl">
+                  A den is not where a wolf lives but where they protect their own. When you add strength + loyalty + leadership, it equals what is at the core of every wolf - family. Here at our lounge we embrace the wolf. We can welcome you in, but we can also welcome you out. Choose your path.....Welcome to the Wolf Den!
+                </p>
+              </div>
+            </motion.div>
+          </div>
 
           {/* About Component */}
           <motion.div
