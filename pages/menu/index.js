@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
-import {useState} from "react";
+import { useState } from "react";
 import Head from "next/head";
 
 const drinks = [
@@ -82,10 +82,31 @@ const drinks = [
     price: 800,
     category: "Weekend Special",
   },
+  {
+    name: "Lone Wolf",
+    description: "Lime juice, soda water, rum, sugar, and mint leaves",
+    imageUrl: "/lonewolf.png",
+    price: 650,
+    category: "Wolf Pack",
+  },
+  {
+    name: "Ms Rabbit",
+    description: "Espresso, vodka, coffee liqueur, and sugar syrup",
+    imageUrl: "/msrabbit.png",
+    price: 700,
+    category: "Wolf Pack",
+  },
+  {
+    name: "Doctor's Note",
+    description: "Cinnamon, hot water, lemon juice, star anise, and ginger",
+    imageUrl: "/doctors-note.png",
+    price: 680,
+    category: "Wolf Pack",
+  },
 ];
 
 const Menu = () => {
-  const categories = ["All", "Cocktails", "Whiskey Cocktails", "Weekend Special"];
+  const categories = ["All", "Cocktails", "Whiskey Cocktails", "Weekend Special", "Wolf Pack"];
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const filteredDrinks = selectedCategory === "All"
