@@ -186,7 +186,7 @@ const AboutPage = () => {
                   className="text-center"
               >
                 <p className="text-lg md:text-xl mt-16">
-                  When you add strength + loyalty + leadership, it equals what is at the core of every wolf - family. Here at our lounge we embrace the wolf. We can welcome you in, but we can also welcome you out. Choose your path.....Welcome to the Wolf Den!
+                  When you add strength + loyalty + leadership. It equals what is at the core of every wolf - family! Here at our lounge we embrace the wolf. We can welcome you in, but we can also welcome you out. Choose your path.....Welcome to the Wolf Den!
                 </p>
 
                 <div className=" relative h-100 w-full rounded-lg overflow-hidden mt-7">
