@@ -21,7 +21,7 @@ const AboutPage = () => {
               transition={{ duration: 0.8 }}
               className="text-5xl font-bold text-green-600 text-center mb-8"
           >
-            About Us
+            The Wolf
           </motion.h1>
 
           <div className="max-w-4xl mx-auto space-y-12">
