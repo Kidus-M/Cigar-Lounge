@@ -170,10 +170,35 @@ const AboutPage = () => {
               </div>
               <div className="md:w-1/2 text-center md:text-left">
                 <p className="text-lg md:text-xl">
-                  A den is not where a wolf lives but where they protect their own. When you add strength + loyalty + leadership, it equals what is at the core of every wolf - family. Here at our lounge we embrace the wolf. We can welcome you in, but we can also welcome you out. Choose your path.....Welcome to the Wolf Den!
+                  A den is not where a wolf lives but where they protect their own.
                 </p>
+
               </div>
             </motion.div>
+
+
+
+              {/* First Paragraph (Unpaired) */}
+              <motion.div
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8 }}
+                  className="text-center"
+              >
+                <p className="text-lg md:text-xl mt-16">
+                  When you add strength + loyalty + leadership, it equals what is at the core of every wolf - family. Here at our lounge we embrace the wolf. We can welcome you in, but we can also welcome you out. Choose your path.....Welcome to the Wolf Den!
+                </p>
+
+                <div className=" relative h-100 w-full rounded-lg overflow-hidden mt-7">
+                  <Image
+                      src="/w7.png"
+                      alt="Wolf Den"
+                      layout="fill"
+                      objectFit="contain"
+                      className="opacity-90 hover:opacity-100 transition duration-500"
+                  />
+                </div>
+              </motion.div>
           </div>
 
           {/* About Component */}
