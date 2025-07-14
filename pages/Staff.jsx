@@ -46,7 +46,7 @@ const StaffPage = () => {
                     initial={{ opacity: 0, y: -50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="text-5xl font-bold text-green-600 text-center mb-12"
+                    className="text-5xl font-bold text-green-600 text-center mb-24"
                 >
                     Meet Our Team
                 </motion.h1>
@@ -58,7 +58,7 @@ const StaffPage = () => {
                             initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.8 }}
-                            className="flex flex-col items-center text-center"
+                            className="flex flex-col items-center text-center my-24"
                         >
                             <div className="relative h-64 w-64 rounded-lg overflow-hidden mb-6">
                                 <Image
