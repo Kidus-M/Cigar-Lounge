@@ -15,13 +15,13 @@ const staffMembers = [
     },
     {
         name: "Blen",
-        role: "Social Media and Event Coordinators",
+        role: "Social Media and Event Coordinator",
         bio: "Hi. I’m Blen. I am currently studing Marketing Management and will be graduating in 2026. Right now, I oversee the social media platforms for Wolf Den. I enjoy working on creative content, engaging with customers, and learning more about the digital space as I go.",
         imageUrl: "/staff3.jpg",
     },
     {
         name: "Bitanya",
-        role: "Social Media and Event Coordinators",
+        role: "Social Media and Event Coordinator",
         bio: "Hello. I’m Bitanya. I am a Marketing Management graduate from Unity University. I have work experience in sales, employee training, and team leadership. I oversee the digital marketing at the Wolf Den.",
         imageUrl: "/staff4.jpg",
     },
