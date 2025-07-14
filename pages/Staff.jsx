@@ -8,28 +8,28 @@ import Head from "next/head";
 const staffMembers = [
     {
         name: "Wongel",
-        role: "Head Mixologist",
+        role: "Operational Manager",
         bio: "Hello. My name is Wongel. I am the operational manager here at Wolf Den. My education is in marketing management. \n" +
             "My work  experience is in 2 customer service , sales, and personal assistant.",
-        imageUrl: "/staff1.jpg",
-    },
-    {
-        name: "Blen",
-        role: "Lounge Manager",
-        bio: "Hi. I’m Blen. I am currently studing Marketing Management and will be graduating in 2026. Right now, I oversee the social media platforms for Wolf Den. I enjoy working on creative content, engaging with customers, and learning more about the digital space as I go.",
         imageUrl: "/staff2.jpg",
     },
     {
-        name: "Bitanya",
-        role: "Bartender",
-        bio: "Hello. I’m Bitanya. I am a Marketing Management graduate from Unity University. I have work experience in sales, employee training, and team leadership. I oversee the digital marketing at the Wolf Den.",
+        name: "Blen",
+        role: "Social Media and Event Coordinators",
+        bio: "Hi. I’m Blen. I am currently studing Marketing Management and will be graduating in 2026. Right now, I oversee the social media platforms for Wolf Den. I enjoy working on creative content, engaging with customers, and learning more about the digital space as I go.",
         imageUrl: "/staff3.jpg",
     },
     {
-        name: "Tsegereda",
-        role: "Host",
-        bio: "Hello. I'm Tsegereda. I am an accountant at the Wolf Den Lounge. I hold a Bachelor of Arts in Accounting and have accumulated seven years of experience in accounting and auditing. I am thrilled to be a member of the Wolf Den family. Cheers!.",
+        name: "Bitanya",
+        role: "Social Media and Event Coordinators",
+        bio: "Hello. I’m Bitanya. I am a Marketing Management graduate from Unity University. I have work experience in sales, employee training, and team leadership. I oversee the digital marketing at the Wolf Den.",
         imageUrl: "/staff4.jpg",
+    },
+    {
+        name: "Tsegereda",
+        role: "Accountant",
+        bio: "Hello. I'm Tsegereda. I am an accountant at the Wolf Den Lounge. I hold a Bachelor of Arts in Accounting and have accumulated seven years of experience in accounting and auditing. I am thrilled to be a member of the Wolf Den family. Cheers!.",
+        imageUrl: "/staff1.jpg",
     },
 ];
 
@@ -70,7 +70,7 @@ const StaffPage = () => {
                                 />
                             </div>
                             <h3 className="text-2xl font-semibold text-green-600">
-                                {member.name}
+                                {member.role}
                             </h3>
                             {/*<p className="text-lg text-gray-400 mt-2">{member.role}</p>*/}
                             <p className="text-lg text-gray-300 mt-4 max-w-md">
