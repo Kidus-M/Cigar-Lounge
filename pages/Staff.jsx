@@ -22,13 +22,13 @@ const staffMembers = [
     {
         name: "Bitanya",
         role: "Social Media and Event Coordinator",
-        bio: "Hello. I’m Bitanya. I am a Marketing Management graduate from Unity University. I have work experience in sales, employee training, and team leadership. I oversee the digital marketing at the Wolf Den.",
+        bio: "Hello. I’m Bitanya. I am a Marketing Management graduate from Unity University. I have work experience in sales, employee training, and team leadership. I oversee the digital marketing at Wolf Den.",
         imageUrl: "/staff4.jpg",
     },
     {
         name: "Tsegereda",
         role: "Accountant",
-        bio: "Hello. I'm Tsegereda. I am an accountant at the Wolf Den Lounge. I hold a Bachelor of Arts in Accounting and have accumulated seven years of experience in accounting and auditing. I am thrilled to be a member of the Wolf Den family. Cheers!.",
+        bio: "Hello. I'm Tsegereda. I am an accountant at the Wolf Den Lounge. I hold a Bachelor of Arts in Accounting and have accumulated seven years of experience in accounting and auditing. I am thrilled to be a member of the Wolf Den family. Cheers!",
         imageUrl: "/staff1.jpg",
     },
 ];
