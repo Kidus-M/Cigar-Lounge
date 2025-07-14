@@ -9,8 +9,8 @@ const staffMembers = [
     {
         name: "Wongel",
         role: "Operational Manager",
-        bio: "Hello. My name is Wongel. I am the operational manager here at Wolf Den. My education is in marketing management. \n" +
-            "My work  experience is in 2 customer service , sales, and personal assistant.",
+        bio: "Hello. My name is Wongel. I am the operational manager here at Wolf Den. My education is in Marketing Management.\n" +
+            "        I have work experience in customer service, sales, and personal assistant.",
         imageUrl: "/staff2.jpg",
     },
     {
