@@ -14,6 +14,18 @@ const staffMembers = [
         imageUrl: "/staff2.jpg",
     },
     {
+        name: "Helen ",
+        role: "Hostess",
+        bio: "Hi. My name is Helen and I am a hostess at Wolf Den. I have a degree in Hotel Management. I have several years of experience in waitressing and video editing.",
+        imageUrl: "/staff5.jpg",
+    },
+    {
+        name: "Kidist",
+        role: "Hostess",
+        bio: "Hello. My name is Kidist and I am your hostess at Wolf Den. I am currently studying to be a pharmacist and I bring waitress experience with me to the Wolf Den.",
+        imageUrl: "/staff6.jpg",
+    },
+    {
         name: "Blen",
         role: "Social Media and Event Coordinator",
         bio: "Hi. I’m Blen. I am currently studing Marketing Management and will be graduating in 2026. Right now, I oversee the social media platforms for Wolf Den. I enjoy working on creative content, engaging with customers, and learning more about the digital space as I go.",
