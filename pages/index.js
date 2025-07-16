@@ -62,49 +62,49 @@ export default function HeroSection() {
       {/* About Section */}
       
       <About />
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 text-white">
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="bg-gray-800 p-6 rounded-lg flex flex-col items-center text-center"
-          >
-            <FaGlobe size={50} className="text-green-600 mb-4" />
-            <h3 className="text-2xl font-semibold text-green-600">
-              Global Standards
-            </h3>
-            <p className="mt-2">
-              We source the finest drinks from around the world,
-              ensuring a luxurious experience.
-            </p>
-          </motion.div>
+      {/*<div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 text-white">*/}
+      {/*    <motion.div*/}
+      {/*      whileHover={{ scale: 1.05 }}*/}
+      {/*      className="bg-gray-800 p-6 rounded-lg flex flex-col items-center text-center"*/}
+      {/*    >*/}
+      {/*      <FaGlobe size={50} className="text-green-600 mb-4" />*/}
+      {/*      <h3 className="text-2xl font-semibold text-green-600">*/}
+      {/*        Global Standards*/}
+      {/*      </h3>*/}
+      {/*      <p className="mt-2">*/}
+      {/*        We source the finest drinks from around the world,*/}
+      {/*        ensuring a luxurious experience.*/}
+      {/*      </p>*/}
+      {/*    </motion.div>*/}
 
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="bg-gray-800 p-6 rounded-lg flex flex-col items-center text-center"
-          >
-            <FaUsers size={50} className="text-green-600 mb-4" />
-            <h3 className="text-2xl font-semibold text-green-600">
-              Community
-            </h3>
-            <p className="mt-2">
-              A space designed for conversation, networking, and shared
-              appreciation of fine beavrages.
-            </p>
-          </motion.div>
+      {/*    <motion.div*/}
+      {/*      whileHover={{ scale: 1.05 }}*/}
+      {/*      className="bg-gray-800 p-6 rounded-lg flex flex-col items-center text-center"*/}
+      {/*    >*/}
+      {/*      <FaUsers size={50} className="text-green-600 mb-4" />*/}
+      {/*      <h3 className="text-2xl font-semibold text-green-600">*/}
+      {/*        Community*/}
+      {/*      </h3>*/}
+      {/*      <p className="mt-2">*/}
+      {/*        A space designed for conversation, networking, and shared*/}
+      {/*        appreciation of fine beavrages.*/}
+      {/*      </p>*/}
+      {/*    </motion.div>*/}
 
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="bg-gray-800 p-6 rounded-lg flex flex-col items-center text-center"
-          >
-            <FaGlassMartiniAlt size={50} className="text-green-600 mb-4" />
-            <h3 className="text-2xl font-semibold text-green-600">
-              Exquisite Drinks
-            </h3>
-            <p className="mt-2">
-              From rare whiskeys to signature cocktails, we craft drinks that
-              elevate your experience.
-            </p>
-          </motion.div>
-        </div>
+      {/*    <motion.div*/}
+      {/*      whileHover={{ scale: 1.05 }}*/}
+      {/*      className="bg-gray-800 p-6 rounded-lg flex flex-col items-center text-center"*/}
+      {/*    >*/}
+      {/*      <FaGlassMartiniAlt size={50} className="text-green-600 mb-4" />*/}
+      {/*      <h3 className="text-2xl font-semibold text-green-600">*/}
+      {/*        Exquisite Drinks*/}
+      {/*      </h3>*/}
+      {/*      <p className="mt-2">*/}
+      {/*        From rare whiskeys to signature cocktails, we craft drinks that*/}
+      {/*        elevate your experience.*/}
+      {/*      </p>*/}
+      {/*    </motion.div>*/}
+      {/*  </div>*/}
       <DrinkMenu />
       <Footer />
     </div>

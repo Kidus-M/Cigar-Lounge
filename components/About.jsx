@@ -83,15 +83,11 @@ export default function About() {
           transition={{ duration: 0.8, delay: 0.4 }}
           viewport={{ once: true }}
         >
-          <p className="text-lg">
-            <span className="text-green-600 font-semibold">Wolf Den</span> is more than just a bar. It is a sanctuary for those who seek
-            <span className="text-green-600 font-semibold"> refinement and relaxation</span>. Whether for an intimate gathering or a solo escape,
-            our lounge offers a perfect retreat.
+          <p className="text-xl">At
+            <span className="text-green-600 font-semibold"> Wolf Den </span>we are excited to introduce the first premiere cigar lounge in Ethiopia. We strive to create  a hidden upscale environment where our clients can escape into seclusion. Come join us and allow us to provide you with a tranquil atmosphere, fine service, and premier drinks complemented by our cigar collection. Welcome to the Wolf Den!
+
           </p>
-          <p className="text-xl mt-2">
-            Our expert mixologists craft exquisite cocktails using premium ingredients, offering a unique tasting experience that
-            sets us apart as the best lounge in Addis Ababa.
-          </p>
+
         </motion.div>
       </div>
     </section>
