@@ -84,7 +84,7 @@ export default function About() {
           viewport={{ once: true }}
         >
           <p className="text-xl">At
-            <span className="text-green-600 font-semibold"> Wolf Den </span>we are excited to introduce the first premiere cigar lounge in Ethiopia. We strive to create  a hidden upscale environment where our clients can escape into seclusion. Come join us and allow us to provide you with a tranquil atmosphere, fine service, and premier drinks complemented by our cigar collection. Welcome to the Wolf Den!
+            <span className=""> Wolf Den </span>we are excited to introduce the first premiere cigar lounge in Ethiopia. We strive to create  a hidden upscale environment where our clients can escape into seclusion. Come join us and allow us to provide you with a tranquil atmosphere, fine service, and premier drinks complemented by our cigar collection. Welcome to the Wolf Den!
 
           </p>
 
