@@ -164,9 +164,9 @@ const Events = () => {
                                         <h3 className="text-2xl font-semibold text-green-600">{event.name}</h3>
                                         <p className="text-gray-400 mt-2">{eventDate.toDateString()}</p>
                                         <p className="text-gray-300 mt-4">{event.description}</p>
-                                        <p className="text-gray-300 mt-2">
-                                            Capacity: {registeredCount}/{event.maxSpots} filled, {waitlistedCount} waitlisted
-                                        </p>
+                                        {/*<p className="text-gray-300 mt-2">*/}
+                                        {/*    Capacity: {registeredCount}/{event.maxSpots} filled, {waitlistedCount} waitlisted*/}
+                                        {/*</p>*/}
                                         {!isPast && (
                                             <>
                                                 <form onSubmit={(e) => handleReservation(event.id, e)} className="mt-6">
