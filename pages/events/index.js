@@ -150,9 +150,10 @@ const Events = () => {
                                     <div className="relative w-full md:w-1/2 h-64">
                                         <Image
                                             src={
-                                                event.imageUrl?.startsWith('http') || event.imageUrl?.startsWith('/')
-                                                    ? event.imageUrl
-                                                    : '/hero1.jpg'
+                                                // event.imageUrl?.startsWith('http') || event.imageUrl?.startsWith('/')
+                                                //     ? event.imageUrl
+                                                //     :
+                                                '/hero1.jpg'
                                             }
                                             alt={event.name}
                                             fill
