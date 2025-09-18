@@ -7,10 +7,10 @@ import Head from "next/head";
 
 const events = [
     {
-        name: "Grand Opening Celebration",
-        date: "2025-07-11",
-        description: "Join us for the grand opening of our first-ever lounge dedicated to premium cigars and exquisite drinks! Enjoy exclusive cigar and cocktail pairings to celebrate this milestone. See you at 6pm.",
-        imageUrl: "/hero1.jpg"
+        name: "Jazz Night",
+        date: "2025-09-20",
+        description: "Step into an evening of smooth rhythms and rich flavors at Wolfden. Our Jazz Night brings together the soulful sounds of live jazz with the refined atmosphere of our cigar lounge. Sip your favorite drink, light up a premium cigar, and let the music carry you away. Whether you’re here to unwind, connect with friends, or savor a night of timeless vibes, Jazz Night at Wolfden is the perfect escape.",
+        imageUrl: "/Jazz.jpg"
     }
 ];
 
