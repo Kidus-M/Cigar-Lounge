@@ -43,7 +43,7 @@ export default function Hero() {
                 />
 
                 {/* Dark Gradient Overlay: Essential for text readability against the photo */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#121212] via-[#121212]/50 to-black/70" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#121212] via-[#121212]/50 to-black/80" />
 
                 {/* Optional: Subtle Texture Overlay for Film Grain effect */}
                 <div className="absolute inset-0 opacity-[0.05] pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]" />
