@@ -144,7 +144,7 @@ export default function AboutPreview() {
           SECTION 2: GALLERY
           Sticky for 400vh (Adjust height to control scroll speed)
       ========================================= */}
-        <section ref={galleryScrollTrackRef} className="relative h-[400vh] bg-[#0e0e0e]">
+        <section ref={galleryScrollTrackRef} className="relative h-[400vh] bg-[#121212]">
 
           {/* The Sticky Viewport: Keeps gallery centered while user scrolls down */}
           <div className="sticky top-0 h-screen w-full flex flex-col justify-center overflow-hidden">
