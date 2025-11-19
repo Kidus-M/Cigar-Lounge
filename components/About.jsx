@@ -4,6 +4,8 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import LoungeSeating from "./../assets/AboutSection/Lounge Seating.png"
 import Cocktails from "./../assets/AboutSection/Cocktails.png"
 import Sitting from "./../assets/AboutSection/Sitting.jpeg"
+import Cigar from "./../assets/AboutSection/Cigar.png"
+import Whiskey from "./../assets/AboutSection/Whiskey.png"
 import Image from "next/image"
 export default function AboutPreview() {
   // --- REFS ---
@@ -26,8 +28,8 @@ export default function AboutPreview() {
     { src: LoungeSeating, alt: "Lounge Seating", title: "Main Lounge", category: "Seating", w: 450, h: 350 },
     { src: Cocktails, alt: "Bar Cocktails", title: "Signature Pours", category: "Bar Service", w: 300, h: 450 },
     { src: Sitting, alt: "Luxurious Seating", title: "The Velvet Room", category: "Private", w: 500, h: 380 },
-    { src: {}, alt: "Cigar and Ashtray", title: "Aficionado's Choice", category: "Collection", w: 280, h: 320 },
-    { src: {}, alt: "Whiskey and Glass", title: "Rare Malts", category: "Drinks", w: 380, h: 450 },
+    { src: Cigar, alt: "Cigar and Ashtray", title: "Aficionado's Choice", category: "Collection", w: 280, h: 320 },
+    { src: Whiskey, alt: "Whiskey and Glass", title: "Rare Malts", category: "Drinks", w: 380, h: 450 },
     { src: {}, alt: "Ambient Lighting", title: "Evening Mood", category: "Ambience", w: 340, h: 340 },
     { src: {}, alt: "Rich Interior", title: "Interior Detail", category: "Design", w: 480, h: 380 },
   ];
