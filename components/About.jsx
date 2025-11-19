@@ -1,7 +1,10 @@
 "use client";
 import React, { useRef, useState, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-
+import LoungeSeating from "./../assets/AboutSection/Lounge Seating.png"
+import Cocktails from "./../assets/AboutSection/Cocktails.png"
+import Sitting from "./../assets/AboutSection/Sitting.jpeg"
+import Image from "next/image"
 export default function AboutPreview() {
   // --- REFS ---
   // 1. Text Section Refs
@@ -20,13 +23,13 @@ export default function AboutPreview() {
   ].join("\n\n");
 
   const images = [
-    { src: "https://images.unsplash.com/photo-1596708304910-410a0e5b8e97?q=80&w=1800&auto=format&fit=crop", alt: "Lounge Seating", title: "Main Lounge", category: "Seating", w: 450, h: 350 },
-    { src: "https://images.unsplash.com/photo-1594917452661-8e0f59ef278a?q=80&w=1500&auto=format&fit=crop", alt: "Bar Cocktails", title: "Signature Pours", category: "Bar Service", w: 300, h: 450 },
-    { src: "https://images.unsplash.com/photo-1516997121675-4c2d1684aa3e?q=80&w=1800&auto=format&fit=crop", alt: "Luxurious Seating", title: "The Velvet Room", category: "Private", w: 500, h: 380 },
-    { src: "https://images.unsplash.com/photo-1627883204901-4470876798e8?q=80&w=1500&auto=format&fit=crop", alt: "Cigar and Ashtray", title: "Aficionado's Choice", category: "Collection", w: 280, h: 320 },
-    { src: "https://images.unsplash.com/photo-1601618210137-0201083437e6?q=80&w=1500&auto=format&fit=crop", alt: "Whiskey and Glass", title: "Rare Malts", category: "Drinks", w: 380, h: 450 },
-    { src: "https://images.unsplash.com/photo-1587391807080-b26a117094b8?q=80&w=1800&auto=format&fit=crop", alt: "Ambient Lighting", title: "Evening Mood", category: "Ambience", w: 340, h: 340 },
-    { src: "https://images.unsplash.com/photo-1532634726-8b9fb99825c7?q=80&w=1500&auto=format&fit=crop", alt: "Rich Interior", title: "Interior Detail", category: "Design", w: 480, h: 380 },
+    { src: LoungeSeating, alt: "Lounge Seating", title: "Main Lounge", category: "Seating", w: 450, h: 350 },
+    { src: Cocktails, alt: "Bar Cocktails", title: "Signature Pours", category: "Bar Service", w: 300, h: 450 },
+    { src: Sitting, alt: "Luxurious Seating", title: "The Velvet Room", category: "Private", w: 500, h: 380 },
+    { src: {}, alt: "Cigar and Ashtray", title: "Aficionado's Choice", category: "Collection", w: 280, h: 320 },
+    { src: {}, alt: "Whiskey and Glass", title: "Rare Malts", category: "Drinks", w: 380, h: 450 },
+    { src: {}, alt: "Ambient Lighting", title: "Evening Mood", category: "Ambience", w: 340, h: 340 },
+    { src: {}, alt: "Rich Interior", title: "Interior Detail", category: "Design", w: 480, h: 380 },
   ];
 
   // --- TEXT SCROLL LOGIC ---
@@ -183,7 +186,7 @@ export default function AboutPreview() {
                           style={{ width: img.w, height: img.h }}
                       >
                         <div className="w-full h-full overflow-hidden relative bg-[#1a1a1a]">
-                          <img
+                          <Image
                               src={img.src}
                               alt={img.alt}
                               draggable="false"
