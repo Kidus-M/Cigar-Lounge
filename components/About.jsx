@@ -6,6 +6,8 @@ import Cocktails from "./../assets/AboutSection/Cocktails.png"
 import Sitting from "./../assets/AboutSection/Sitting.jpeg"
 import Cigar from "./../assets/AboutSection/Cigar.png"
 import Whiskey from "./../assets/AboutSection/Whiskey.png"
+import Evenings from "./../assets/AboutSection/Evening.jpg"
+import Design from "./../assets/AboutSection/Design.png"
 import Image from "next/image"
 export default function AboutPreview() {
   // --- REFS ---
@@ -30,8 +32,8 @@ export default function AboutPreview() {
     { src: Sitting, alt: "Luxurious Seating", title: "The Velvet Room", category: "Private", w: 500, h: 380 },
     { src: Cigar, alt: "Cigar and Ashtray", title: "Aficionado's Choice", category: "Collection", w: 280, h: 320 },
     { src: Whiskey, alt: "Whiskey and Glass", title: "Rare Malts", category: "Drinks", w: 380, h: 450 },
-    { src: {}, alt: "Ambient Lighting", title: "Evening Mood", category: "Ambience", w: 340, h: 340 },
-    { src: {}, alt: "Rich Interior", title: "Interior Detail", category: "Design", w: 480, h: 380 },
+    { src: Evenings, alt: "Ambient Lighting", title: "Evening Mood", category: "Ambience", w: 340, h: 340 },
+    { src: Design, alt: "Rich Interior", title: "Interior Detail", category: "Design", w: 480, h: 380 },
   ];
 
   // --- TEXT SCROLL LOGIC ---
@@ -152,7 +154,7 @@ export default function AboutPreview() {
         <section ref={galleryScrollTrackRef} className="relative h-[400vh] bg-[#121212]">
 
           {/* The Sticky Viewport: Keeps gallery centered while user scrolls down */}
-          <div className="sticky top-0 h-screen w-full flex flex-col justify-center overflow-hidden">
+          <div className="sticky top-5 h-screen w-full flex flex-col justify-center overflow-hidden">
 
             {/* --- GALLERY CONTENT --- */}
             <div className="relative z-20 w-full">
