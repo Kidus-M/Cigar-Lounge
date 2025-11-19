@@ -1,7 +1,9 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
-import About from "../components/About";      // Ensure these exist
+import About from "../components/About";
+import {TextReveal} from "../components/TextRevealSection."
+import {Gallery} from "../components/GallerySection"// Ensure these exist
 // import DrinkMenu from "../components/DrinkMenu"; // Ensure these exist
 // import Footer from "../components/Footer";    // Ensure these exist
 
@@ -29,7 +31,9 @@ export default function Home() {
 
           {/* Rest of the page content */}
           <div className="relative z-10 bg-[#121212]">
-            <About />
+              <About />
+              {/*<TextReveal />*/}
+              {/*<Gallery />*/}
             <DrinkMenu />
           </div>
         </main>
