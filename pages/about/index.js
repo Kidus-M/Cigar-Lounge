@@ -1,11 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Quote } from "lucide-react";
+import Image from "next/image"
 
-// --- SHARED COMPONENTS ---
-const Navbar = () => <nav className="w-full py-6 px-8 flex justify-between items-center bg-[#121212] border-b border-white/5 sticky top-0 z-50 backdrop-blur-md bg-opacity-90"><span className="text-2xl font-serif text-white">Wolf Den<span className="text-[#A68A64]">.</span></span><span className="text-gray-400 text-sm uppercase tracking-widest">The Lounge</span></nav>;
-const Footer = () => <footer className="w-full py-12 bg-black text-center text-gray-500 border-t border-white/10"><p>© 2025 Wolf Den Lounge</p></footer>;
-
+import WolfFamily from "../../assets/AboutPage/WolfFamily.png"
+import WolfLoyalty from "../../assets/AboutPage/WolfLoyalty.png"
 // --- ANIMATION VARIANTS ---
 const fadeInUp = {
   hidden: { opacity: 0, y: 60 },
@@ -31,9 +30,10 @@ const WolfCard = ({ image, title, label }) => {
       <div className="relative group w-full h-[500px] select-none border border-white/5 bg-[#121212] shadow-2xl">
         {/* Image Wrapper */}
         <div className="w-full h-full overflow-hidden relative">
-          <img
+          <Image
               src={image}
               alt={title}
+              fill
               className="w-full h-full object-cover transition-all duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)]
                      grayscale brightness-[0.6] group-hover:grayscale-0 group-hover:brightness-100 group-hover:scale-105"
           />
@@ -129,7 +129,7 @@ export default function AboutPage() {
 
           {/* 1. FAMILY */}
           <WolfSection
-              image="/w1.png"
+              image={WolfFamily}
               title="The Pack is Family"
               label="Connection"
               text="Wolves live in packs. It is not just a group; it is a family unit bonded by blood, trust, and shared survival."
@@ -139,7 +139,7 @@ export default function AboutPage() {
 
           {/* 2. LOYALTY */}
           <WolfSection
-              image="/w3.png"
+              image={WolfLoyalty}
               title="Unwavering Loyalty"
               label="Commitment"
               text="Wolves are extremely loyal to their own. Their survival depends on the strength of their bond and the integrity of the pack."
