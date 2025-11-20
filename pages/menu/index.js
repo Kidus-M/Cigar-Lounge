@@ -10,6 +10,8 @@ import RoyalMartini from "../../assets/Menu/RoyalMartini.png"
 import Margarita from "../../assets/Menu/Margarita.png"
 import Daiquiri from "../../assets/Menu/Daiquiri.png"
 import Manhattan from "../../assets/Menu/Manhattan.png"
+import WhiskeySour from "../../assets/Menu/WhiskeySour.png"
+import BourbonFlip from "../../assets/Menu/BourbonFlip.png"
 // --- DATA ---
 // (Inlined for immediate stability)
 const drinks = [
@@ -81,7 +83,7 @@ const drinks = [
     id: 9,
     name: "Whiskey Sour",
     description: "Whisky, lime juice, sugar syrup, 1 white egg.",
-    imageUrl: {},
+    imageUrl: WhiskeySour,
     price: 575,
     category: "Whiskey Cocktails",
   },
@@ -89,7 +91,7 @@ const drinks = [
     id: 10,
     name: "Bourbon Flip",
     description: "Premium whiskey, lime mixed with sugar syrup.",
-    imageUrl:{},
+    imageUrl: BourbonFlip,
     price: 535,
     category: "Whiskey Cocktails",
   },
@@ -97,7 +99,7 @@ const drinks = [
     id: 11,
     name: "Old Fashioned",
     description: "Brown sugar, lime and sugar mixed with whiskey.",
-    imageUrl: {},
+    imageUrl: OldFashioned,
     price: 589,
     category: "Whiskey Cocktails",
   },
