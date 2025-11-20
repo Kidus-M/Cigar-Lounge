@@ -12,6 +12,9 @@ import Daiquiri from "../../assets/Menu/Daiquiri.png"
 import Manhattan from "../../assets/Menu/Manhattan.png"
 import WhiskeySour from "../../assets/Menu/WhiskeySour.png"
 import BourbonFlip from "../../assets/Menu/BourbonFlip.png"
+import OldFashioned from "../../assets/Menu/OldFashioned.png"
+import PaperPlane from "../../assets/Menu/PaperPlane.png"
+import BlueOcean from "../../assets/Menu/BlueOcean.png"
 // --- DATA ---
 // (Inlined for immediate stability)
 const drinks = [
@@ -72,6 +75,14 @@ const drinks = [
     category: "Cocktails",
   },
   {
+    id: 14,
+    name: "Gin Sour",
+    description: "Gin, lime juice, sugar syrup.",
+    imageUrl: GinSour,
+    price: 900,
+    category: "Cocktails",
+  },
+  {
     id: 8,
     name: "Manhattan",
     description: "White rum mixed with whiskey and sugar.",
@@ -105,9 +116,17 @@ const drinks = [
   },
   {
     id: 12,
+    name: "Paper Plane",
+    description: "Premium whiskey mixed with lime and sugar.",
+    imageUrl: PaperPlane,
+    price: 589,
+    category: "Whiskey Cocktails",
+  },
+  {
+    id: 13,
     name: "Blue Ocean",
     description: "Blue curaçao, lime juice, sprite, triple sek.",
-    imageUrl: {},
+    imageUrl: BlueOcean,
     price: 800,
     category: "Weekend Special",
   },
