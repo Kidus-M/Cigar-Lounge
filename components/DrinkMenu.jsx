@@ -1,198 +1,128 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Quote } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
-// --- SHARED COMPONENTS ---
-const Navbar = () => <nav className="w-full py-6 px-8 flex justify-between items-center bg-[#121212] border-b border-white/5 sticky top-0 z-50 backdrop-blur-md bg-opacity-90"><span className="text-2xl font-serif text-white">Wolf Den<span className="text-[#A68A64]">.</span></span><span className="text-gray-400 text-sm uppercase tracking-widest">The Lounge</span></nav>;
-const Footer = () => <footer className="w-full py-12 bg-black text-center text-gray-500 border-t border-white/10"><p>© 2025 Wolf Den Lounge</p></footer>;
-
-// --- ANIMATION VARIANTS ---
-const fadeInUp = {
-  hidden: { opacity: 0, y: 60 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
-};
-
-const imageReveal = {
-  hidden: { opacity: 0, scale: 0.95 },
-  visible: { opacity: 1, scale: 1, transition: { duration: 1, ease: "easeOut" } }
-};
-
-const staggerContainer = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: { staggerChildren: 0.2 }
+// --- DATA (Inlined for portability) ---
+const previewDrinks = [
+  {
+    id: 1,
+    name: "Lone Wolf",
+    description: "Lime juice, ginger beer, vodka, mint, ice, lime",
+    imageUrl: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80", // Placeholder
+    price: 650,
+    category: "Wolf Pack",
+  },
+  {
+    id: 2,
+    name: "Ms Rabbit",
+    description: "Cold coffee, vodka, coffee liqueur, espresso beans",
+    imageUrl: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=800&q=80", // Placeholder
+    price: 700,
+    category: "Wolf Pack",
+  },
+  {
+    id: 3,
+    name: "Doctor's Note",
+    description: "Cinnamon stick, lemon juice, hot water, lemon, whiskey, honey",
+    imageUrl: "https://images.unsplash.com/photo-1597075687490-8f673c6c17f6?auto=format&fit=crop&w=800&q=80", // Placeholder
+    price: 680,
+    category: "Wolf Pack",
   }
-};
+];
 
-// --- NEW COMPONENT: WOLF CARD (Applying the modern card design to Wolf images) ---
-const WolfCard = ({ image, title, label }) => {
+// --- REUSABLE CARD COMPONENT ---
+const DrinkCard = ({ drink }) => {
   return (
-      <div className="relative group w-full h-[500px] select-none border border-white/5 bg-[#121212] shadow-2xl">
-        {/* Image Wrapper */}
-        <div className="w-full h-full overflow-hidden relative">
+      <div className="relative group w-full h-[420px] select-none">
+        {/* Image Wrapper with Overflow Hidden */}
+        <div className="w-full h-full overflow-hidden relative bg-[#1a1a1a]">
           <img
-              src={image}
-              alt={title}
-              className="w-full h-full object-cover transition-all duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)]
-                     grayscale brightness-[0.6] group-hover:grayscale-0 group-hover:brightness-100 group-hover:scale-105"
+              src={drink.imageUrl}
+              alt={drink.name}
+              className="w-full h-full object-cover transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)]
+                     grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 group-hover:scale-105"
           />
 
           {/* Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#121212] via-transparent to-transparent opacity-80 group-hover:opacity-40 transition-opacity duration-500" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#121212] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-          {/* Glass Metadata Box (Appears on Hover/Default) */}
-          <div className="absolute bottom-6 left-6 right-6 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100">
-            <div className="backdrop-blur-md bg-black/70 border border-white/10 p-5 flex flex-col gap-1 shadow-2xl">
-              <p className="text-[#A68A64] text-[10px] font-sans uppercase tracking-[0.25em] mb-1">
-                {label}
+          {/* Glass Metadata Box */}
+          <div className="absolute bottom-6 left-6 right-6 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-75">
+            <div className="backdrop-blur-md bg-white/5 border border-white/10 p-4 flex flex-col gap-2">
+              <div className="flex justify-between items-start">
+                <div>
+                  <p className="text-[#A68A64] text-[10px] font-mono uppercase tracking-wider mb-1">
+                    {drink.category}
+                  </p>
+                  <h3 className="text-white font-serif text-xl leading-none">
+                    {drink.name}
+                  </h3>
+                </div>
+                <span className="text-white/90 font-mono text-sm border border-[#A68A64]/30 px-2 py-1 rounded-full bg-[#121212]/50">
+                {drink.price}<span className="text-[10px] ml-1">ETB</span>
+              </span>
+              </div>
+              {/* Description reveals inside the box */}
+              <p className="text-white/60 text-xs font-light leading-relaxed border-t border-white/10 pt-2 mt-1">
+                {drink.description}
               </p>
-              <h3 className="text-white font-serif text-2xl leading-none">
-                {title}
-              </h3>
             </div>
           </div>
         </div>
 
-        {/* Modern Decoration: Corner Lines */}
-        {/* Top Left */}
-        <div className="absolute -top-[1px] -left-[1px] w-[1px] h-12 bg-[#A68A64] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-        <div className="absolute -top-[1px] -left-[1px] w-12 h-[1px] bg-[#A68A64] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+        {/* External Decorations (Corner Lines) */}
+        <div className="absolute -top-2 -left-2 w-[1px] h-8 bg-[#A68A64] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+        <div className="absolute -top-2 -left-2 w-8 h-[1px] bg-[#A68A64] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-        {/* Bottom Right */}
-        <div className="absolute -bottom-[1px] -right-[1px] w-[1px] h-12 bg-[#A68A64] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-        <div className="absolute -bottom-[1px] -right-[1px] w-12 h-[1px] bg-[#A68A64] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+        {/* Bottom Right Decorations */}
+        <div className="absolute -bottom-2 -right-2 w-[1px] h-8 bg-[#A68A64] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+        <div className="absolute -bottom-2 -right-2 w-8 h-[1px] bg-[#A68A64] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
       </div>
   );
 };
 
-// --- COMPONENT: WOLF SECTION ---
-const WolfSection = ({ image, title, label, text, highlight, reversed }) => (
-    <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }}
-        variants={staggerContainer}
-        className={`flex flex-col ${reversed ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-12 md:gap-20 py-20 border-b border-white/5 last:border-0`}
-    >
-      {/* Image Side - Using the new WolfCard Design */}
-      <motion.div variants={imageReveal} className="w-full md:w-1/2 relative p-4">
-        <WolfCard image={image} title={title} label={label} />
-      </motion.div>
-
-      {/* Text Side */}
-      <motion.div variants={fadeInUp} className="w-full md:w-1/2 text-center md:text-left space-y-6 px-4">
-      <span className="text-[#A68A64] text-xs font-sans font-bold uppercase tracking-widest border-b border-[#A68A64] pb-2 inline-block md:hidden">
-        {label}
-      </span>
-        <h3 className="text-4xl md:text-5xl font-serif text-white leading-tight">{title}</h3>
-        <p className="text-lg text-gray-400 font-light leading-relaxed">
-          {text}
-        </p>
-        <div className="relative pl-6 border-l-2 border-[#A68A64]/50 mt-6">
-          <p className="text-white font-medium italic text-lg">
-            "{highlight}"
-          </p>
-        </div>
-      </motion.div>
-    </motion.div>
-);
-
-export default function AboutPage() {
+export default function MenuPreview() {
   return (
-      <div className="bg-[#121212] min-h-screen text-[#F3F4F6] font-sans selection:bg-[#A68A64] selection:text-black overflow-x-hidden">
+      <section className="relative py-32 bg-[#121212]">
+        <div className="container mx-auto px-4 md:px-12 max-w-screen-xl">
 
-
-        {/* --- HERO HEADER --- */}
-        <div className="relative pt-32 pb-20 px-6 text-center bg-[#121212]">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-24 bg-gradient-to-b from-transparent to-[#A68A64]"></div>
-
-          <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-          >
-            <span className="text-[#A68A64] uppercase tracking-[0.4em] text-sm font-semibold">The Philosophy</span>
-            <h1 className="text-6xl md:text-9xl font-serif text-white mt-8 mb-8 tracking-tight">
-              The <span className="text-[#A68A64] italic">Wolf</span>
-            </h1>
-            <div className="max-w-2xl mx-auto">
-              <p className="text-xl text-gray-400 font-light leading-relaxed">
-                "A wolf does not talk about strength, loyalty, or leadership. It lives it."
-              </p>
+          {/* Header */}
+          <div className="flex flex-col md:flex-row justify-between items-end mb-16 border-b border-white/10 pb-8">
+            <div>
+            <span className="text-[#A68A64] font-mono text-xs tracking-[0.2em] uppercase mb-4 block">
+              The Collection
+            </span>
+              <h2 className="text-white text-4xl md:text-6xl font-serif tracking-tight">
+                Taste the <span className="italic text-[#A68A64]">Wild</span>
+              </h2>
             </div>
-          </motion.div>
-        </div>
-
-        {/* --- MAIN CONTENT --- */}
-        <div className="max-w-7xl mx-auto px-6 md:px-12 pb-24">
-
-          {/* 1. FAMILY */}
-          <WolfSection
-              image="/w1.png"
-              title="The Pack is Family"
-              label="Connection"
-              text="Wolves live in packs. It is not just a group; it is a family unit bonded by blood, trust, and shared survival."
-              highlight="At the Wolf Den, we consider—and treat—all who enter as family."
-              reversed={false}
-          />
-
-          {/* 2. LOYALTY */}
-          <WolfSection
-              image="/w3.png"
-              title="Unwavering Loyalty"
-              label="Commitment"
-              text="Wolves are extremely loyal to their own. Their survival depends on the strength of their bond and the integrity of the pack."
-              highlight="Our staff is committed to this code. We understand that our survival is embedded in the loyalty we give to you."
-              reversed={true}
-          />
-
-          {/* 3. DOMINANCE */}
-          <WolfSection
-              image="/w5.png"
-              title="Unrivaled Excellence"
-              label="Dominance"
-              text="Nothing hunts the wolf. It stands at the apex, confident and composed, master of its domain."
-              highlight="The Wolf Den has no competition. We strive everyday to be the best because we offer the best in class, elegance, and service."
-              reversed={false}
-          />
-
-          {/* 4. PROTECTION */}
-          <WolfSection
-              image="/w6.png"
-              title="The Sanctuary"
-              label="Safety"
-              text="A den is not just where a wolf lives, but where they protect their own. It is a place of rest, strategy, and safety."
-              highlight="At the Wolf Den, we advocate for a safe, secluded environment for our customers and our staff."
-              reversed={true}
-          />
-
-          {/* --- CONCLUSION SECTION --- */}
-          <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-              className="pt-32 pb-16 text-center max-w-5xl mx-auto"
-          >
-            <Quote className="w-16 h-16 text-[#A68A64] mx-auto mb-10 opacity-50" />
-            <p className="text-2xl md:text-4xl font-serif text-white leading-snug">
-              "When you add <span className="text-[#A68A64]">strength</span> + <span className="text-[#A68A64]">loyalty</span> + <span className="text-[#A68A64]">leadership</span>, it equals what is at the core of every wolf: <span className="italic border-b border-[#A68A64]">Family</span>."
-            </p>
-            <p className="mt-10 text-gray-400 font-light text-lg max-w-2xl mx-auto">
-              Here at our lounge, we embrace the wolf. We can welcome you in, but we can also welcome you out. Choose your path.
-            </p>
-            <p className="mt-8 text-[#A68A64] text-xl font-medium uppercase tracking-[0.3em]">
-              Welcome to the Wolf Den
-            </p>
-
-            {/* Final Large Image with Card Style applied */}
-            <div className="mt-20 max-w-4xl mx-auto">
-              <WolfCard image="/w7.png" title="The Den" label="Established 2024" />
+            <div className="mt-6 md:mt-0">
+              <a
+                  href="/menu"
+                  className="group flex items-center gap-3 text-white/60 hover:text-white transition-colors"
+              >
+                <span className="text-sm font-mono uppercase tracking-wider">View Full Menu</span>
+                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-2 text-[#A68A64]" />
+              </a>
             </div>
-          </motion.div>
-        </div>
+          </div>
 
-      </div>
+          {/* Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 lg:gap-10">
+            {previewDrinks.map((drink, idx) => (
+                <motion.div
+                    key={drink.id}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: idx * 0.1, duration: 0.6 }}
+                    viewport={{ once: true }}
+                >
+                  <DrinkCard drink={drink} />
+                </motion.div>
+            ))}
+          </div>
+
+        </div>
+      </section>
   );
 }

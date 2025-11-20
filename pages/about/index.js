@@ -2,8 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Quote } from "lucide-react";
 
-// --- SHARED COMPONENTS (Mocked for standalone usage, replace with your actual imports) ---
-const Navbar = () => <nav className="w-full py-6 px-8 flex justify-between items-center bg-[#121212] border-b border-white/5"><span className="text-2xl font-serif text-white">Wolf Den<span className="text-[#A68A64]">.</span></span><span className="text-gray-400 text-sm uppercase tracking-widest">The Lounge</span></nav>;
+// --- SHARED COMPONENTS ---
+const Navbar = () => <nav className="w-full py-6 px-8 flex justify-between items-center bg-[#121212] border-b border-white/5 sticky top-0 z-50 backdrop-blur-md bg-opacity-90"><span className="text-2xl font-serif text-white">Wolf Den<span className="text-[#A68A64]">.</span></span><span className="text-gray-400 text-sm uppercase tracking-widest">The Lounge</span></nav>;
 const Footer = () => <footer className="w-full py-12 bg-black text-center text-gray-500 border-t border-white/10"><p>© 2025 Wolf Den Lounge</p></footer>;
 
 // --- ANIMATION VARIANTS ---
@@ -21,53 +21,87 @@ const staggerContainer = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: {
-      staggerChildren: 0.2
-    }
+    transition: { staggerChildren: 0.2 }
   }
 };
 
-// --- SECTION COMPONENT ---
-const WolfSection = ({ image, title, text, highlight, reversed }) => (
+// --- NEW COMPONENT: WOLF CARD (Applying the modern card design to Wolf images) ---
+const WolfCard = ({ image, title, label }) => {
+  return (
+      <div className="relative group w-full h-[500px] select-none border border-white/5 bg-[#121212] shadow-2xl">
+        {/* Image Wrapper */}
+        <div className="w-full h-full overflow-hidden relative">
+          <img
+              src={image}
+              alt={title}
+              className="w-full h-full object-cover transition-all duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)]
+                     grayscale brightness-[0.6] group-hover:grayscale-0 group-hover:brightness-100 group-hover:scale-105"
+          />
+
+          {/* Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#121212] via-transparent to-transparent opacity-80 group-hover:opacity-40 transition-opacity duration-500" />
+
+          {/* Glass Metadata Box (Appears on Hover/Default) */}
+          <div className="absolute bottom-6 left-6 right-6 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100">
+            <div className="backdrop-blur-md bg-black/70 border border-white/10 p-5 flex flex-col gap-1 shadow-2xl">
+              <p className="text-[#A68A64] text-[10px] font-sans uppercase tracking-[0.25em] mb-1">
+                {label}
+              </p>
+              <h3 className="text-white font-serif text-2xl leading-none">
+                {title}
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        {/* Modern Decoration: Corner Lines */}
+        {/* Top Left */}
+        <div className="absolute -top-[1px] -left-[1px] w-[1px] h-12 bg-[#A68A64] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+        <div className="absolute -top-[1px] -left-[1px] w-12 h-[1px] bg-[#A68A64] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+        {/* Bottom Right */}
+        <div className="absolute -bottom-[1px] -right-[1px] w-[1px] h-12 bg-[#A68A64] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+        <div className="absolute -bottom-[1px] -right-[1px] w-12 h-[1px] bg-[#A68A64] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+      </div>
+  );
+};
+
+// --- COMPONENT: WOLF SECTION ---
+const WolfSection = ({ image, title, label, text, highlight, reversed }) => (
     <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
         variants={staggerContainer}
-        className={`flex flex-col ${reversed ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-12 md:gap-24 py-24 border-b border-white/5 last:border-0`}
+        className={`flex flex-col ${reversed ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-12 md:gap-20 py-20 border-b border-white/5 last:border-0`}
     >
-      {/* Image Side */}
-      <motion.div variants={imageReveal} className="w-full md:w-1/2 relative">
-        <div className="relative h-[400px] w-full overflow-hidden rounded-sm">
-          <div className="absolute inset-0 bg-[#A68A64]/20 mix-blend-overlay z-10"></div>
-          <img
-              src={image}
-              alt={title}
-              className="w-full h-full object-cover object-center opacity-90 hover:opacity-100 hover:scale-105 transition-all duration-700 grayscale-[30%] hover:grayscale-0"
-          />
-          {/* Decorative Border */}
-          <div className={`absolute top-4 ${reversed ? 'right-4' : 'left-4'} w-full h-full border border-[#A68A64]/30 -z-10`}></div>
-        </div>
+      {/* Image Side - Using the new WolfCard Design */}
+      <motion.div variants={imageReveal} className="w-full md:w-1/2 relative p-4">
+        <WolfCard image={image} title={title} label={label} />
       </motion.div>
 
       {/* Text Side */}
-      <motion.div variants={fadeInUp} className="w-full md:w-1/2 text-center md:text-left space-y-6">
-        <h3 className="text-3xl font-serif text-white">{title}</h3>
+      <motion.div variants={fadeInUp} className="w-full md:w-1/2 text-center md:text-left space-y-6 px-4">
+      <span className="text-[#A68A64] text-xs font-sans font-bold uppercase tracking-widest border-b border-[#A68A64] pb-2 inline-block md:hidden">
+        {label}
+      </span>
+        <h3 className="text-4xl md:text-5xl font-serif text-white leading-tight">{title}</h3>
         <p className="text-lg text-gray-400 font-light leading-relaxed">
           {text}
-          <br />
-          <span className="block mt-4 text-[#A68A64] font-medium italic border-l-2 border-[#A68A64] pl-4">
-          {highlight}
-        </span>
         </p>
+        <div className="relative pl-6 border-l-2 border-[#A68A64]/50 mt-6">
+          <p className="text-white font-medium italic text-lg">
+            "{highlight}"
+          </p>
+        </div>
       </motion.div>
     </motion.div>
 );
 
 export default function AboutPage() {
   return (
-      <div className="bg-[#121212] min-h-screen text-[#F3F4F6] font-sans selection:bg-[#A68A64] selection:text-black">
-        {/*<Navbar />*/}
+      <div className="bg-[#121212] min-h-screen text-[#F3F4F6] font-sans selection:bg-[#A68A64] selection:text-black overflow-x-hidden">
+
 
         {/* --- HERO HEADER --- */}
         <div className="relative pt-32 pb-20 px-6 text-center bg-[#121212]">
@@ -79,7 +113,7 @@ export default function AboutPage() {
               transition={{ duration: 1 }}
           >
             <span className="text-[#A68A64] uppercase tracking-[0.4em] text-sm font-semibold">The Philosophy</span>
-            <h1 className="text-6xl md:text-8xl font-serif text-white mt-6 mb-8">
+            <h1 className="text-6xl md:text-9xl font-serif text-white mt-8 mb-8 tracking-tight">
               The <span className="text-[#A68A64] italic">Wolf</span>
             </h1>
             <div className="max-w-2xl mx-auto">
@@ -91,13 +125,14 @@ export default function AboutPage() {
         </div>
 
         {/* --- MAIN CONTENT --- */}
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 pb-24">
 
           {/* 1. FAMILY */}
           <WolfSection
               image="/w1.png"
               title="The Pack is Family"
-              text="Wolves live in packs. It is not just a group; it is a family unit bonded by blood and trust."
+              label="Connection"
+              text="Wolves live in packs. It is not just a group; it is a family unit bonded by blood, trust, and shared survival."
               highlight="At the Wolf Den, we consider—and treat—all who enter as family."
               reversed={false}
           />
@@ -106,7 +141,8 @@ export default function AboutPage() {
           <WolfSection
               image="/w3.png"
               title="Unwavering Loyalty"
-              text="Wolves are extremely loyal to their own. Their survival depends on the strength of their bond."
+              label="Commitment"
+              text="Wolves are extremely loyal to their own. Their survival depends on the strength of their bond and the integrity of the pack."
               highlight="Our staff is committed to this code. We understand that our survival is embedded in the loyalty we give to you."
               reversed={true}
           />
@@ -115,7 +151,8 @@ export default function AboutPage() {
           <WolfSection
               image="/w5.png"
               title="Unrivaled Excellence"
-              text="Nothing hunts the wolf. It stands at the apex, confident and composed."
+              label="Dominance"
+              text="Nothing hunts the wolf. It stands at the apex, confident and composed, master of its domain."
               highlight="The Wolf Den has no competition. We strive everyday to be the best because we offer the best in class, elegance, and service."
               reversed={false}
           />
@@ -124,7 +161,8 @@ export default function AboutPage() {
           <WolfSection
               image="/w6.png"
               title="The Sanctuary"
-              text="A den is not just where a wolf lives, but where they protect their own."
+              label="Safety"
+              text="A den is not just where a wolf lives, but where they protect their own. It is a place of rest, strategy, and safety."
               highlight="At the Wolf Den, we advocate for a safe, secluded environment for our customers and our staff."
               reversed={true}
           />
@@ -135,65 +173,26 @@ export default function AboutPage() {
               whileInView="visible"
               viewport={{ once: true }}
               variants={fadeInUp}
-              className="py-32 text-center max-w-4xl mx-auto"
+              className="pt-32 pb-16 text-center max-w-5xl mx-auto"
           >
-            <Quote className="w-12 h-12 text-[#A68A64] mx-auto mb-8 opacity-50" />
-            <p className="text-2xl md:text-3xl font-serif text-white leading-normal">
-              "When you add <span className="text-[#A68A64]">strength</span> + <span className="text-[#A68A64]">loyalty</span> + <span className="text-[#A68A64]">leadership</span>, it equals what is at the core of every wolf: <span className="italic">Family</span>."
+            <Quote className="w-16 h-16 text-[#A68A64] mx-auto mb-10 opacity-50" />
+            <p className="text-2xl md:text-4xl font-serif text-white leading-snug">
+              "When you add <span className="text-[#A68A64]">strength</span> + <span className="text-[#A68A64]">loyalty</span> + <span className="text-[#A68A64]">leadership</span>, it equals what is at the core of every wolf: <span className="italic border-b border-[#A68A64]">Family</span>."
             </p>
-            <p className="mt-8 text-gray-400 font-light text-lg">
+            <p className="mt-10 text-gray-400 font-light text-lg max-w-2xl mx-auto">
               Here at our lounge, we embrace the wolf. We can welcome you in, but we can also welcome you out. Choose your path.
             </p>
-            <p className="mt-6 text-[#A68A64] text-xl font-medium uppercase tracking-widest">
+            <p className="mt-8 text-[#A68A64] text-xl font-medium uppercase tracking-[0.3em]">
               Welcome to the Wolf Den
             </p>
 
-            <div className="mt-16 relative w-full h-[400px] overflow-hidden rounded-sm">
-              <img src="/w7.png" alt="The Wolf Den" className="w-full h-full object-contain opacity-80" />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#121212] to-transparent"></div>
+            {/* Final Large Image with Card Style applied */}
+            <div className="mt-20 max-w-4xl mx-auto">
+              <WolfCard image="/w7.png" title="The Den" label="Established 2024" />
             </div>
           </motion.div>
-
-          {/* --- GALLERY SECTION (Previous "About" Images) --- */}
-          <div className="py-24 border-t border-white/5">
-            <div className="text-center mb-16">
-              <span className="text-[#A68A64] uppercase tracking-widest text-xs">The Atmosphere</span>
-              <h2 className="text-4xl font-serif text-white mt-4">Experience the Den</h2>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-8">
-              {[
-                { src: "/about1.jpeg", label: "The Ambiance" },
-                { src: "/about2.jpeg", label: "The Spirits" },
-                { src: "/about3.jpg", label: "The Comfort" }
-              ].map((item, idx) => (
-                  <motion.div
-                      key={idx}
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ delay: idx * 0.2, duration: 0.8 }}
-                      viewport={{ once: true }}
-                      className="group relative h-[400px] overflow-hidden cursor-pointer"
-                  >
-                    <img
-                        src={item.src}
-                        alt={item.label}
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-black/60 group-hover:bg-black/20 transition-colors duration-500 flex items-center justify-center">
-                            <span className="text-white font-serif text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 translate-y-4 group-hover:translate-y-0">
-                                {item.label}
-                            </span>
-                    </div>
-                    <div className="absolute bottom-0 left-0 w-full h-1 bg-[#A68A64] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
-                  </motion.div>
-              ))}
-            </div>
-          </div>
-
         </div>
 
-        {/*<Footer />*/}
       </div>
   );
 }
