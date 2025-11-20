@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
+import Head from "next/head";
 import { motion, AnimatePresence } from "framer-motion";
 
+
 // --- DATA ---
+// (Inlined for immediate stability)
 const drinks = [
   {
     id: 1,
@@ -101,7 +104,7 @@ const drinks = [
   },
 ];
 
-// --- CARD COMPONENT ---
+// --- RESPONSIVE CARD COMPONENT ---
 const DrinkCard = ({ drink }) => {
   return (
       <motion.div
@@ -113,15 +116,37 @@ const DrinkCard = ({ drink }) => {
           className="relative group w-full h-[400px] md:h-[450px] select-none"
       >
         <div className="w-full h-full overflow-hidden relative bg-[#1a1a1a]">
+          {/* IMAGE:
+            Mobile: Always full color & bright.
+            Desktop (md+): Grayscale & Dimmed, reveals on hover.
+        */}
           <img
               src={drink.imageUrl}
               alt={drink.name}
               className="w-full h-full object-cover transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)]
-                     grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 group-hover:scale-105"
+                     grayscale-0 brightness-100 scale-100
+                     md:grayscale md:brightness-75 md:scale-100
+                     md:group-hover:grayscale-0 md:group-hover:brightness-100 md:group-hover:scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#121212] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-          <div className="absolute bottom-6 left-6 right-6 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-75">
+          {/* GRADIENT OVERLAY:
+            Mobile: Always visible to make text readable.
+            Desktop (md+): Hidden by default, fades in on hover.
+        */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#121212] via-transparent to-transparent transition-opacity duration-500
+                        opacity-100
+                        md:opacity-0 md:group-hover:opacity-100"
+          />
+
+          {/* METADATA CONTENT:
+            Mobile: Always visible (opacity 100, no translate).
+            Desktop (md+): Hidden (opacity 0, translate y) -> Slides up on hover.
+        */}
+          <div className="absolute bottom-6 left-6 right-6 transition-all duration-500 delay-75
+                        opacity-100 translate-y-0
+                        md:opacity-0 md:translate-y-4
+                        md:group-hover:translate-y-0 md:group-hover:opacity-100">
+
             <div className="backdrop-blur-md bg-white/5 border border-white/10 p-4 flex flex-col gap-2">
               <div className="flex justify-between items-start">
                 <div>
@@ -143,15 +168,19 @@ const DrinkCard = ({ drink }) => {
           </div>
         </div>
 
-        <div className="absolute -top-2 -left-2 w-[1px] h-8 bg-[#A68A64] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-        <div className="absolute -top-2 -left-2 w-8 h-[1px] bg-[#A68A64] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-        <div className="absolute -bottom-2 -right-2 w-[1px] h-8 bg-[#A68A64] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-        <div className="absolute -bottom-2 -right-2 w-8 h-[1px] bg-[#A68A64] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+        {/* CORNER LINES:
+          Mobile: Always visible.
+          Desktop (md+): Fade in on hover.
+      */}
+        <div className="absolute -top-2 -left-2 w-[1px] h-8 bg-[#A68A64] transition-opacity duration-500 opacity-100 md:opacity-0 md:group-hover:opacity-100" />
+        <div className="absolute -top-2 -left-2 w-8 h-[1px] bg-[#A68A64] transition-opacity duration-500 opacity-100 md:opacity-0 md:group-hover:opacity-100" />
+        <div className="absolute -bottom-2 -right-2 w-[1px] h-8 bg-[#A68A64] transition-opacity duration-500 opacity-100 md:opacity-0 md:group-hover:opacity-100" />
+        <div className="absolute -bottom-2 -right-2 w-8 h-[1px] bg-[#A68A64] transition-opacity duration-500 opacity-100 md:opacity-0 md:group-hover:opacity-100" />
       </motion.div>
   );
 };
 
-export default function Menu() {
+const Menu = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -172,6 +201,12 @@ export default function Menu() {
 
   return (
       <div className="bg-[#121212] min-h-screen text-white selection:bg-[#A68A64] selection:text-black">
+        <Head>
+          <title>Menu | Wolf Den Lounge</title>
+          <meta name="description" content="Explore our curated selection of spirits and cocktails." />
+        </Head>
+
+
 
         <main className="pt-32 pb-24">
 
@@ -196,24 +231,27 @@ export default function Menu() {
           </div>
 
           {/* --- STICKY FILTER BAR --- */}
-          <div className={`sticky top-0 z-40 transition-all duration-300 ${isScrolled ? "bg-[#121212]/90 backdrop-blur-lg py-4 border-b border-white/5" : "bg-transparent py-8"}`}>
+          <div className={`sticky top-15 z-40 transition-all duration-300 ${isScrolled ? "bg-[#121212]/90 backdrop-blur-lg py-4 border-b border-white/5" : "bg-transparent py-8"}`}>
             <div className="px-4 md:px-12 max-w-screen-xl mx-auto">
-              <div className="flex flex-wrap justify-center gap-2 md:gap-4">
-                {categories.map((category) => (
-                    <button
-                        key={category}
-                        onClick={() => setSelectedCategory(category)}
-                        className={`
-                    relative px-6 py-2 text-xs md:text-sm font-mono uppercase tracking-wider rounded-full transition-all duration-300 border
-                    ${selectedCategory === category
-                            ? "border-[#A68A64] text-[#A68A64] bg-[#A68A64]/10"
-                            : "border-white/10 text-white/50 hover:border-white/30 hover:text-white"
-                        }
-                  `}
-                    >
-                      {category}
-                    </button>
-                ))}
+              {/* Horizontal scroll on mobile for categories if needed */}
+              <div className="overflow-x-auto pb-2 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide">
+                <div className="flex md:flex-wrap justify-start md:justify-center gap-2 md:gap-4 min-w-max">
+                  {categories.map((category) => (
+                      <button
+                          key={category}
+                          onClick={() => setSelectedCategory(category)}
+                          className={`
+                        relative px-6 py-2 text-xs md:text-sm font-mono uppercase tracking-wider rounded-full transition-all duration-300 border
+                        ${selectedCategory === category
+                              ? "border-[#A68A64] text-[#A68A64] bg-[#A68A64]/10"
+                              : "border-white/10 text-white/50 hover:border-white/30 hover:text-white"
+                          }
+                    `}
+                      >
+                        {category}
+                      </button>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -240,6 +278,10 @@ export default function Menu() {
           </div>
 
         </main>
+
+
       </div>
   );
-}
+};
+
+export default Menu;
