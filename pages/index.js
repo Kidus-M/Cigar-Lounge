@@ -2,14 +2,13 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import About from "../components/About";
-import {TextReveal} from "../components/TextRevealSection."
-import {Gallery} from "../components/GallerySection"// Ensure these exist
-// import DrinkMenu from "../components/DrinkMenu"; // Ensure these exist
+// Ensure these exist
+import DrinkMenu from "../components/DrinkMenu"; // Ensure these exist
 import Footer from "../components/Footer";    // Ensure these exist
 
 // Temporary placeholders in case components don't exist yet
 // const About = () => <div className="h-96 flex items-center justify-center bg-[#121212] text-white border-t border-white/10">About Section Placeholder</div>;
-const DrinkMenu = () => <div className="h-96 flex items-center justify-center bg-[#1E1E1E] text-white">Menu Section Placeholder</div>;
+// const DrinkMenu = () => <div className="h-96 flex items-center justify-center bg-[#1E1E1E] text-white">Menu Section Placeholder</div>;
 // const Footer = () => <div className="h-40 flex items-center justify-center bg-black text-gray-500">Footer Placeholder</div>;
 
 export default function Home() {
