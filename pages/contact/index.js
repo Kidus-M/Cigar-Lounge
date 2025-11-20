@@ -1,20 +1,17 @@
 import React, { useState } from "react";
-import Footer from "../../components/Footer";
-import Navbar from "../../components/Navbar";
 import { MailOpen, Phone, Youtube, Instagram } from "lucide-react";
-import Head from "next/head";
 
-const Contacts = () => {
-  const [status, setStatus] = useState(null); // 'success' | 'error'
+const ContactPage = () => {
+  const [status, setStatus] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     const form = e.target;
     const formData = new FormData(form);
 
     try {
-      const response = await fetch("https://formsubmit.co/ajax/Wolf Denaddis@gmail.com", {
+      // Using the endpoint from your provided code
+      const response = await fetch("https://formsubmit.co/ajax/wolfdenaddis@gmail.com", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -34,175 +31,184 @@ const Contacts = () => {
   };
 
   return (
-      <div className="bg-black">
-        <Head>
-          <title>Wolf Den Lounge</title>
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-        <Navbar />
-        <section className="bg-black mt-20">
-          <div id="map" className="relative h-[300px] bg-black">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3940.735504050806!2d38.770424999999996!3d8.996468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwNTknNDcuMyJOIDM4wrA0NicxMy41IkU!5e0!3m2!1sen!2set!4v1739611609218!5m2!1sen!2set"
-                width="100%"
-                height="480"
-                allowFullScreen=""
-                loading="lazy"
-                className="opacity-70 hover:opacity-100"
-            ></iframe>
-          </div>
+      <div className="bg-[#121212] min-h-screen text-[#F3F4F6] font-sans selection:bg-[#A68A64] selection:text-black">
 
-          <div className="container px-6 md:px-12">
-            <div className="block rounded-lg bg-black px-6 py-12 border border-green-600 -mt-[100px] shadow-md backdrop-blur-[30px]">
-              <div className="flex flex-wrap">
-                <div className="flex justify-center w-full">
-                  <div className="text-center md:max-w-xl lg:max-w-3xl">
-                    <h2 className="mb-12 px-6 text-3xl text-green-600 font-bold">
-                      Contact us
-                    </h2>
-                  </div>
+        {/* --- HEADER SECTION --- */}
+        <div className="relative pt-32 pb-20 px-6 text-center">
+        <span className="text-[#A68A64] uppercase tracking-[0.3em] text-xs font-bold animate-fade-up">
+          Connect With Us
+        </span>
+          <h1 className="text-5xl md:text-7xl font-serif text-white mt-4 mb-6 animate-fade-up delay-100">
+            Reserve Your <span className="italic text-[#A68A64]">Experience</span>
+          </h1>
+          <p className="text-gray-400 font-light max-w-xl mx-auto animate-fade-up delay-200 leading-relaxed">
+            Whether for a private event, a table reservation, or general inquiries, our team is ready to welcome you to the Den.
+          </p>
+        </div>
+
+        {/* --- MAP SECTION --- */}
+        <div className="relative h-[450px] w-full overflow-hidden border-y border-white/5">
+          <iframe
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3940.735504050806!2d38.770424999999996!3d8.996468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwNTknNDcuMyJOIDM4wrA0NicxMy41IkU!5e0!3m2!1sen!2set!4v1739611609218!5m2!1sen!2set"
+              width="100%"
+              height="100%"
+              allowFullScreen=""
+              loading="lazy"
+              className="w-full h-full border-0 grayscale invert-[.9] contrast-[1.2] hover:grayscale-0 transition-all duration-700 ease-in-out"
+          ></iframe>
+          {/* Gradient Overlay to blend map edges into dark theme */}
+          <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-[#121212] via-transparent to-[#121212] opacity-80" />
+        </div>
+
+        {/* --- CONTACT CONTENT --- */}
+        <div className="max-w-7xl mx-auto px-6 md:px-12 -mt-24 relative z-10 pb-24">
+          <div className="bg-[#1A1A1A]/95 backdrop-blur-xl border border-white/5 shadow-2xl p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row gap-16 rounded-sm">
+
+            {/* LEFT: Contact Form */}
+            <div className="w-full lg:w-7/12">
+              <h3 className="text-3xl font-serif text-white mb-2">Send a Message</h3>
+              <p className="text-gray-500 font-light text-sm mb-10">We usually respond within 24 hours.</p>
+
+              <form onSubmit={handleSubmit} className="space-y-8">
+                <input type="hidden" name="_subject" value="New Contact Form Submission!" />
+                <input type="hidden" name="_captcha" value="false" />
+
+                {/* Name Input */}
+                <div className="group relative">
+                  <input
+                      type="text"
+                      name="name"
+                      required
+                      className="peer w-full bg-transparent border-b border-white/10 py-3 text-white focus:outline-none focus:border-[#A68A64] transition-colors placeholder-transparent"
+                      placeholder="Name"
+                      id="name"
+                  />
+                  <label
+                      htmlFor="name"
+                      className="absolute left-0 -top-3.5 text-[#A68A64] text-xs uppercase tracking-widest transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-[#A68A64] peer-focus:text-xs"
+                  >
+                    Full Name
+                  </label>
                 </div>
 
-                <div className="flex flex-wrap">
-                  <form
-                      className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6"
-                      onSubmit={handleSubmit}
+                {/* Email Input */}
+                <div className="group relative">
+                  <input
+                      type="email"
+                      name="email"
+                      required
+                      className="peer w-full bg-transparent border-b border-white/10 py-3 text-white focus:outline-none focus:border-[#A68A64] transition-colors placeholder-transparent"
+                      placeholder="Email"
+                      id="email"
+                  />
+                  <label
+                      htmlFor="email"
+                      className="absolute left-0 -top-3.5 text-[#A68A64] text-xs uppercase tracking-widest transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-[#A68A64] peer-focus:text-xs"
                   >
-                    <input type="hidden" name="_subject" value="New Contact Form Submission!" />
-                    <input type="hidden" name="_captcha" value="false" />
-                    <input type="hidden" name="_template" value="table" />
+                    Email Address
+                  </label>
+                </div>
 
-                    <div className="mb-3 w-full">
-                      <label className="block font-medium mb-[2px] text-green-600">Name</label>
-                      <input
-                          type="text"
-                          name="name"
-                          required
-                          className="px-2 py-2 border w-full bg-white outline-none rounded-md"
-                          placeholder="Name"
-                      />
-                    </div>
+                {/* Message Input */}
+                <div className="group relative">
+                <textarea
+                    name="message"
+                    required
+                    rows="4"
+                    className="peer w-full bg-transparent border-b border-white/10 py-3 text-white focus:outline-none focus:border-[#A68A64] transition-colors placeholder-transparent resize-none"
+                    placeholder="Message"
+                    id="message"
+                ></textarea>
+                  <label
+                      htmlFor="message"
+                      className="absolute left-0 -top-3.5 text-[#A68A64] text-xs uppercase tracking-widest transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-[#A68A64] peer-focus:text-xs"
+                  >
+                    Your Message
+                  </label>
+                </div>
 
-                    <div className="mb-3 w-full">
-                      <label className="block font-medium mb-[2px] text-green-600">Email</label>
-                      <input
-                          type="email"
-                          name="email"
-                          required
-                          className="px-2 py-2 border w-full bg-white outline-none rounded-md"
-                          placeholder="Enter your email"
-                      />
-                    </div>
+                {/* Submit Button */}
+                <button
+                    type="submit"
+                    className="mt-4 px-10 py-4 bg-[#A68A64] text-[#121212] text-xs uppercase tracking-[0.2em] font-bold hover:bg-white transition-all duration-300 min-w-[200px] cursor-pointer rounded-sm shadow-lg hover:shadow-[#A68A64]/20"
+                >
+                  Send Message
+                </button>
 
-                    <div className="mb-3 w-full">
-                      <label className="block font-medium mb-[2px] text-green-600">Message</label>
-                      <textarea
-                          name="message"
-                          required
-                          className="px-2 py-2 border rounded-md w-full bg-white outline-none"
-                          placeholder="Write your message here..."
-                      ></textarea>
-                    </div>
+                {/* Status Messages */}
+                {status === "success" && (
+                    <p className="text-[#A68A64] font-medium mt-4 animate-fade-up">Message sent successfully. We will be in touch.</p>
+                )}
+                {status === "error" && (
+                    <p className="text-red-500 font-medium mt-4 animate-fade-up">Failed to send message. Please try again.</p>
+                )}
+              </form>
+            </div>
 
-                    <button
-                        type="submit"
-                        className="mb-3 inline-block w-full rounded bg-green-600 px-6 py-2.5 font-medium uppercase text-white hover:bg-green-700"
-                    >
-                      Send
-                    </button>
+            {/* RIGHT: Contact Info */}
+            <div className="w-full lg:w-5/12 space-y-12 border-l border-white/5 lg:pl-16 pt-4">
 
-                    {status === "success" && (
-                        <p className="text-green-500 font-medium mt-2">Message sent successfully!</p>
-                    )}
-                    {status === "error" && (
-                        <p className="text-red-500 font-medium mt-2">Failed to send message. Please try again.</p>
-                    )}
-                  </form>
+              {/* Info Block */}
+              <div>
+                <div className="flex items-center gap-4 mb-2">
+                  <Phone className="text-[#A68A64] w-5 h-5" />
+                  <h4 className="text-white font-serif text-xl">Phone</h4>
+                </div>
+                <a href="tel:0979398094" className="block text-gray-400 hover:text-[#A68A64] transition-colors font-light pl-9">
+                  +251 979 398 094
+                </a>
+              </div>
 
-                  <div className="w-full mt-10 shrink-0 grow-0 basis-auto lg:w-7/12">
-                    <div className="flex flex-wrap text-green-600">
-                      <div className="mb-12 w-full md:w-6/12 md:px-3 lg:px-6">
-                        <div className="flex items-start">
-                          <div className="shrink-0">
-                            <div className="inline-block p-4 text-green-600">
-                              <Phone size={40} />
-                            </div>
-                          </div>
-                          <div className="ml-6 grow">
-                            <p className="mb-2 font-bold text-white">Phone Number</p>
-                            <a href="tel:0979398094" className="text-white">
-                              +251-979-398-094
-                            </a>
-                          </div>
-                        </div>
-                      </div>
+              {/* Info Block */}
+              <div>
+                <div className="flex items-center gap-4 mb-2">
+                  <MailOpen className="text-[#A68A64] w-5 h-5" />
+                  <h4 className="text-white font-serif text-xl">Email</h4>
+                </div>
+                <a href="mailto:wolfdenaddis@gmail.com" className="block text-gray-400 hover:text-[#A68A64] transition-colors font-light pl-9">
+                  wolfdenaddis@gmail.com
+                </a>
+              </div>
 
-                      <div className="mb-12 w-full md:w-6/12 md:px-3 lg:px-6">
-                        <div className="flex items-start">
-                          <div className="shrink-0">
-                            <div className="inline-block p-4 text-green-600">
-                              <MailOpen size={40} />
-                            </div>
-                          </div>
-                          <div className="ml-6 grow">
-                            <p className="mb-2 font-bold text-white">Email</p>
-                            <p className="text-white">Wolfdenaddis@gmail.com</p>
-                          </div>
-                        </div>
-                      </div>
+              {/* Info Block */}
+              <div>
+                <div className="flex items-center gap-4 mb-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#A68A64]"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <h4 className="text-white font-serif text-xl">Location</h4>
+                </div>
+                <a
+                    href="https://maps.app.goo.gl/Ph5JPnx6KVDjyqps8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block text-gray-400 hover:text-[#A68A64] transition-colors font-light pl-9 leading-relaxed"
+                >
+                  From Gazebo to Wollo Sefer road,<br />Addis Ababa, Ethiopia
+                </a>
+              </div>
 
-                      <div className="mb-12 w-full md:w-6/12 md:px-3 lg:px-6">
-                        <div className="flex items-start">
-                          <div className="shrink-0">
-                            <div className="inline-block p-4 text-green-600">
-                              <Instagram size={40} />
-                            </div>
-                          </div>
-                          <div className="ml-6 grow">
-                            <p className="mb-2 font-bold text-white">Instagram</p>
-                            <a
-                                href="https://www.instagram.com/wolfdenaddis?igsh=ZzRmOGp4ZDdmaDRx&utm_source=qr"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="text-white"
-                            >
-                              Instagram.WolfDenaddis
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="mb-12 w-full md:w-6/12 md:px-3 lg:px-6">
-                        <div className="flex items-start">
-                          <div className="shrink-0">
-                            <div className="inline-block p-4 text-green-600">
-                              <Youtube size={50} />
-                            </div>
-                          </div>
-                          <div className="ml-6 grow">
-                            <p className="mb-2 font-bold text-white">Youtube</p>
-                            <a
-                                href="https://www.youtube.com/@Wolf-f7r"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="text-white"
-                            >
-                              Wolf Den
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
+              {/* Socials */}
+              <div className="pt-8 border-t border-white/10">
+                <span className="text-[#A68A64] uppercase tracking-widest text-xs font-bold block mb-6">Follow The Pack</span>
+                <div className="flex gap-6">
+                  <a href="https://www.instagram.com/wolfdenaddis?igsh=ZzRmOGp4ZDdmaDRx&utm_source=qr" className="text-white hover:text-[#A68A64] transition-colors">
+                    <Instagram size={24} strokeWidth={1.5} />
+                  </a>
+                  <a href="https://youtube.com/@wolf-f7r?si=YSW7A5NGQX-XrbNd" className="text-white hover:text-[#A68A64] transition-colors">
+                    <Youtube size={24} strokeWidth={1.5} />
+                  </a>
+                  <a href="https://www.tiktok.com/@wolfdenaddis?_t=ZM-8xpQE4larlo&_r=1" className="text-white hover:text-[#A68A64] transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                      <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                    </svg>
+                  </a>
                 </div>
               </div>
+
             </div>
           </div>
-        </section>
-        <Footer />
+        </div>
       </div>
   );
 };
 
-export default Contacts;
+export default ContactPage;

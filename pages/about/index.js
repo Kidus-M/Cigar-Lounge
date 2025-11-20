@@ -5,6 +5,8 @@ import Image from "next/image"
 
 import WolfFamily from "../../assets/AboutPage/WolfFamily.png"
 import WolfLoyalty from "../../assets/AboutPage/WolfLoyalty.png"
+import WolfDominance from "../../assets/AboutPage/WolfDominance.png"
+import WolfSanctuary from "../../assets/AboutPage/WolfSanctuary.png"
 // --- ANIMATION VARIANTS ---
 const fadeInUp = {
   hidden: { opacity: 0, y: 60 },
@@ -149,7 +151,7 @@ export default function AboutPage() {
 
           {/* 3. DOMINANCE */}
           <WolfSection
-              image="/w5.png"
+              image={WolfDominance}
               title="Unrivaled Excellence"
               label="Dominance"
               text="Nothing hunts the wolf. It stands at the apex, confident and composed, master of its domain."
@@ -159,7 +161,7 @@ export default function AboutPage() {
 
           {/* 4. PROTECTION */}
           <WolfSection
-              image="/w6.png"
+              image={WolfSanctuary}
               title="The Sanctuary"
               label="Safety"
               text="A den is not just where a wolf lives, but where they protect their own. It is a place of rest, strategy, and safety."
