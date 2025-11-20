@@ -6,6 +6,8 @@ import ClassicMojito from "../../assets/Menu/ClassicMojito.png"
 import LoneWolf from "../../assets/Menu/LoneWolf.png"
 import MsRabbit from "../../assets/Menu/MsRabbit.png"
 import DoctorsNote from "../../assets/Menu/DoctorsNote.png"
+import RoyalMartini from "../../assets/Menu/RoyalMartini.png"
+import Margarita from "../../assets/Menu/Margarita.png"
 // --- DATA ---
 // (Inlined for immediate stability)
 const drinks = [
@@ -45,7 +47,7 @@ const drinks = [
     id: 5,
     name: "Royal Martini",
     description: "Freshly brewed espresso mixed with rum and lime.",
-    imageUrl: {},
+    imageUrl: RoyalMartini,
     price: 1100,
     category: "Cocktails",
   },
@@ -53,7 +55,7 @@ const drinks = [
     id: 6,
     name: "Margarita",
     description: "Tequila, triple sek, lime juice, salt.",
-    imageUrl: {},
+    imageUrl: Margarita,
     price: 1890,
     category: "Cocktails",
   },
