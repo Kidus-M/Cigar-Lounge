@@ -3,36 +3,36 @@ import { Calendar, Clock, Users, CheckCircle, AlertCircle } from 'lucide-react';
 
 // --- MOCK DATA (Simulating Firestore) ---
 const MOCK_EVENTS = [
-    {
-        id: '1',
-        name: 'Whiskey & Smoke Night',
-        date: '2025-12-15T19:00:00',
-        description: 'An exclusive tasting of rare single malts paired with our signature house blend cigars. Hosted by our master sommelier.',
-        image: 'https://images.unsplash.com/photo-1525538465038-f02733205657?q=80&w=2574&auto=format&fit=crop',
-        maxSpots: 20,
-        registeredCount: 12,
-        status: 'open'
-    },
-    {
-        id: '2',
-        name: 'Midnight Jazz & Gin',
-        date: '2025-04-22T20:00:00',
-        description: 'Live jazz performance accompanied by a curated selection of botanical gins. A night of rhythm and relaxation.',
-        image: 'https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80',
-        maxSpots: 15,
-        registeredCount: 15, // Full -> Waitlist
-        status: 'open'
-    },
-    {
-        id: '3',
-        name: 'The Alpha Gathering',
-        date: '2024-12-10T18:00:00', // Past Event
-        description: 'Our annual members-only networking event. Strictly by invitation or reservation.',
-        image: 'https://images.unsplash.com/photo-1560523160-754a9e25c68f?q=80&w=2536&auto=format&fit=crop',
-        maxSpots: 30,
-        registeredCount: 30,
-        status: 'past'
-    }
+    // {
+    //     id: '1',
+    //     name: 'Whiskey & Smoke Night',
+    //     date: '2025-12-15T19:00:00',
+    //     description: 'An exclusive tasting of rare single malts paired with our signature house blend cigars. Hosted by our master sommelier.',
+    //     image: 'https://images.unsplash.com/photo-1525538465038-f02733205657?q=80&w=2574&auto=format&fit=crop',
+    //     maxSpots: 20,
+    //     registeredCount: 12,
+    //     status: 'open'
+    // },
+    // {
+    //     id: '2',
+    //     name: 'Midnight Jazz & Gin',
+    //     date: '2025-04-22T20:00:00',
+    //     description: 'Live jazz performance accompanied by a curated selection of botanical gins. A night of rhythm and relaxation.',
+    //     image: 'https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80',
+    //     maxSpots: 15,
+    //     registeredCount: 15, // Full -> Waitlist
+    //     status: 'open'
+    // },
+    // {
+    //     id: '3',
+    //     name: 'The Alpha Gathering',
+    //     date: '2024-12-10T18:00:00', // Past Event
+    //     description: 'Our annual members-only networking event. Strictly by invitation or reservation.',
+    //     image: 'https://images.unsplash.com/photo-1560523160-754a9e25c68f?q=80&w=2536&auto=format&fit=crop',
+    //     maxSpots: 30,
+    //     registeredCount: 30,
+    //     status: 'past'
+    // }
 ];
 
 // --- COMPONENTS ---
