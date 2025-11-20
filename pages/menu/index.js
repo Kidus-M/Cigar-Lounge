@@ -10,6 +10,7 @@ import RoyalMartini from "../../assets/Menu/RoyalMartini.png"
 import Margarita from "../../assets/Menu/Margarita.png"
 import Daiquiri from "../../assets/Menu/Daiquiri.png"
 import Manhattan from "../../assets/Menu/Manhattan.png"
+import GinSour from "../../assets/Menu/GinSour.png"
 import WhiskeySour from "../../assets/Menu/WhiskeySour.png"
 import BourbonFlip from "../../assets/Menu/BourbonFlip.png"
 import OldFashioned from "../../assets/Menu/OldFashioned.png"
@@ -23,7 +24,7 @@ const drinks = [
     name: "Lone Wolf",
     description: "Lime juice, ginger beer, vodka, mint, ice, lime",
     imageUrl: LoneWolf,
-    price: 650,
+    price: "",
     category: "Wolf Pack",
   },
   {
@@ -31,7 +32,7 @@ const drinks = [
     name: "Ms Rabbit",
     description: "Cold coffee, vodka, coffee liqueur, espresso beans",
     imageUrl: MsRabbit,
-    price: 700,
+    price: "",
     category: "Wolf Pack",
   },
   {
@@ -39,7 +40,7 @@ const drinks = [
     name: "Doctor's Note",
     description: "Cinnamon stick, lemon juice, hot water, lemon, whiskey, honey",
     imageUrl: DoctorsNote,
-    price: 680,
+    price: "",
     category: "Wolf Pack",
   },
   {
@@ -79,7 +80,7 @@ const drinks = [
     name: "Gin Sour",
     description: "Gin, lime juice, sugar syrup.",
     imageUrl: GinSour,
-    price: 900,
+    price: 455,
     category: "Cocktails",
   },
   {
@@ -119,7 +120,7 @@ const drinks = [
     name: "Paper Plane",
     description: "Premium whiskey mixed with lime and sugar.",
     imageUrl: PaperPlane,
-    price: 589,
+    price: 538,
     category: "Whiskey Cocktails",
   },
   {
