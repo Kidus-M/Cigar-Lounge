@@ -260,7 +260,7 @@ const Menu = () => {
           </div>
 
           {/* --- STICKY FILTER BAR --- */}
-          <div className={`sticky top-15 z-40 transition-all duration-300 ${isScrolled ? "bg-[#121212]/90 backdrop-blur-lg py-4 border-b border-white/5" : "bg-transparent py-8"}`}>
+          <div className={`sticky top-15 z-10 transition-all duration-300 ${isScrolled ? "bg-[#121212]/90 backdrop-blur-lg py-4 border-b border-white/5" : "bg-transparent py-8"}`}>
             <div className="px-4 md:px-12 max-w-screen-xl mx-auto">
               {/* Horizontal scroll on mobile for categories if needed */}
               <div className="overflow-x-auto pb-2 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide">
