@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import { motion, AnimatePresence } from "framer-motion";
-
-
+import Image from "next/image";
+import ClassicMojito from "../../assets/Menu/ClassicMojito.png"
+import LoneWolf from "../../assets/Menu/LoneWolf.png"
+import MsRabbit from "../../assets/Menu/MsRabbit.png"
 // --- DATA ---
 // (Inlined for immediate stability)
 const drinks = [
@@ -10,7 +12,7 @@ const drinks = [
     id: 1,
     name: "Lone Wolf",
     description: "Lime juice, ginger beer, vodka, mint, ice, lime",
-    imageUrl: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80",
+    imageUrl: LoneWolf,
     price: 650,
     category: "Wolf Pack",
   },
@@ -18,7 +20,7 @@ const drinks = [
     id: 2,
     name: "Ms Rabbit",
     description: "Cold coffee, vodka, coffee liqueur, espresso beans",
-    imageUrl: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=800&q=80",
+    imageUrl: MsRabbit,
     price: 700,
     category: "Wolf Pack",
   },
@@ -26,7 +28,7 @@ const drinks = [
     id: 3,
     name: "Doctor's Note",
     description: "Cinnamon stick, lemon juice, hot water, lemon, whiskey, honey",
-    imageUrl: "https://images.unsplash.com/photo-1597075687490-8f673c6c17f6?auto=format&fit=crop&w=800&q=80",
+    imageUrl: {},
     price: 680,
     category: "Wolf Pack",
   },
@@ -34,7 +36,7 @@ const drinks = [
     id: 4,
     name: "Classic Mojito",
     description: "Rum infused with fresh lime, mint and sugar.",
-    imageUrl: "https://images.unsplash.com/photo-1551538827-9c037cb4f32a?auto=format&fit=crop&w=800&q=80",
+    imageUrl: ClassicMojito,
     price: 355,
     category: "Cocktails",
   },
@@ -42,7 +44,7 @@ const drinks = [
     id: 5,
     name: "Royal Martini",
     description: "Freshly brewed espresso mixed with rum and lime.",
-    imageUrl: "https://images.unsplash.com/photo-1575023782549-62ca0d244b39?auto=format&fit=crop&w=800&q=80",
+    imageUrl: {},
     price: 1100,
     category: "Cocktails",
   },
@@ -50,7 +52,7 @@ const drinks = [
     id: 6,
     name: "Margarita",
     description: "Tequila, triple sek, lime juice, salt.",
-    imageUrl: "https://images.unsplash.com/photo-1541544537156-3639b1651c5e?auto=format&fit=crop&w=800&q=80",
+    imageUrl: {},
     price: 1890,
     category: "Cocktails",
   },
@@ -58,7 +60,7 @@ const drinks = [
     id: 7,
     name: "Daiquiri",
     description: "Rum, lemon juice and sugar mixed with apple.",
-    imageUrl: "https://images.unsplash.com/photo-1615887023516-9b6c50139990?auto=format&fit=crop&w=800&q=80",
+    imageUrl: {},
     price: 900,
     category: "Cocktails",
   },
@@ -66,7 +68,7 @@ const drinks = [
     id: 8,
     name: "Manhattan",
     description: "White rum mixed with whiskey and sugar.",
-    imageUrl: "https://images.unsplash.com/photo-1618557112861-4414f3e124c9?auto=format&fit=crop&w=800&q=80",
+    imageUrl: {},
     price: 950,
     category: "Whiskey Cocktails",
   },
@@ -74,7 +76,7 @@ const drinks = [
     id: 9,
     name: "Whiskey Sour",
     description: "Whisky, lime juice, sugar syrup, 1 white egg.",
-    imageUrl: "https://images.unsplash.com/photo-1634506423977-f6b35ba2f98e?auto=format&fit=crop&w=800&q=80",
+    imageUrl: {},
     price: 575,
     category: "Whiskey Cocktails",
   },
@@ -82,7 +84,7 @@ const drinks = [
     id: 10,
     name: "Bourbon Flip",
     description: "Premium whiskey, lime mixed with sugar syrup.",
-    imageUrl: "https://images.unsplash.com/photo-1581636760376-d58e0d42792a?auto=format&fit=crop&w=800&q=80",
+    imageUrl:{},
     price: 535,
     category: "Whiskey Cocktails",
   },
@@ -90,7 +92,7 @@ const drinks = [
     id: 11,
     name: "Old Fashioned",
     description: "Brown sugar, lime and sugar mixed with whiskey.",
-    imageUrl: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80",
+    imageUrl: {},
     price: 589,
     category: "Whiskey Cocktails",
   },
@@ -98,7 +100,7 @@ const drinks = [
     id: 12,
     name: "Blue Ocean",
     description: "Blue curaçao, lime juice, sprite, triple sek.",
-    imageUrl: "https://images.unsplash.com/photo-1560512823-8db03e1b2181?auto=format&fit=crop&w=800&q=80",
+    imageUrl: {},
     price: 800,
     category: "Weekend Special",
   },
@@ -120,7 +122,7 @@ const DrinkCard = ({ drink }) => {
             Mobile: Always full color & bright.
             Desktop (md+): Grayscale & Dimmed, reveals on hover.
         */}
-          <img
+          <Image
               src={drink.imageUrl}
               alt={drink.name}
               className="w-full h-full object-cover transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)]
