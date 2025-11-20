@@ -5,6 +5,7 @@ import Image from "next/image";
 import ClassicMojito from "../../assets/Menu/ClassicMojito.png"
 import LoneWolf from "../../assets/Menu/LoneWolf.png"
 import MsRabbit from "../../assets/Menu/MsRabbit.png"
+import DoctorsNote from "../../assets/Menu/DoctorsNote.png"
 // --- DATA ---
 // (Inlined for immediate stability)
 const drinks = [
@@ -28,7 +29,7 @@ const drinks = [
     id: 3,
     name: "Doctor's Note",
     description: "Cinnamon stick, lemon juice, hot water, lemon, whiskey, honey",
-    imageUrl: {},
+    imageUrl: DoctorsNote,
     price: 680,
     category: "Wolf Pack",
   },
