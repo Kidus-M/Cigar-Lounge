@@ -8,6 +8,8 @@ import MsRabbit from "../../assets/Menu/MsRabbit.png"
 import DoctorsNote from "../../assets/Menu/DoctorsNote.png"
 import RoyalMartini from "../../assets/Menu/RoyalMartini.png"
 import Margarita from "../../assets/Menu/Margarita.png"
+import Daiquiri from "../../assets/Menu/Daiquiri.png"
+import Manhattan from "../../assets/Menu/Manhattan.png"
 // --- DATA ---
 // (Inlined for immediate stability)
 const drinks = [
@@ -63,7 +65,7 @@ const drinks = [
     id: 7,
     name: "Daiquiri",
     description: "Rum, lemon juice and sugar mixed with apple.",
-    imageUrl: {},
+    imageUrl: Daiquiri,
     price: 900,
     category: "Cocktails",
   },
@@ -71,7 +73,7 @@ const drinks = [
     id: 8,
     name: "Manhattan",
     description: "White rum mixed with whiskey and sugar.",
-    imageUrl: {},
+    imageUrl: Manhattan,
     price: 950,
     category: "Whiskey Cocktails",
   },
