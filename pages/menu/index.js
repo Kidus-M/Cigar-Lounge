@@ -168,7 +168,7 @@ const Menu = () => {
           ))}
         </div>
 
-        <div className="mt-auto pt-16 px-4 flex flex-col items-center text-center">
+        <div className="mt-auto pt-16 px-4 flex flex-col items-center text-center mb-24">
           <p className="text-3xl md:text-4xl font-serif font-bold tracking-wider text-green-600">
             Wolf Den
           </p>
