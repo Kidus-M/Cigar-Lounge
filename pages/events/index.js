@@ -14,8 +14,14 @@ const events = [
   {
     name: "Jazzie Fridays",
     description:
-      "Live Jazz Friday nights from 6pm to 10pm.",
+      "Live Band Friday nights from 6pm to 10pm.",
     imageUrl: "/event-music-night.png",
+  },
+  {
+    name: "Smokie Saturdays",
+    description:
+      "When you purchase a cigar you get one whiskey for free!!!",
+    imageUrl: "/event-smokie-saturdays.png",
   },
   {
     name: "Birthday Celebration",
