@@ -12,7 +12,7 @@ const events = [
     imageUrl: "/event-music-night.png",
   },
   {
-    name: "Ladies Night",
+    name: "Ladies Thursday",
     description:
       "All drinks 50% off for all ladies. Thursday nights! 8:30pm to 10:30pm.",
     imageUrl: "/event-ladies-night.png",
