@@ -90,7 +90,7 @@ const Menu = () => {
         <meta name="robots" content="noindex, nofollow" />
       </Head>
 
-      <main className="bg-black min-h-screen py-12">
+      <main className="bg-black min-h-screen py-12 flex flex-col">
         <div className="px-4 text-center">
           
           <h1 className="text-4xl font-bold text-white mt-4">Menu</h1>
@@ -166,6 +166,15 @@ const Menu = () => {
               )}
             </div>
           ))}
+        </div>
+
+        <div className="mt-auto pt-16 px-4 flex flex-col items-center text-center">
+          <p className="text-3xl md:text-4xl font-serif font-bold tracking-wider text-green-600">
+            Wolf Den
+          </p>
+          <p className="mt-1 text-xs font-semibold tracking-[0.35em] text-white">
+            CIGAR LOUNGE
+          </p>
         </div>
       </main>
     </div>
