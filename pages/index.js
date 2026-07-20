@@ -35,10 +35,13 @@ export default function HeroSection() {
         {/* Content */}
         <div className="relative z-10 text-center space-y-8">
           <h1 className="text-6xl md:text-8xl font-serif text-white font-bold tracking-wider animate-fade-in">
-            Wolf Den Lounge
+            Wolf Den 
           </h1>
+          <h2 className="text-2xl md:text-4xl text-white font-light tracking-wide animate-fade-in delay-100">
+            CIGAR LOUNGE
+          </h2>
           <p className="text-xl md:text-3xl text-white font-light max-w-2xl mx-auto animate-fade-in-up delay-200">
-            Discover a hidden, upscale retreat where timeless elegance and
+            Discover a hidden, upscale retreat, where timeless elegance and
             genuine hospitality come together.
           </p>
         </div>
