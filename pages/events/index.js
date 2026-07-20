@@ -14,7 +14,7 @@ const events = [
   {
     name: "Jazz Fridays",
     description:
-      "An intimate evening of live music, warm energy, and the signature Wolf Den atmosphere.",
+      "Live Jazz Friday nights from 6pm to 10pm.dsd",
     imageUrl: "/event-music-night.png",
   },
   {
