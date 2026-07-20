@@ -9,19 +9,19 @@ const specialties = [
   {
     title: "Whiskey",
     description:
-      "We are no ordinary bar that carries to many selections that make your head spin. We simplfied our menu to be the premier whiskey experience. Our menu won't make your head spin but our whiskey will.",
+      "We are no ordinary bar. Our menu is simple. Whiskey, wine, and beer.  Our menu won't make your head spin, but our whiskey will!",
     imageUrl: "/old-fashioned.jpeg",
   },
   {
     title: "Cigars",
     description:
-      "All of our cigars are hand selected and imported.\n\nOut of stock due to high demand.\n\nComing soon.",
+      "All of our cigars are hand selected and imported.\n\n\nOut of stock due to high demand. \nComing soon!",
     imageUrl: "/event-smokie-saturdays.png",
   },
   {
     title: "Events",
     description:
-      "Our lounge provides an eventful experience everyday of the week. ",
+      "Our lounge provides an eventful experience everyday of the week. Check out our events page! ",
     imageUrl: "/event-music-night.png",
   },
 ];
@@ -37,7 +37,7 @@ const AboutPage = () => {
       <Navbar />
 
       <main className="bg-black text-gray-300">
-        <section className="relative min-h-[70vh] overflow-hidden flex items-center justify-center px-6 py-20">
+        <section className="relative min-h-[70vh] overflow-hidden flex items-center justify-center px-6 py-20 mb-0">
           <Image
             src="/about1.jpeg"
             alt="Warm and elegant Wolf Den lounge interior"
@@ -53,37 +53,22 @@ const AboutPage = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="relative z-10 max-w-4xl mx-auto text-center"
+            className="relative z-10 max-w-4xl mx-auto text-center mb-0"
           >
-            <h1 className="text-green-600 text-4xl font-bold uppercase tracking-[0.3em] mb-5">
+            <h1 className="text-green-600 text-4xl font-bold uppercase tracking-[0.3em] mb-8">
               A Simplified Experience
             </h1>
             <h1 className="text-5xl md:text-7xl font-bold text-white">
               Whiskey and Cigars
             </h1>
             <p className="mt-8 text-lg md:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
-              Wolf Den is a premier lounge in Addis Ababa. We bring the simplification of whiskey, cigars, and events that brings everyone together.
+              Wolf Den is a premier lounge in Addis Ababa. We bring the simplification of whiskey, cigars, and events that come together.
             </p>
           </motion.div>
         </section>
 
         <section className="max-w-7xl mx-auto px-6 md:px-12 py-20">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center max-w-3xl mx-auto mb-12"
-          >
-            {/* <h2 className="text-4xl md:text-5xl font-bold text-green-600">
-              Our Specialties
-            </h2>
-            <p className="mt-5 text-lg text-gray-300">
-              A thoughtful lounge experience, centered on the things we do
-              best.
-            </p> */}
-          </motion.div>
-
+          
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {specialties.map((specialty, index) => (
               <motion.article
@@ -105,7 +90,7 @@ const AboutPage = () => {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-2xl font-semibold text-green-600">
+                  <h3 className="text-2xl font-semibold text-green-600 text-center">
                     {specialty.title}
                   </h3>
                   <p className="mt-4 text-gray-300 leading-relaxed whitespace-pre-line">
