@@ -14,7 +14,7 @@ const events = [
   {
     name: "Jazzie Fridays",
     description:
-      "Live Band Friday nights from 6pm to 10pm.",
+      "Live band Friday nights from 6pm to 10pm.",
     imageUrl: "/event-music-night.png",
   },
   {
