@@ -3,12 +3,12 @@ import Image from "next/image";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import Head from "next/head";
-
+import { motion } from "framer-motion";
 const events = [
   {
     name: "Ladies Thursdays",
     description:
-      "All drinks 50% off for all ladies. Thursday nights! 8:30pm to 10:30pm.",
+      "All drinks 50% off for all ladies! Thursday nights 8:30pm to 10:30pm.",
     imageUrl: "/event-ladies-night.png",
   },
   {
@@ -26,7 +26,7 @@ const events = [
   {
     name: "Birthday Celebration",
     description:
-      "Show ID and bring at least three other people with you, and our birthday boy or birthday girl gets 3 free drinks!!!!",
+      "Show ID and bring at least three other people with you, and our birthday boy or birthday girl will get 3 free drinks!!!",
     imageUrl: "/event-birthday-celebration.png",
   },
 ];
@@ -40,6 +40,14 @@ const Events = () => {
       </Head>
       <Navbar />
       <div className="bg-black py-12">
+        <motion.h1
+                    initial={{ opacity: 0, y: -50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8 }}
+                    className="text-5xl font-bold text-green-600 text-center mb-24"
+                >
+                    Events
+                </motion.h1>
         
         <div className="max-w-7xl mx-auto space-y-8 px-4">
           {events.map((event) => (
