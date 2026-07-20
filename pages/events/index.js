@@ -6,7 +6,7 @@ import Head from "next/head";
 
 const events = [
   {
-    name: "Music Night",
+    name: "Jazz Fridays",
     description:
       "An intimate evening of live music, warm energy, and the signature Wolf Den atmosphere.",
     imageUrl: "/event-music-night.png",
@@ -20,7 +20,7 @@ const events = [
   {
     name: "Birthday Celebration",
     description:
-      "Celebrate your special day with the pack in an elegant setting made for unforgettable occasions.",
+      "Show ID and bring at least three other people with you, and our birthday boy or birthday girl gets 3 free drinks!!!!",
     imageUrl: "/event-birthday-celebration.png",
   },
 ];
