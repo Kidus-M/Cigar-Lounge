@@ -6,7 +6,7 @@ import Head from "next/head";
 import { motion } from "framer-motion";
 const events = [
   {
-    name: "Happy Days",
+    name: "Happy Hour + Tuesdays",
     description:
       "All beers 50% off. Happy hour from Monday to Friday 4pm to 7pm. Not enough?? The first 10 people who come in on Tuesdays during happy hour will get their third beer for free!!!",
     imageUrl: "/event-happy-wednesdays.png",
