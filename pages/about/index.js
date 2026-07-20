@@ -55,16 +55,14 @@ const AboutPage = () => {
             transition={{ duration: 0.8 }}
             className="relative z-10 max-w-4xl mx-auto text-center"
           >
-            <p className="text-green-600 font-bold uppercase tracking-[0.3em] mb-5">
-              About Wolf Den
-            </p>
+            <h1 className="text-green-600 text-4xl font-bold uppercase tracking-[0.3em] mb-5">
+              A Simplified Experience
+            </h1>
             <h1 className="text-5xl md:text-7xl font-bold text-white">
-              Where Good Taste Feels Like Home
+              Whiskey and Cigars
             </h1>
             <p className="mt-8 text-lg md:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
-              Wolf Den is an intimate Addis Ababa lounge built around three
-              things we care about deeply: characterful whiskey, exceptional
-              cigars, and events that bring people together.
+              Wolf Den is a premier lounge in Addis Ababa. We bring the simplification of whiskey, cigars, and events that brings everyone together.
             </p>
           </motion.div>
         </section>
@@ -77,13 +75,13 @@ const AboutPage = () => {
             viewport={{ once: true }}
             className="text-center max-w-3xl mx-auto mb-12"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-green-600">
+            {/* <h2 className="text-4xl md:text-5xl font-bold text-green-600">
               Our Specialties
             </h2>
             <p className="mt-5 text-lg text-gray-300">
               A thoughtful lounge experience, centered on the things we do
               best.
-            </p>
+            </p> */}
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
