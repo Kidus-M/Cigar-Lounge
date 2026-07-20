@@ -34,9 +34,7 @@ const Events = () => {
       </Head>
       <Navbar />
       <div className="bg-black py-12">
-        <h2 className="text-4xl font-bold text-center text-green-600 mb-8">
-          Upcoming Events
-        </h2>
+        
         <div className="max-w-7xl mx-auto space-y-8 px-4">
           {events.map((event) => (
             <div
