@@ -15,7 +15,7 @@ const specialties = [
   {
     title: "Cigars",
     description:
-      "All of our cigars are hand selected and imported.\n\n\nOut of stock due to high demand. \nComing soon!",
+      "All of our cigars are hand selected and imported.\n\n\nOut of stock due to high demand. Coming soon!",
     imageUrl: "/event-smokie-saturdays.png",
   },
   {
@@ -37,7 +37,7 @@ const AboutPage = () => {
       <Navbar />
 
       <main className="bg-black text-gray-300">
-        <section className="relative min-h-[70vh] overflow-hidden flex items-center justify-center px-6 py-20 mb-0">
+        <section className="relative min-h-[50vh] overflow-hidden flex items-center justify-center px-6 py-20 mb-0">
           <Image
             src="/about1.jpeg"
             alt="Warm and elegant Wolf Den lounge interior"
@@ -53,7 +53,7 @@ const AboutPage = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="relative z-10 max-w-4xl mx-auto text-center mb-0"
+            className="relative z-10 max-w-4xl mx-auto text-center"
           >
             <h1 className="text-green-600 text-4xl font-bold uppercase tracking-[0.3em] mb-8">
               A Simplified Experience
@@ -68,7 +68,6 @@ const AboutPage = () => {
         </section>
 
         <section className="max-w-7xl mx-auto px-6 md:px-12 py-20">
-          
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {specialties.map((specialty, index) => (
               <motion.article
