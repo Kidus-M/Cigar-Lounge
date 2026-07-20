@@ -14,7 +14,7 @@ const events = [
   {
     name: "Ladies Night",
     description:
-      "A stylish evening created for great company, memorable moments, and an elevated night out.",
+      "All drinks 50% off for all ladies. Thursday nights! 8:30pm to 10:30pm.",
     imageUrl: "/event-ladies-night.png",
   },
   {
