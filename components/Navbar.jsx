@@ -12,6 +12,7 @@ export default function Navbar() {
   const router = useRouter();
 
   const navLinks = [
+    { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     {name: "Staff", path: "/Staff" },
     { name: "Events", path: "/events" },
