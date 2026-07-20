@@ -6,16 +6,16 @@ import Head from "next/head";
 
 const events = [
   {
-    name: "Jazz Fridays",
-    description:
-      "An intimate evening of live music, warm energy, and the signature Wolf Den atmosphere.",
-    imageUrl: "/event-music-night.png",
-  },
-  {
     name: "Ladies Thursdays",
     description:
       "All drinks 50% off for all ladies. Thursday nights! 8:30pm to 10:30pm.",
     imageUrl: "/event-ladies-night.png",
+  },
+  {
+    name: "Jazz Fridays",
+    description:
+      "An intimate evening of live music, warm energy, and the signature Wolf Den atmosphere.",
+    imageUrl: "/event-music-night.png",
   },
   {
     name: "Birthday Celebration",
