@@ -125,37 +125,8 @@ const Contacts = () => {
                         <div className="flex items-start">
                           <div className="shrink-0">
                             <div className="inline-block p-4 text-green-600">
-                              <Phone size={40} />
-                            </div>
-                          </div>
-                          <div className="ml-6 grow">
-                            <p className="mb-2 font-bold text-white">Phone Number</p>
-                            <a href="tel:0979398094" className="text-white">
-                              +251-979-398-094
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="mb-12 w-full md:w-6/12 md:px-3 lg:px-6">
-                        <div className="flex items-start">
-                          <div className="shrink-0">
-                            <div className="inline-block p-4 text-green-600">
-                              <MailOpen size={40} />
-                            </div>
-                          </div>
-                          <div className="ml-6 grow">
-                            <p className="mb-2 font-bold text-white">Email</p>
-                            <p className="text-white">Wolfdenaddis@gmail.com</p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="mb-12 w-full md:w-6/12 md:px-3 lg:px-6">
-                        <div className="flex items-start">
-                          <div className="shrink-0">
-                            <div className="inline-block p-4 text-green-600">
                               <MapPin size={40} />
+                              
                             </div>
                           </div>
                           <div className="ml-6 grow">
@@ -169,8 +140,49 @@ const Contacts = () => {
                               Bole Matemiya, Addis Ababa
                             </a>
                           </div>
+            
                         </div>
                       </div>
+                      <div className="mb-12 w-full md:w-6/12 md:px-3 lg:px-6">
+                        <div className="flex items-start">
+                          <div className="shrink-0">
+                            <div className="inline-block p-4 text-green-600">
+                              <Youtube size={50} />
+                            </div>
+                          </div>
+                          <div className="ml-6 grow">
+                            <p className="mb-2 font-bold text-white">Youtube</p>
+                            <a
+                                href="https://www.youtube.com/@Wolf-f7r"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="text-white"
+                            >
+                              Wolf Den
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      
+ <div className="mb-12 w-full md:w-6/12 md:px-3 lg:px-6">
+                        <div className="flex items-start">
+                          <div className="shrink-0">
+                            <div className="inline-block p-4 text-green-600">
+                              
+                              <Phone size={40} />
+                            </div>
+                          </div>
+                          <div className="ml-6 grow">
+                            <p className="mb-2 font-bold text-white">Phone Number</p>
+                            <a href="tel:0979398094" className="text-white">
+                              +251-979-398-094
+                            </a>
+                          </div>
+                          
+                        </div>
+                      </div>
+                     
 
                       <div className="mb-12 w-full md:w-6/12 md:px-3 lg:px-6">
                         <div className="flex items-start">
@@ -197,19 +209,12 @@ const Contacts = () => {
                         <div className="flex items-start">
                           <div className="shrink-0">
                             <div className="inline-block p-4 text-green-600">
-                              <Youtube size={50} />
+                              <MailOpen size={40} />
                             </div>
                           </div>
-                          <div className="ml-6 grow">
-                            <p className="mb-2 font-bold text-white">Youtube</p>
-                            <a
-                                href="https://www.youtube.com/@Wolf-f7r"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="text-white"
-                            >
-                              Wolf Den
-                            </a>
+                         <div className="ml-6 grow">
+                            <p className="mb-2 font-bold text-white">Email</p>
+                            <p className="text-green-500">Wolfdenaddis@gmail.com</p>
                           </div>
                         </div>
                       </div>
