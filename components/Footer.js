@@ -93,7 +93,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
             <p className="text-sm text-white">
-              © 2025 Wolf Den Lounge. All rights reserved.
+              © 2026 Wolf Den Lounge. All rights reserved.
             </p>
           </div>
         </div>
