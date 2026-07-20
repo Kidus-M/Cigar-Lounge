@@ -14,24 +14,6 @@ const staffMembers = [
         imageUrl: "/staff2.jpg",
     },
     {
-        name: "Helen ",
-        role: "Hostess",
-        bio: "Hi. My name is Helen and I am a hostess at Wolf Den. I have a degree in Hotel Management. I have several years of experience in waitressing and video editing.",
-        imageUrl: "/staff5.jpg",
-    },
-    {
-        name: "Kidist",
-        role: "Hostess",
-        bio: "Hello. My name is Kidist and I am your hostess at Wolf Den. I am currently studying to be a pharmacist and I bring waitress experience with me to the Wolf Den.",
-        imageUrl: "/staff6.jpg",
-    },
-    {
-        name: "Kidist",
-        role: "Hostess",
-        bio: "Hello. My name is Kidist. I bring professional experience in waitressing. I will be your hostess at the Wolf Den.",
-        imageUrl: "/staff7.jpg",
-    },
-    {
         name: "Blen",
         role: "Social Media and Event Coordinator",
         bio: "Hi. I’m Blen. I am currently studing Marketing Management and will be graduating in 2026. Right now, I oversee the social media platforms for Wolf Den. I enjoy working on creative content, engaging with customers, and learning more about the digital space as I go.",
@@ -42,12 +24,6 @@ const staffMembers = [
         role: "Social Media and Event Coordinator",
         bio: "Hello. I’m Bitanya. I am a Marketing Management graduate from Unity University. I have work experience in sales, employee training, and team leadership. I oversee the digital marketing at Wolf Den.",
         imageUrl: "/staff4.jpg",
-    },
-    {
-        name: "Tsegereda",
-        role: "Accountant",
-        bio: "Hello. I'm Tsegereda. I am an accountant at the Wolf Den Lounge. I hold a Bachelor of Arts in Accounting and have accumulated seven years of experience in accounting and auditing. I am thrilled to be a member of the Wolf Den family. Cheers!",
-        imageUrl: "/staff1.jpg",
     },
 ];
 

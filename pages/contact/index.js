@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
-import { MailOpen, Phone, Youtube, Instagram } from "lucide-react";
+import { MailOpen, MapPin, Phone, Youtube, Instagram } from "lucide-react";
 import Head from "next/head";
 
 const Contacts = () => {
@@ -43,7 +43,7 @@ const Contacts = () => {
         <section className="bg-black mt-20">
           <div id="map" className="relative h-[300px] bg-black">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3940.735504050806!2d38.770424999999996!3d8.996468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwNTknNDcuMyJOIDM4wrA0NicxMy41IkU!5e0!3m2!1sen!2set!4v1739611609218!5m2!1sen!2set"
+                src="https://www.google.com/maps?q=Bole%20Matemiya%2C%20Addis%20Ababa&output=embed"
                 width="100%"
                 height="480"
                 allowFullScreen=""
@@ -147,6 +147,27 @@ const Contacts = () => {
                           <div className="ml-6 grow">
                             <p className="mb-2 font-bold text-white">Email</p>
                             <p className="text-white">Wolfdenaddis@gmail.com</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="mb-12 w-full md:w-6/12 md:px-3 lg:px-6">
+                        <div className="flex items-start">
+                          <div className="shrink-0">
+                            <div className="inline-block p-4 text-green-600">
+                              <MapPin size={40} />
+                            </div>
+                          </div>
+                          <div className="ml-6 grow">
+                            <p className="mb-2 font-bold text-white">Address</p>
+                            <a
+                                href="https://www.google.com/maps/search/?api=1&query=Bole+Matemiya%2C+Addis+Ababa"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="text-white"
+                            >
+                              Bole Matemiya, Addis Ababa
+                            </a>
                           </div>
                         </div>
                       </div>

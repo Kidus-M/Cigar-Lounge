@@ -11,11 +11,10 @@ export default function Footer() {
             </span>
               <div className="mt-6 lg:max-w-sm">
                 <p className="text-sm text-white">
-                  Elegance, relaxation, and the finest drinks in the
-                  city.
+                  Elegance, relaxation, and refined hospitality in the city.
                 </p>
                 <p className="mt-4 text-sm text-white">
-                  Where elegance meets relaxation, and every sip is an experience.
+                  Where elegance meets relaxation, and every visit is an experience.
                 </p>
               </div>
             </div>
@@ -48,14 +47,14 @@ export default function Footer() {
               <div className="flex text-white">
                 <p className="mr-1 text-white">Address:</p>
                 <a
-                    href="https://maps.app.goo.gl/Ph5JPnx6KVDjyqps8"
+                    href="https://www.google.com/maps/search/?api=1&query=Bole+Matemiya%2C+Addis+Ababa"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Our address"
                     title="Our address"
                     className="transition-colors duration-300 text-white hover:text-green-600"
                 >
-                  From Gazebo to Wollo Sefer road, Addis Ababa
+                  Bole Matemiya, Addis Ababa
                 </a>
               </div>
             </div>

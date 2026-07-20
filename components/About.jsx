@@ -9,9 +9,10 @@ export default function About() {
       {/* Background Overlay */}
       <div className="absolute inset-0">
         <Image
-          src="/about1.jpg"
-          layout="fill"
-          objectFit="cover"
+          src="/about1.jpeg"
+          fill
+          sizes="100vw"
+          style={{ objectFit: "cover" }}
           alt="Elegant lounge interior"
           className="opacity-60"
         />
@@ -44,8 +45,7 @@ export default function About() {
               src="/about1.jpeg"
               width={500}
               height={350}
-              objectFit="cover"
-              className="rounded-lg shadow-lg"
+              className="rounded-lg shadow-lg object-cover"
               alt="Elegant lounge interior"
             />
           </div>
@@ -56,9 +56,8 @@ export default function About() {
               src="/about2.jpeg"
               width={500}
               height={350}
-              objectFit="cover"
-              className="rounded-lg shadow-lg"
-              alt="Premium cocktails served"
+              className="rounded-lg shadow-lg object-cover"
+              alt="Elegant lounge details"
             />
           </div>
 
@@ -68,8 +67,7 @@ export default function About() {
               src="/about3.jpg"
               width={500}
               height={350}
-              objectFit="cover"
-              className="rounded-lg shadow-lg"
+              className="rounded-lg shadow-lg object-cover"
               alt="Luxurious seating area"
             />
           </div>
@@ -84,7 +82,7 @@ export default function About() {
           viewport={{ once: true }}
         >
           <p className="text-xl">At
-            <span className=""> Wolf Den </span>we are excited to introduce the first premiere cigar lounge in Ethiopia. We strive to create  a hidden upscale environment where our clients can escape into seclusion. Come join us and allow us to provide you with a tranquil atmosphere, fine service, and premier drinks complemented by our cigar collection. Welcome to the Wolf Den!
+            <span className=""> Wolf Den </span>we are excited to introduce the first premiere cigar lounge in Ethiopia. We strive to create a hidden upscale environment where our clients can escape into seclusion. Come join us and allow us to provide you with a tranquil atmosphere, fine service, and a distinguished cigar collection. Welcome to the Wolf Den!
 
           </p>
 
