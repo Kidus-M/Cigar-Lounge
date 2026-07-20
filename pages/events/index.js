@@ -12,6 +12,12 @@ const events = [
     imageUrl: "/event-happy-wednesdays.png",
   },
   {
+    name: "Mani Wednesdays",
+    description:
+      "Get your nails touched up. Enjoy 50% off your first drink with a purchase of a touch up manicure!",
+    imageUrl: "/event-mani-wednesdays.png",
+  },
+  {
     name: "Ladies Thursdays",
     description:
       "All drinks 50% off for all ladies! Thursday nights 8:30pm to 10:30pm.",
