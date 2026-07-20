@@ -10,6 +10,69 @@ const categories = [
   "Non-Alcoholic",
 ];
 
+const menuItems = {
+  Whiskey: [
+    {
+      name: "Red Label",
+      options: [
+        { label: "Bottle", price: "6,500 birr" },
+        { label: "30ml", price: "325 birr" },
+        { label: "50ml", price: "542 birr" },
+      ],
+    },
+    {
+      name: "Black Label",
+      options: [
+        { label: "Bottle", price: "9,300 birr" },
+        { label: "30ml", price: "465 birr" },
+        { label: "50ml", price: "775 birr" },
+      ],
+    },
+    {
+      name: "Gold Label",
+      options: [
+        { label: "Bottle", price: "23,600 birr" },
+        { label: "30ml", price: "1,180 birr" },
+        { label: "50ml", price: "1,967 birr" },
+      ],
+    },
+    {
+      name: "Blue Label",
+      options: [
+        { label: "Bottle", price: "60,000 birr" },
+        { label: "30ml", price: "3,000 birr" },
+        { label: "50ml", price: "5,000 birr" },
+      ],
+    },
+  ],
+  Wine: [
+    {
+      name: "The Prince",
+      note: "Wine of South Africa",
+      price: "4,000 birr",
+    },
+    { name: "Gouder Red Wine", price: "1,500 birr" },
+    { name: "Acacia", note: "Medium Sweet Red", price: "1,500 birr" },
+    { name: "Acacia", note: "Medium Sweet White", price: "1,500 birr" },
+  ],
+  Beer: [
+    { name: "Heineken Beer", price: "200 birr" },
+    { name: "St. George Beer", price: "200 birr" },
+  ],
+  "House Cocktails": [
+    { name: "The Den’s Embrace", price: "900 birr" },
+    { name: "Whiskey Sour", price: "1,000 birr" },
+  ],
+  "Non-Alcoholic": [
+    { name: "Coca-Cola", price: "100 birr" },
+    { name: "Sprite", price: "100 birr" },
+    { name: "Water", price: "100 birr" },
+    { name: "Ambo Water", price: "100 birr" },
+    { name: "Tea", price: "150 birr" },
+    { name: "Coffee", price: "150 birr" },
+  ],
+};
+
 const Menu = () => {
   const [openCategory, setOpenCategory] = useState(null);
 
@@ -57,7 +120,48 @@ const Menu = () => {
 
               {openCategory === category && (
                 <div className="mt-2 rounded-lg border border-green-600/30 bg-gray-900 px-6 py-5 text-left text-gray-300">
-                  Menu selections coming soon.
+                  <div className="divide-y divide-gray-700">
+                    {menuItems[category].map((item, itemIndex) => (
+                      <div
+                        key={`${item.name}-${item.note || itemIndex}`}
+                        className="py-4 first:pt-0 last:pb-0"
+                      >
+                        <div className="flex items-start justify-between gap-6">
+                          <div>
+                            <h2 className="text-lg font-semibold text-white">
+                              {item.name}
+                            </h2>
+                            {item.note && (
+                              <p className="mt-1 text-sm text-gray-400">
+                                {item.note}
+                              </p>
+                            )}
+                          </div>
+                          {item.price && (
+                            <p className="shrink-0 font-semibold text-green-500">
+                              {item.price}
+                            </p>
+                          )}
+                        </div>
+
+                        {item.options && (
+                          <div className="mt-3 space-y-2">
+                            {item.options.map((option) => (
+                              <div
+                                key={option.label}
+                                className="flex items-center justify-between gap-6 text-sm"
+                              >
+                                <span>{option.label}</span>
+                                <span className="font-semibold text-green-500">
+                                  {option.price}
+                                </span>
+                              </div>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>
