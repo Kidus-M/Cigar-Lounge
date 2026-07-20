@@ -20,7 +20,7 @@ const events = [
   {
     name: "Smokie Saturdays",
     description:
-      "When you purchase a cigar you get one whiskey for free!!!",
+      "Purchase a cigar anytime you like. But when you purchase a cigar on Saturdays, you get one glass of whiskey free!!!",
     imageUrl: "/event-smokie-saturdays.png",
   },
   {
