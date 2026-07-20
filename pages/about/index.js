@@ -7,21 +7,21 @@ import Head from "next/head";
 
 const specialties = [
   {
-    title: "Whiskey with Character",
+    title: "Whiskey",
     description:
-      "Our whiskey selection is focused, approachable, and chosen for the moments that deserve to be savored. Every bottle earns its place.",
+      "We are no ordinary bar that carries to many selections that make your head spin. We simplfied our menu to be the premier whiskey experience. Our menu won't make your head spin but our whiskey will.",
     imageUrl: "/old-fashioned.jpeg",
   },
   {
-    title: "Cigars Worth Slowing Down For",
+    title: "Cigars",
     description:
-      "We celebrate the quiet ritual of a fine cigar: time to settle in, enjoy the craft, and let conversation unfold naturally.",
+      "All of our cigars are hand selected and imported.\n\nOut of stock due to high demand.\n\nComing soon.",
     imageUrl: "/event-smokie-saturdays.png",
   },
   {
-    title: "Events with a Pulse",
+    title: "Events",
     description:
-      "From live music to weekly celebrations, our events turn familiar nights into occasions the whole pack can share.",
+      "Our lounge provides an eventful experience everyday of the week. ",
     imageUrl: "/event-music-night.png",
   },
 ];
@@ -108,7 +108,7 @@ const AboutPage = () => {
                   <h3 className="text-2xl font-semibold text-green-600">
                     {specialty.title}
                   </h3>
-                  <p className="mt-4 text-gray-300 leading-relaxed">
+                  <p className="mt-4 text-gray-300 leading-relaxed whitespace-pre-line">
                     {specialty.description}
                   </p>
                 </div>
@@ -117,7 +117,7 @@ const AboutPage = () => {
           </div>
         </section>
 
-        <section className="max-w-5xl mx-auto px-6 md:px-12 pb-20">
+        {/* <section className="max-w-5xl mx-auto px-6 md:px-12 pb-20">
           <motion.div
             initial={{ opacity: 0, y: 35 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -137,7 +137,7 @@ const AboutPage = () => {
               considered, and easy to enjoy. Quality leads; clutter stays out.
             </p>
           </motion.div>
-        </section>
+        </section> */}
 
         <section className="max-w-6xl mx-auto px-6 md:px-12 pb-20">
           <motion.div
@@ -187,20 +187,18 @@ const AboutPage = () => {
                 Women Behind the Den
               </p>
               <h2 className="mt-5 text-4xl md:text-5xl font-bold text-white">
-                Hospitality led by women
+                Supporting Women Everywhere 
               </h2>
               <p className="mt-6 text-lg md:text-xl leading-relaxed">
-                Wolf Den is proudly powered by an all-female team. Women lead
+                Wolf Den is proudly powered by an all women team. Women lead
                 our hospitality, operations, events, and creative direction,
                 bringing care, confidence, and fresh perspective to every part
-                of the lounge.
-              </p>
-              <p className="mt-5 text-lg md:text-xl leading-relaxed">
-                Supporting Wolf Den means supporting women&apos;s
+                of the lounge. Supporting Wolf Den means supporting women&apos;s
                 entrepreneurship, professional growth, and leadership. It is
-                not simply something we say; it is part of how we work every
+                not simply something we say, it is part of how we work every
                 day.
               </p>
+             
             </motion.div>
           </div>
         </section>
