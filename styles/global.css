@@ -26,3 +26,42 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.wolf-den-map-marker {
+  align-items: center;
+  background: #050505;
+  border: 2px solid #d4af37;
+  border-radius: 9999px 9999px 9999px 0;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 45%);
+  color: #d4af37;
+  display: flex;
+  font-size: 25px;
+  height: 52px;
+  justify-content: center;
+  transform: rotate(-45deg);
+  width: 52px;
+}
+
+.wolf-den-map-marker span {
+  line-height: 1;
+  transform: rotate(45deg);
+}
+
+.wolf-den-map-popup {
+  color: #111;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Gilmer Light', sans-serif;
+  gap: 3px;
+  min-width: 190px;
+}
+
+.wolf-den-map-popup strong {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+.wolf-den-map-popup span {
+  font-size: 12px;
+  line-height: 1.45;
+}
