@@ -6,7 +6,7 @@ import Navbar from "../../components/Navbar";
 import WolfDenMap from "../../components/WolfDenMap";
 
 const locationLabel = "Bole Matemiya, Addis Ababa";
-const directionsUrl = "https://www.google.com/maps/search/?api=1&query=8.997187%2C38.769612";
+const directionsUrl = "https://www.google.com/maps/search/?api=1&query=8.996513499441487%2C38.769730169592755";
 
 const Contacts = () => {
   const [status, setStatus] = useState(null);
@@ -35,7 +35,7 @@ const Contacts = () => {
     <div className="min-h-screen bg-black">
       <Head>
         <title>Contact | Wolf Den Lounge</title>
-        <meta name="description" content="Contact Wolf Den Lounge, view our opening hours, and find us in the S&F Building in Bole Matemiya, Addis Ababa." />
+        <meta name="description" content="Contact Wolf Den Lounge, view our opening hours, and find us in the A&F Building in Bole Matemiya, Addis Ababa." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
@@ -110,7 +110,7 @@ const Contacts = () => {
             <div>
               <p className="mb-3 text-sm font-semibold uppercase tracking-[0.28em] text-green-500">Bole Matemiya</p>
               <h2 id="find-the-den" className="text-3xl font-bold text-white">Find the Den</h2>
-              <p className="mt-3 max-w-2xl leading-relaxed text-zinc-300">We are in the S&amp;F Building, directly in front of Andinet Butchery.</p>
+              <p className="mt-3 max-w-2xl leading-relaxed text-zinc-300">We are in the A&amp;F Building, directly in front of Andinet Butchery.</p>
             </div>
             <a href={directionsUrl} target="_blank" rel="noreferrer" className="inline-flex w-fit items-center gap-2 rounded-md border border-green-600 px-5 py-3 font-medium text-green-500 transition hover:bg-green-600 hover:text-white">
               <MapPin aria-hidden="true" size={20} /> Open directions

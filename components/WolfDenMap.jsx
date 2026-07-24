@@ -1,68 +1,15 @@
-import { useEffect, useRef } from "react";
-
-const WOLF_DEN_LOCATION = [8.997187, 38.769612];
+const mapEmbedUrl =
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d985.1837521498636!2d38.769730169592755!3d8.996513499441487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b850483b8f6c5%3A0xa5b48fae0775c152!2sWolf%20den%20Cigar%20Lounge!5e0!3m2!1sen!2set!4v1784886873709!5m2!1sen!2set";
 
 export default function WolfDenMap() {
-  const mapElement = useRef(null);
-
-  useEffect(() => {
-    let map;
-    let cancelled = false;
-
-    const createMap = async () => {
-      const L = await import("leaflet");
-
-      if (cancelled || !mapElement.current) {
-        return;
-      }
-
-      map = L.map(mapElement.current, {
-        scrollWheelZoom: false,
-        zoomControl: true,
-      }).setView(WOLF_DEN_LOCATION, 17);
-
-      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        attribution:
-          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-        maxZoom: 19,
-      }).addTo(map);
-
-      const wolfDenIcon = L.divIcon({
-        className: "wolf-den-map-marker",
-        html: '<span aria-hidden="true">&#9733;</span>',
-        iconSize: [52, 52],
-        iconAnchor: [26, 52],
-        popupAnchor: [0, -48],
-      });
-
-      L.marker(WOLF_DEN_LOCATION, {
-        icon: wolfDenIcon,
-        title: "Wolf Den Lounge",
-        alt: "Wolf Den Lounge location",
-      })
-        .addTo(map)
-        .bindPopup(
-          '<div class="wolf-den-map-popup"><strong>Wolf Den Lounge</strong><span>S&amp;F Building, in front of Andinet Butchery</span></div>',
-        )
-        .openPopup();
-    };
-
-    createMap();
-
-    return () => {
-      cancelled = true;
-      if (map) {
-        map.remove();
-      }
-    };
-  }, []);
-
   return (
-    <div
-      ref={mapElement}
-      className="h-[420px] w-full bg-zinc-900 md:h-[520px]"
-      role="region"
-      aria-label="Interactive map showing the Wolf Den Lounge location"
+    <iframe
+      src={mapEmbedUrl}
+      title="Wolf Den Cigar Lounge location"
+      className="h-[420px] w-full border-0 md:h-[520px]"
+      allowFullScreen
+      loading="lazy"
+      referrerPolicy="strict-origin-when-cross-origin"
     />
   );
 }
