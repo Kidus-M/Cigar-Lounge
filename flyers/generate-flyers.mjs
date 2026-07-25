@@ -19,6 +19,7 @@ const events = [
     slug: "happy-hour-tuesdays",
     name: "Happy Hour + Tuesdays",
     day: "TUESDAY",
+    cadence: "DAILY AT THE DEN",
     description:
       "All beers 50% off. Happy hour from Monday to Friday 4pm to 7pm. Not enough?? The first 10 people who come in on Tuesdays during happy hour will get their third beer for free!!!",
     image: "event-happy-wednesdays.png",
@@ -51,12 +52,13 @@ const events = [
   },
   {
     order: "05",
-    slug: "smokie-saturdays",
-    name: "Smokie Saturdays",
+    slug: "college-nights",
+    name: "College Nights",
     day: "SATURDAY",
     description:
-      "Purchase a cigar anytime you like. But when you purchase a cigar on Saturdays, you get one glass of whiskey free!!!",
-    image: "event-smokie-saturdays.png",
+      "50% off all beers, for all our college students, every Saturday night! Must show your student ID.",
+    image: "event-college-nights.png",
+    status: "Coming Soon",
   },
 ];
 
@@ -147,11 +149,8 @@ function flyerSvg(event) {
 
   <rect width="1500" height="2400" fill="#020302"/>
   <rect width="1500" height="180" fill="url(#headerGlow)"/>
-  <g transform="translate(88 42)">
-    <circle cx="48" cy="48" r="42" fill="none" stroke="#22c55e" stroke-width="6"/>
-    <path d="M29 53 L44 68 L70 29" fill="none" stroke="#22c55e" stroke-width="7"
-      stroke-linecap="round" stroke-linejoin="round"/>
-    <text x="120" y="65" fill="#ffffff" font-family="'Segoe UI', Arial, sans-serif"
+  <g transform="translate(90 42)">
+    <text x="0" y="65" fill="#ffffff" font-family="'Segoe UI', Arial, sans-serif"
       font-size="58" font-weight="900" letter-spacing="7">WOLF DEN LOUNGE</text>
   </g>
   <g transform="translate(1135 42)">
@@ -171,7 +170,7 @@ function flyerSvg(event) {
   <rect x="0" y="1180" width="1500" height="8" fill="#d6ad60"/>
 
   <text x="90" y="1290" fill="#22c55e" font-family="'Segoe UI', Arial, sans-serif"
-    font-size="30" font-weight="800" letter-spacing="10">WEEKLY AT THE DEN</text>
+    font-size="30" font-weight="800" letter-spacing="10">${event.cadence ?? "WEEKLY AT THE DEN"}</text>
   <text x="90" y="1435" fill="#ffffff" font-family="'Arial Narrow', 'Segoe UI', Arial, sans-serif"
     font-size="92" font-weight="900" letter-spacing="-2">${escapeXml(event.name)}</text>
   <rect x="90" y="1482" width="1180" height="8" rx="4" fill="#16a34a"/>
@@ -179,10 +178,15 @@ function flyerSvg(event) {
 
   <text x="90" y="1578" fill="#e4e4e7" font-family="'Segoe UI', Arial, sans-serif"
     font-size="${descriptionSize}" font-weight="500">${descriptionTspans}</text>
+  ${event.status ? `<g transform="translate(90 1715)">
+    <rect width="310" height="72" rx="36" fill="#16a34a"/>
+    <text x="155" y="48" text-anchor="middle" fill="#ffffff" font-family="'Segoe UI', Arial, sans-serif"
+      font-size="29" font-weight="900" letter-spacing="4">${event.status}</text>
+  </g>` : ""}
 
   <g transform="translate(988 1848)">
     <text x="216" y="0" text-anchor="middle" fill="#22c55e"
-      font-family="'Segoe UI', Arial, sans-serif" font-size="24" font-weight="900" letter-spacing="3">SCAN FOR ALL EVENTS</text>
+      font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="900" letter-spacing="3">Events</text>
     <rect x="0" y="34" width="424" height="424" rx="24" fill="#ffffff" filter="url(#shadow)"/>
     <image href="../assets/wolf-den-events-qr.svg" x="16" y="50" width="392" height="392" image-rendering="pixelated"/>
   </g>

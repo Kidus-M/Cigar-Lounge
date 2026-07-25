@@ -30,10 +30,10 @@ const events = [
     imageUrl: "/event-music-night.png",
   },
   {
-    name: "Smokie Saturdays",
+    name: "College Nights",
     description:
-      "Purchase a cigar anytime you like. But when you purchase a cigar on Saturdays, you get one glass of whiskey free!!!",
-    imageUrl: "/event-smokie-saturdays.png",
+      "50% off all beers, for all our college students, every Saturday night! Must show your student ID.",
+    imageUrl: "/event-college-nights.png",
   },
   {
     name: "Birthday Celebration",

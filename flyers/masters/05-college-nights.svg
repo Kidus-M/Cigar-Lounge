@@ -2,8 +2,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   width="1500" height="2400" viewBox="0 0 1500 2400" role="img"
   aria-labelledby="title description">
-  <title id="title">Smokie Saturdays — Wolf Den Lounge</title>
-  <desc id="description">Purchase a cigar anytime you like. But when you purchase a cigar on Saturdays, you get one glass of whiskey free!!!</desc>
+  <title id="title">College Nights — Wolf Den Lounge</title>
+  <desc id="description">50% off all beers, for all our college students, every Saturday night! Must show your student ID.</desc>
 
   <defs>
     <clipPath id="photoClip">
@@ -32,11 +32,8 @@
 
   <rect width="1500" height="2400" fill="#020302"/>
   <rect width="1500" height="180" fill="url(#headerGlow)"/>
-  <g transform="translate(88 42)">
-    <circle cx="48" cy="48" r="42" fill="none" stroke="#22c55e" stroke-width="6"/>
-    <path d="M29 53 L44 68 L70 29" fill="none" stroke="#22c55e" stroke-width="7"
-      stroke-linecap="round" stroke-linejoin="round"/>
-    <text x="120" y="65" fill="#ffffff" font-family="'Segoe UI', Arial, sans-serif"
+  <g transform="translate(90 42)">
+    <text x="0" y="65" fill="#ffffff" font-family="'Segoe UI', Arial, sans-serif"
       font-size="58" font-weight="900" letter-spacing="7">WOLF DEN LOUNGE</text>
   </g>
   <g transform="translate(1135 42)">
@@ -47,7 +44,7 @@
   </g>
   <rect x="0" y="174" width="1500" height="6" fill="#22c55e"/>
   <g clip-path="url(#photoClip)">
-    <image href="../assets/event-smokie-saturdays.png" x="0" y="180" width="1500" height="1000"
+    <image href="../assets/event-college-nights.png" x="0" y="180" width="1500" height="1000"
       preserveAspectRatio="xMidYMid meet"/>
   </g>
 
@@ -58,16 +55,21 @@
   <text x="90" y="1290" fill="#22c55e" font-family="'Segoe UI', Arial, sans-serif"
     font-size="30" font-weight="800" letter-spacing="10">WEEKLY AT THE DEN</text>
   <text x="90" y="1435" fill="#ffffff" font-family="'Arial Narrow', 'Segoe UI', Arial, sans-serif"
-    font-size="92" font-weight="900" letter-spacing="-2">Smokie Saturdays</text>
+    font-size="92" font-weight="900" letter-spacing="-2">College Nights</text>
   <rect x="90" y="1482" width="1180" height="8" rx="4" fill="#16a34a"/>
   <rect x="1270" y="1482" width="140" height="8" rx="4" fill="#d6ad60"/>
 
   <text x="90" y="1578" fill="#e4e4e7" font-family="'Segoe UI', Arial, sans-serif"
-    font-size="49" font-weight="500"><tspan x="90" dy="0">Purchase a cigar anytime you like. But when you</tspan><tspan x="90" dy="66">purchase a cigar on Saturdays, you get one glass of</tspan><tspan x="90" dy="66">whiskey free!!!</tspan></text>
+    font-size="49" font-weight="500"><tspan x="90" dy="0">50% off all beers, for all our college students, every</tspan><tspan x="90" dy="66">Saturday night! Must show your student ID.</tspan></text>
+  <g transform="translate(90 1715)">
+    <rect width="310" height="72" rx="36" fill="#16a34a"/>
+    <text x="155" y="48" text-anchor="middle" fill="#ffffff" font-family="'Segoe UI', Arial, sans-serif"
+      font-size="29" font-weight="900" letter-spacing="4">Coming Soon</text>
+  </g>
 
   <g transform="translate(988 1848)">
     <text x="216" y="0" text-anchor="middle" fill="#22c55e"
-      font-family="'Segoe UI', Arial, sans-serif" font-size="24" font-weight="900" letter-spacing="3">SCAN FOR ALL EVENTS</text>
+      font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="900" letter-spacing="3">Events</text>
     <rect x="0" y="34" width="424" height="424" rx="24" fill="#ffffff" filter="url(#shadow)"/>
     <image href="../assets/wolf-den-events-qr.svg" x="16" y="50" width="392" height="392" image-rendering="pixelated"/>
   </g>

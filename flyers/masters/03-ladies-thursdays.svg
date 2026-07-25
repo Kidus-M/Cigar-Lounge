@@ -32,11 +32,8 @@
 
   <rect width="1500" height="2400" fill="#020302"/>
   <rect width="1500" height="180" fill="url(#headerGlow)"/>
-  <g transform="translate(88 42)">
-    <circle cx="48" cy="48" r="42" fill="none" stroke="#22c55e" stroke-width="6"/>
-    <path d="M29 53 L44 68 L70 29" fill="none" stroke="#22c55e" stroke-width="7"
-      stroke-linecap="round" stroke-linejoin="round"/>
-    <text x="120" y="65" fill="#ffffff" font-family="'Segoe UI', Arial, sans-serif"
+  <g transform="translate(90 42)">
+    <text x="0" y="65" fill="#ffffff" font-family="'Segoe UI', Arial, sans-serif"
       font-size="58" font-weight="900" letter-spacing="7">WOLF DEN LOUNGE</text>
   </g>
   <g transform="translate(1135 42)">
@@ -64,10 +61,11 @@
 
   <text x="90" y="1578" fill="#e4e4e7" font-family="'Segoe UI', Arial, sans-serif"
     font-size="49" font-weight="500"><tspan x="90" dy="0">All drinks 50% off for all ladies! Thursday nights</tspan><tspan x="90" dy="66">8:30pm to 10:30pm.</tspan></text>
+  
 
   <g transform="translate(988 1848)">
     <text x="216" y="0" text-anchor="middle" fill="#22c55e"
-      font-family="'Segoe UI', Arial, sans-serif" font-size="24" font-weight="900" letter-spacing="3">SCAN FOR ALL EVENTS</text>
+      font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="900" letter-spacing="3">Events</text>
     <rect x="0" y="34" width="424" height="424" rx="24" fill="#ffffff" filter="url(#shadow)"/>
     <image href="../assets/wolf-den-events-qr.svg" x="16" y="50" width="392" height="392" image-rendering="pixelated"/>
   </g>
