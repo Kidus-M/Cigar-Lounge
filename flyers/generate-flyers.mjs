@@ -58,7 +58,6 @@ const events = [
     description:
       "50% off all beers, for all our college students, every Saturday night! Must show your student ID.",
     image: "event-college-nights.png",
-    status: "Coming Soon",
   },
 ];
 
@@ -114,6 +113,8 @@ function flyerSvg(event) {
         `<tspan x="90" dy="${index === 0 ? 0 : Math.round(descriptionSize * 1.34)}">${escapeXml(line)}</tspan>`,
     )
     .join("");
+  const dayBadgeWidth = event.day === "WEDNESDAY" ? 340 : 278;
+  const dayBadgeX = 1413 - dayBadgeWidth;
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -153,9 +154,9 @@ function flyerSvg(event) {
     <text x="0" y="65" fill="#ffffff" font-family="'Segoe UI', Arial, sans-serif"
       font-size="58" font-weight="900" letter-spacing="7">WOLF DEN LOUNGE</text>
   </g>
-  <g transform="translate(1135 42)">
-    <rect width="278" height="96" rx="48" fill="#16a34a"/>
-    <text x="139" y="62" text-anchor="middle" fill="#ffffff"
+  <g transform="translate(${dayBadgeX} 42)">
+    <rect width="${dayBadgeWidth}" height="96" rx="48" fill="#16a34a"/>
+    <text x="${dayBadgeWidth / 2}" y="62" text-anchor="middle" fill="#ffffff"
       font-family="'Arial Narrow', 'Segoe UI', Arial, sans-serif"
       font-size="38" font-weight="900" letter-spacing="4">${event.day}</text>
   </g>

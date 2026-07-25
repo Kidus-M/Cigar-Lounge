@@ -61,11 +61,7 @@
 
   <text x="90" y="1578" fill="#e4e4e7" font-family="'Segoe UI', Arial, sans-serif"
     font-size="49" font-weight="500"><tspan x="90" dy="0">50% off all beers, for all our college students, every</tspan><tspan x="90" dy="66">Saturday night! Must show your student ID.</tspan></text>
-  <g transform="translate(90 1715)">
-    <rect width="310" height="72" rx="36" fill="#16a34a"/>
-    <text x="155" y="48" text-anchor="middle" fill="#ffffff" font-family="'Segoe UI', Arial, sans-serif"
-      font-size="29" font-weight="900" letter-spacing="4">Coming Soon</text>
-  </g>
+  
 
   <g transform="translate(988 1848)">
     <text x="216" y="0" text-anchor="middle" fill="#22c55e"

@@ -36,9 +36,9 @@
     <text x="0" y="65" fill="#ffffff" font-family="'Segoe UI', Arial, sans-serif"
       font-size="58" font-weight="900" letter-spacing="7">WOLF DEN LOUNGE</text>
   </g>
-  <g transform="translate(1135 42)">
-    <rect width="278" height="96" rx="48" fill="#16a34a"/>
-    <text x="139" y="62" text-anchor="middle" fill="#ffffff"
+  <g transform="translate(1073 42)">
+    <rect width="340" height="96" rx="48" fill="#16a34a"/>
+    <text x="170" y="62" text-anchor="middle" fill="#ffffff"
       font-family="'Arial Narrow', 'Segoe UI', Arial, sans-serif"
       font-size="38" font-weight="900" letter-spacing="4">WEDNESDAY</text>
   </g>
