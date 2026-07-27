@@ -31,7 +31,6 @@ const AboutPage = () => {
     <div className="bg-black mt-20">
       <Head>
         <title>Wolf Den Lounge - About Us</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Navbar />

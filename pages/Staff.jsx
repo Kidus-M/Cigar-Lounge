@@ -32,7 +32,6 @@ const StaffPage = () => {
         <div className="bg-black mt-20">
             <Head>
                 <title>Wolf Den Lounge - Meet Our Team</title>
-                <link rel="icon" href="/favicon.ico" />
             </Head>
             <Navbar />
             <div className="bg-black min-h-screen text-gray-300 py-12 px-6 md:px-12 lg:px-24">

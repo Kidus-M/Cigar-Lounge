@@ -48,7 +48,6 @@ const Events = () => {
     <div className="bg-black mt-20">
       <Head>
         <title>Wolf Den Lounge - Upcoming Events</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
       <div className="bg-black py-12">

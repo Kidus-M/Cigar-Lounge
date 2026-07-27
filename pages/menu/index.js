@@ -86,7 +86,6 @@ const Menu = () => {
     <div className="bg-black min-h-screen">
       <Head>
         <title>Wolf Den Lounge - Menu</title>
-        <link rel="icon" href="/favicon.ico" />
         <meta name="robots" content="noindex, nofollow" />
       </Head>
 

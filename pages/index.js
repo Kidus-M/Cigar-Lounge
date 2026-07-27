@@ -24,7 +24,6 @@ export default function HeroSection() {
 
         <Head>
           <title>Wolf Den Lounge</title>
-          <link rel="icon" href="/favicon.ico" />
         </Head>
         {/* Background Image */}
         <div

@@ -3,6 +3,7 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
+    "generate:favicons": "node scripts/generate-favicons.mjs",
     "start": "next start"
   },
   "dependencies": {

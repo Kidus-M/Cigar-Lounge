@@ -36,7 +36,6 @@ const Contacts = () => {
       <Head>
         <title>Contact | Wolf Den Lounge</title>
         <meta name="description" content="Contact Wolf Den Lounge, view our opening hours, and find us in the A&F Building in Bole Matemiya, Addis Ababa." />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
 
