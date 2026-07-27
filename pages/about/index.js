@@ -55,14 +55,14 @@ const AboutPage = () => {
             transition={{ duration: 0.8 }}
             className="relative z-10 max-w-4xl mx-auto text-center"
           >
-            <h1 className="text-green-600 text-4xl font-bold uppercase tracking-[0.3em] mb-8">
+            <h1 className="text-green-600 font-bold uppercase tracking-[0.3em] mb-8">
               A Simplified Experience
             </h1>
             <h1 className="text-5xl md:text-7xl font-bold text-white">
               Whiskey and Cigars
             </h1>
             <p className="mt-8 text-lg md:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
-              Wolf Den is a premier lounge in Addis Ababa. We bring the simplification of whiskey, cigars, and events that come together.
+              Wolf Den is a premier lounge in Addis Ababa. We bring the simplification of whiskey, cigars, and events together!
             </p>
           </motion.div>
         </section>
@@ -142,11 +142,11 @@ const AboutPage = () => {
               />
             </div>
             <div>
-              <p className="text-green-600 font-bold uppercase tracking-[0.25em]">
+              <p className="text-green-600 font-bold uppercase tracking-[0.25em] text-center">
                 Your Home Away from Home
               </p>
               <h2 className="mt-5 text-4xl md:text-5xl font-bold text-white">
-                Come in. Settle down. Stay awhile.
+                Luxury. Business. Home.
               </h2>
               <p className="mt-6 text-lg md:text-xl leading-relaxed">
                 The Den is polished without feeling distant. Warm lighting,

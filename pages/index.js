@@ -40,10 +40,6 @@ export default function HeroSection() {
           <h1 className="text-2xl md:text-4xl text-white font-light tracking-wide animate-fade-in delay-100">
             CIGAR LOUNGE
           </h1>
-          <p className="text-xl md:text-3xl text-white font-light max-w-2xl mx-auto animate-fade-in-up delay-200">
-            Discover a hidden, upscale retreat, where timeless elegance and
-            genuine hospitality come together.
-          </p>
         </div>
 
         {/* Decorative Elements */}
