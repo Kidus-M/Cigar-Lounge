@@ -9,18 +9,18 @@ const services = [
     name: "Cabinet Service",
     label: "Bottle care",
     description:
-      "Don’t worry if you can’t spend the night—your bottle can. Ask our management team for details about our cabinet service.",
+      "Don’t worry if you can’t spend the night, your bottle can! Ask our management for details about our cabinet service.",
     imageUrl: "/service-cabinet.png",
   },
   {
     name: "The Captain Program",
     label: "Crew membership",
     description:
-      "Captains, first officers, and flight attendants are eligible to receive a membership package. See our management team for details.",
+      "Captains, first officers, and flight attendants are eligible to receive a membership package. See management for details.",
     imageUrl: "/service-captain-program.png",
   },
   {
-    name: "Promoter Spinoffs",
+    name: "Promoter Spin-offs",
     label: "Promoter development",
     description:
       "Introducing a service program for aspiring promoters. Follow us for more details.",
@@ -44,12 +44,9 @@ export default function Services() {
             transition={{ duration: 0.7 }}
             className="mx-auto max-w-3xl text-center"
           >
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-amber-400">Wolf Den Lounge</p>
+            
             <h1 className="text-5xl font-bold tracking-tight text-green-500 sm:text-6xl">Services at the Den</h1>
-            <p className="mt-6 text-lg leading-8 text-zinc-300">
-              Thoughtful programs for bottle storage, aviation professionals,
-              and the next generation of nightlife promoters.
-            </p>
+            
           </motion.div>
           <div className="mt-16 space-y-10">
             {services.map((service, index) => (
