@@ -24,10 +24,10 @@ const events = [
     imageUrl: "/event-ladies-night.png",
   },
   {
-    name: "Jazzie Fridays",
+    name: "DJ Fridays",
     description:
-      "Live band Friday nights from 6pm to 10pm.",
-    imageUrl: "/event-music-night.png",
+      "No cover charge. All admissions are free! DJ Friday nights from 6pm to 10pm.",
+    imageUrl: "/event-dj-fridays.png",
   },
   {
     name: "College Nights",

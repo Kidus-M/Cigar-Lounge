@@ -44,11 +44,12 @@ const events = [
   },
   {
     order: "04",
-    slug: "jazzie-fridays",
-    name: "Jazzie Fridays",
+    slug: "dj-fridays",
+    name: "DJ Fridays",
     day: "FRIDAY",
-    description: "Live band Friday nights from 6pm to 10pm.",
-    image: "event-music-night.png",
+    description:
+      "No cover charge. All admissions are free! DJ Friday nights from 6pm to 10pm.",
+    image: "event-dj-fridays.png",
   },
   {
     order: "05",
