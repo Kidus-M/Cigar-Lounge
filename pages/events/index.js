@@ -30,16 +30,10 @@ const events = [
     imageUrl: "/event-dj-fridays.png",
   },
   {
-    name: "College Nights",
+    name: "College Saturdays",
     description:
       "50% off all beers, for all our college students, every Saturday night! Must show your student ID.",
     imageUrl: "/event-college-nights.png",
-  },
-  {
-    name: "Birthday Celebration",
-    description:
-      "Show ID and bring at least three other people with you, and our birthday boy or birthday girl will get 3 free drinks!!!",
-    imageUrl: "/event-birthday-celebration.png",
   },
 ];
 

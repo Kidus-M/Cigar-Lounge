@@ -26,6 +26,13 @@ const services = [
       "Introducing a service program for aspiring promoters. Follow us for more details.",
     imageUrl: "/service-promoter-spinoffs.png",
   },
+  {
+    name: "Birthday Celebration",
+    label: "Birthday perks",
+    description:
+      "Show ID and bring at least three other people with you, and our birthday boy or birthday girl will get 3 free drinks!!!",
+    imageUrl: "/event-birthday-celebration.png",
+  },
 ];
 
 export default function Services() {
