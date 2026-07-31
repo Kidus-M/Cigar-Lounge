@@ -53,8 +53,8 @@ const events = [
   },
   {
     order: "05",
-    slug: "college-nights",
-    name: "College Nights",
+    slug: "college-saturdays",
+    name: "College Saturdays",
     day: "SATURDAY",
     description:
       "50% off all beers, for all our college students, every Saturday night! Must show your student ID.",
