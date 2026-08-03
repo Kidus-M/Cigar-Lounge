@@ -1,0 +1,129 @@
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const scriptDir = path.dirname(fileURLToPath(import.meta.url));
+const projectDir = path.resolve(scriptDir, "..");
+const outputDir = path.join(scriptDir, "general-lounge");
+const assetDir = path.join(outputDir, "assets");
+
+fs.mkdirSync(assetDir, { recursive: true });
+fs.copyFileSync(
+  path.join(projectDir, "public", "hero1.jpg"),
+  path.join(assetDir, "hero1.jpg"),
+);
+fs.copyFileSync(
+  path.join(projectDir, "wolf-den-instagram-qr.png"),
+  path.join(assetDir, "wolf-den-instagram-qr.png"),
+);
+
+const svg = `<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="2400"
+  viewBox="0 0 1500 2400" role="img" aria-labelledby="title description">
+  <title id="title">Wolf Den Cigar Lounge</title>
+  <desc id="description">General lounge flyer with an Instagram QR code.</desc>
+  <defs>
+    <clipPath id="photoClip"><rect x="0" y="180" width="1500" height="1030"/></clipPath>
+    <linearGradient id="headerGlow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#050806"/>
+      <stop offset="0.72" stop-color="#0b140e"/>
+      <stop offset="1" stop-color="#102d1b"/>
+    </linearGradient>
+    <linearGradient id="panelGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14251a"/>
+      <stop offset="0.38" stop-color="#070a08"/>
+      <stop offset="1" stop-color="#020302"/>
+    </linearGradient>
+    <pattern id="grain" width="64" height="64" patternUnits="userSpaceOnUse">
+      <circle cx="8" cy="12" r="1.5" fill="#ffffff" opacity="0.035"/>
+      <circle cx="42" cy="21" r="1" fill="#ffffff" opacity="0.025"/>
+      <circle cx="19" cy="53" r="1.2" fill="#ffffff" opacity="0.02"/>
+      <circle cx="58" cy="47" r="1.4" fill="#ffffff" opacity="0.028"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+
+  <rect width="1500" height="2400" fill="#020302"/>
+  <rect width="1500" height="180" fill="url(#headerGlow)"/>
+  <text x="90" y="108" fill="#ffffff" font-family="'Segoe UI', Arial, sans-serif"
+    font-size="58" font-weight="900" letter-spacing="7">WOLF DEN LOUNGE</text>
+  <g transform="translate(1087 42)">
+    <rect width="325" height="96" rx="48" fill="#16a34a"/>
+    <text x="162.5" y="62" text-anchor="middle" fill="#ffffff"
+      font-family="'Arial Narrow', 'Segoe UI', Arial, sans-serif"
+      font-size="32" font-weight="900" letter-spacing="3">ADDIS ABABA</text>
+  </g>
+  <rect x="0" y="174" width="1500" height="6" fill="#22c55e"/>
+
+  <g clip-path="url(#photoClip)">
+    <image href="./assets/hero1.jpg" x="0" y="180" width="1500" height="1030"
+      preserveAspectRatio="xMidYMid slice"/>
+  </g>
+
+  <rect x="0" y="1210" width="1500" height="1190" fill="url(#panelGlow)"/>
+  <rect x="0" y="1210" width="1500" height="1190" fill="url(#grain)"/>
+  <rect x="0" y="1210" width="1500" height="8" fill="#d6ad60"/>
+
+  <text x="90" y="1328" fill="#22c55e" font-family="'Segoe UI', Arial, sans-serif"
+    font-size="29" font-weight="800" letter-spacing="8">ETHIOPIA'S PREMIER CIGAR LOUNGE</text>
+  <text x="90" y="1470" fill="#ffffff" font-family="'Arial Narrow', 'Segoe UI', Arial, sans-serif"
+    font-size="102" font-weight="900" letter-spacing="-2">WELCOME TO THE DEN</text>
+  <rect x="90" y="1518" width="1180" height="8" rx="4" fill="#16a34a"/>
+  <rect x="1270" y="1518" width="140" height="8" rx="4" fill="#d6ad60"/>
+
+  <text x="90" y="1615" fill="#e4e4e7" font-family="'Segoe UI', Arial, sans-serif"
+    font-size="41" font-weight="500">
+    <tspan x="90" dy="0">Escape into a hidden upscale environment with a tranquil</tspan>
+    <tspan x="90" dy="57">atmosphere, fine service, and cigars.</tspan>
+  </text>
+
+  <g transform="translate(988 1788)">
+    <text x="212" y="0" text-anchor="middle" fill="#22c55e"
+      font-family="'Segoe UI', Arial, sans-serif" font-size="28"
+      font-weight="900" letter-spacing="4">INSTAGRAM</text>
+    <rect x="0" y="34" width="424" height="424" rx="24" fill="#ffffff" filter="url(#shadow)"/>
+    <image href="./assets/wolf-den-instagram-qr.png" x="16" y="50"
+      width="392" height="392" image-rendering="pixelated"/>
+  </g>
+
+  <g transform="translate(90 1848)">
+    <text x="0" y="0" fill="#ffffff" font-family="'Arial Narrow', 'Segoe UI', Arial, sans-serif"
+      font-size="54" font-weight="900">FOLLOW THE DEN</text>
+    <text x="0" y="66" fill="#22c55e" font-family="'Segoe UI', Arial, sans-serif"
+      font-size="38" font-weight="800">@wolfdenaddis</text>
+    <text x="0" y="130" fill="#a1a1aa" font-family="'Segoe UI', Arial, sans-serif"
+      font-size="30" font-weight="600">Scan for lounge moments, events,</text>
+    <text x="0" y="172" fill="#a1a1aa" font-family="'Segoe UI', Arial, sans-serif"
+      font-size="30" font-weight="600">and updates.</text>
+  </g>
+
+  <g transform="translate(90 2140)">
+    <circle cx="18" cy="18" r="18" fill="#16a34a"/>
+    <text x="55" y="29" fill="#ffffff" font-family="'Segoe UI', Arial, sans-serif"
+      font-size="31" font-weight="800" letter-spacing="2">BOLE MATEMIYA - ADDIS ABABA</text>
+    <text x="55" y="88" fill="#d4d4d8" font-family="'Segoe UI', Arial, sans-serif"
+      font-size="29" font-weight="600">TUESDAY - SUNDAY: 12PM - 4AM</text>
+    <text x="55" y="143" fill="#d4d4d8" font-family="'Segoe UI', Arial, sans-serif"
+      font-size="29" font-weight="600">+251 979 398 094</text>
+  </g>
+
+  <rect x="22" y="22" width="1456" height="2356" rx="16"
+    fill="none" stroke="#22c55e" stroke-width="3" opacity="0.72"/>
+  <rect x="38" y="38" width="1424" height="2324" rx="11"
+    fill="none" stroke="#ffffff" stroke-width="1" opacity="0.15"/>
+</svg>`;
+
+fs.writeFileSync(path.join(outputDir, "wolf-den-general-lounge-flyer.svg"), svg);
+fs.writeFileSync(
+  path.join(outputDir, "wolf-den-general-lounge-flyer.html"),
+  `<!doctype html>
+<html><head><meta charset="utf-8"><style>
+@page { size: 5in 8in; margin: 0; }
+html, body { width: 5in; height: 8in; margin: 0; background: #020302; overflow: hidden; }
+img { display: block; width: 5in; height: 8in; }
+</style></head><body><img src="./wolf-den-general-lounge-flyer.svg" alt=""></body></html>`,
+);
+
+console.log("Generated general lounge flyer master and print wrapper.");
