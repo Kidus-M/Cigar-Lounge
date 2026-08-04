@@ -16,9 +16,9 @@ fs.copyFileSync(
 const sharedDefs = `
   <defs>
     <radialGradient id="coffeeGlow" cx="50%" cy="42%" r="78%">
-      <stop offset="0" stop-color="#684637"/>
-      <stop offset="0.58" stop-color="#513328"/>
-      <stop offset="1" stop-color="#3b241d"/>
+      <stop offset="0" stop-color="#806048"/>
+      <stop offset="0.58" stop-color="#6f4e37"/>
+      <stop offset="1" stop-color="#52382b"/>
     </radialGradient>
     <pattern id="grain" width="54" height="54" patternUnits="userSpaceOnUse">
       <circle cx="8" cy="13" r="1.2" fill="#f7ead8" opacity="0.026"/>
@@ -45,15 +45,13 @@ const frontBody = `${base}
     font-weight="700">Wolf Den</text>
   <text x="562.5" y="410" text-anchor="middle" fill="#ddb786"
     font-family="'Segoe UI', Arial, sans-serif" font-size="34" font-weight="700"
-    letter-spacing="14">LOUNGE</text>
-  <line x1="438" y1="445" x2="687" y2="445" stroke="#c79a6b"
-    stroke-width="2" opacity="0.75"/>`;
+    letter-spacing="14">LOUNGE</text>`;
 
 const backBody = `${base}
-  <rect x="357.5" y="132.5" width="410" height="410" rx="24"
+  <rect x="396.5" y="171.5" width="332" height="332" rx="22"
     fill="#ffffff" filter="url(#qrShadow)"/>
-  <image href="./assets/wolf-den-welcome-qr.png" x="374.5" y="149.5"
-    width="376" height="376" image-rendering="pixelated"/>`;
+  <image href="./assets/wolf-den-welcome-qr.png" x="412.5" y="187.5"
+    width="300" height="300" image-rendering="pixelated"/>`;
 
 function cardSvg(body, { bleed, title, description }) {
   const width = bleed ? 1125 : 1050;

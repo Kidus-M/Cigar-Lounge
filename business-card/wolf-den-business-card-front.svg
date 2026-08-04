@@ -6,9 +6,9 @@
   
   <defs>
     <radialGradient id="coffeeGlow" cx="50%" cy="42%" r="78%">
-      <stop offset="0" stop-color="#684637"/>
-      <stop offset="0.58" stop-color="#513328"/>
-      <stop offset="1" stop-color="#3b241d"/>
+      <stop offset="0" stop-color="#806048"/>
+      <stop offset="0.58" stop-color="#6f4e37"/>
+      <stop offset="1" stop-color="#52382b"/>
     </radialGradient>
     <pattern id="grain" width="54" height="54" patternUnits="userSpaceOnUse">
       <circle cx="8" cy="13" r="1.2" fill="#f7ead8" opacity="0.026"/>
@@ -33,6 +33,4 @@
   <text x="562.5" y="410" text-anchor="middle" fill="#ddb786"
     font-family="'Segoe UI', Arial, sans-serif" font-size="34" font-weight="700"
     letter-spacing="14">LOUNGE</text>
-  <line x1="438" y1="445" x2="687" y2="445" stroke="#c79a6b"
-    stroke-width="2" opacity="0.75"/>
 </svg>
