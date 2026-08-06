@@ -12,22 +12,23 @@ const events = [
     imageUrl: "/event-happy-wednesdays.png",
   },
   {
-    name: "Mani Wednesdays",
+    name: "Wine N' Ayib",
     description:
-      "Get your nails touched up. Enjoy 50% off your first drink with a purchase of a touch up manicure!",
-    imageUrl: "/event-mani-wednesdays.png",
+      "Putting a new spin on wine and cheese. With every glass of wine purchased comes complimentary ayib dish decorated with mitmita, pistachios, and a side of savory crackers.",
+    imageUrl: "/event-wine-n-ayib.png",
+    hasSmallConnector: true,
   },
   {
-    name: "Ladies Thursdays",
+    name: "DJ Thursdays",
     description:
-      "All drinks 50% off for all ladies! Thursday nights 8:30pm to 10:30pm.",
-    imageUrl: "/event-ladies-night.png",
-  },
-  {
-    name: "DJ Fridays",
-    description:
-      "No cover charge. All admissions are free! DJ Friday nights from 6pm to 10pm.",
+      "No cover charge. All admissions are free! DJ Thursday nights from 6pm to 10pm.",
     imageUrl: "/event-dj-fridays.png",
+  },
+  {
+    name: "Ladies Fridays",
+    description:
+      "All drinks 50% off for all ladies! Friday nights 8:30pm to 10:30pm.",
+    imageUrl: "/event-ladies-night.png",
   },
   {
     name: "College Saturdays",
@@ -72,7 +73,13 @@ const Events = () => {
               </div>
               <div className="p-6 w-full md:w-1/2">
                 <h3 className="text-2xl font-semibold text-green-600">
-                  {event.name}
+                  {event.hasSmallConnector ? (
+                    <>
+                      Wine <span className="text-[0.65em]">N&apos;</span> Ayib
+                    </>
+                  ) : (
+                    event.name
+                  )}
                 </h3>
                 <p className="text-green-500 mt-2 font-bold uppercase tracking-wide">
                   Coming Soon

@@ -28,6 +28,9 @@ export default function Welcome() {
         <p className="font-serif text-3xl leading-relaxed tracking-wide sm:text-4xl sm:leading-relaxed md:text-5xl md:leading-relaxed">
           {welcomeMessage}
         </p>
+        <p className="mt-8 text-sm font-bold uppercase tracking-[0.2em] text-[#e2b681] sm:text-base">
+          Offer expires September 30, 2026
+        </p>
         <Link
           href="/contact"
           className="mt-12 inline-flex border-b border-[#c79a6b] pb-2 text-sm font-semibold uppercase tracking-[0.24em] text-[#f7ead8] transition-colors hover:text-[#e2b681] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#e2b681] focus-visible:ring-offset-4 focus-visible:ring-offset-[#4a2d22] sm:text-base"
