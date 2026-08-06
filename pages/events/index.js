@@ -14,7 +14,7 @@ const events = [
   {
     name: "Wine N' Ayib",
     description:
-      "Putting a new spin on wine and cheese. With every glass of wine purchased comes complimentary ayib dish decorated with mitmita, pistachios, and a side of savory crackers.",
+      "Putting a new spin on wine and cheese. With every glass of wine purchased comes a complimentary ayib dish decorated with mitmita, pistachios, and a side of savory crackers.",
     imageUrl: "/event-wine-n-ayib.png",
     hasSmallConnector: true,
   },
