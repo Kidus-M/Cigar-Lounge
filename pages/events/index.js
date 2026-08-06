@@ -61,7 +61,7 @@ const Events = () => {
               key={event.name}
               className="flex flex-col md:flex-row items-center bg-gray-800 rounded-lg overflow-hidden transform transition duration-500 hover:scale-105"
             >
-              <div className="relative w-full md:w-1/2 h-64">
+              <div className="relative aspect-[3/2] w-full md:w-1/2">
                 <Image
                   src={event.imageUrl}
                   alt={event.name}
