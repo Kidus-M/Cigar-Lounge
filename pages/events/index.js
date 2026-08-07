@@ -22,7 +22,7 @@ const events = [
     title: "DTT",
     titleDetail: "DJ Trivia Thursdays",
     description:
-      "You're really in for a treat! Enjoy a night filled with music and trivia. Enjoy a Th But that's not all. Present your college ID and get 30% off all drinks. Be the winner of our trivia night and receive a CASH prize! No cover charge for this event. But wait, there's more! If it's your college's night, show your college ID and get 50% off all drinks!",
+      "You're really in for a treat! Enjoy a Thursday night, filled with music and trivia, from 6pm to 10pm.  But that's not all. Present your college ID and get 30% off all drinks. Be the winner of our trivia night and receive a CASH prize! No cover charge for this event. But wait, there's more! If it's your college's night, show your college ID and get 50% off all drinks!",
     schedule: [
       "1st Thursday - Unity College",
       "2nd Thursday - HiLCoE College",
@@ -34,7 +34,7 @@ const events = [
   {
     name: "Do You Fridays",
     description:
-      "Want to host an event? Wolf Den will be happy to have you. Tell us about your event, and let's make it a smash! If your event reaches 50 or more people, you and one companion (girlfriend, friend, etc..) get to drink for free all night! There is no catch and there is no venue fee.",
+      "Want to host an event? Wolf Den will be happy to have you. Tell us about your event and let's make it a smash! If your event reaches 50 or more people, you and one companion (girlfriend, friend, etc..) get to drink for free all night! There is no catch and there is no venue fee.",
     imageUrl: "/event-do-you-fridays.png",
   },
   {
@@ -82,7 +82,7 @@ const Events = () => {
                 <h3 className="text-2xl font-semibold text-green-600">
                   {event.title ?? event.name}
                   {event.titleDetail ? (
-                    <span className="mt-1 block text-[0.58em] font-medium text-green-500">
+                    <span className="ml-2 inline-block text-[0.58em] font-medium text-green-500">
                       ({event.titleDetail})
                     </span>
                   ) : null}
