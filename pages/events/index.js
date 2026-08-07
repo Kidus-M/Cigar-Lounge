@@ -14,7 +14,7 @@ const events = [
   {
     name: "Winey Wednesdays",
     description:
-      "Putting a new spin on wine and cheese. With every glass of wine purchased comes a complimentary ayib dish decorated with mitmita, pistachios, and a side of savory crackers.",
+      "Putting a new spin on wine and cheese. With every glass of wine purchased comes a complimentary ayib dish decorated with mitmita, pistachios, and a side of savory crackers. Every Wednesday from 4pm to 8pm.",
     imageUrl: "/event-wine-n-ayib.png",
   },
   {
@@ -22,7 +22,7 @@ const events = [
     title: "DTT",
     titleDetail: "DJ Trivia Thursdays",
     description:
-      "You're really in for a treat! Enjoy a night filled with music and trivia. But that's not all. Present your college ID and get 30% off all drinks. Be the winner of our trivia night and receive a CASH prize! No cover charge for this event. But wait, there's more! If it's your college's night, show your college ID and get 50% off all drinks!",
+      "You're really in for a treat! Enjoy a night filled with music and trivia. Enjoy a Th But that's not all. Present your college ID and get 30% off all drinks. Be the winner of our trivia night and receive a CASH prize! No cover charge for this event. But wait, there's more! If it's your college's night, show your college ID and get 50% off all drinks!",
     schedule: [
       "1st Thursday - Unity College",
       "2nd Thursday - HiLCoE College",
@@ -82,7 +82,7 @@ const Events = () => {
                 <h3 className="text-2xl font-semibold text-green-600">
                   {event.title ?? event.name}
                   {event.titleDetail ? (
-                    <span className="ml-2 inline-block text-[0.58em] font-medium text-green-500">
+                    <span className="mt-1 block text-[0.58em] font-medium text-green-500">
                       ({event.titleDetail})
                     </span>
                   ) : null}
