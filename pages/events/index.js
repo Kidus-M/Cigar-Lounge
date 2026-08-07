@@ -68,7 +68,7 @@ const Events = () => {
               key={event.name}
               className="flex flex-col md:flex-row items-center bg-gray-800 rounded-lg overflow-hidden transform transition duration-500 hover:scale-105"
             >
-              <div className="relative aspect-[3/2] w-full md:w-1/2">
+              <div className="relative aspect-3/2 w-full md:w-1/2">
                 <Image
                   src={event.imageUrl}
                   alt={event.name}
@@ -79,10 +79,10 @@ const Events = () => {
                 />
               </div>
               <div className="p-6 w-full md:w-1/2">
-                <h3 className="text-2xl font-semibold text-green-600">
-                  {event.title ?? event.name}
+                <h3 className="flex flex-col items-start text-2xl font-semibold text-green-600">
+                  <span>{event.title ?? event.name}</span>
                   {event.titleDetail ? (
-                    <span className="ml-2 inline-block text-[0.58em] font-medium text-green-500">
+                    <span className="mt-1 text-sm font-medium text-green-500">
                       ({event.titleDetail})
                     </span>
                   ) : null}

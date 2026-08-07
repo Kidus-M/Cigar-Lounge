@@ -1,0 +1,11 @@
+
+> dev
+> next dev -p 3005
+
+   ▲ Next.js 15.5.8
+   - Local:        http://localhost:3005
+   - Network:      http://192.168.56.1:3005
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 4.2s
