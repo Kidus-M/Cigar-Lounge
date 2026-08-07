@@ -12,29 +12,36 @@ const events = [
     imageUrl: "/event-happy-wednesdays.png",
   },
   {
-    name: "Wine N' Ayib",
+    name: "Winey Wednesdays",
     description:
       "Putting a new spin on wine and cheese. With every glass of wine purchased comes a complimentary ayib dish decorated with mitmita, pistachios, and a side of savory crackers.",
     imageUrl: "/event-wine-n-ayib.png",
-    hasSmallConnector: true,
   },
   {
-    name: "DJ Thursdays",
+    name: "DTT (DJ Trivia Thursdays)",
+    title: "DTT",
+    titleDetail: "DJ Trivia Thursdays",
     description:
-      "No cover charge. All admissions are free! DJ Thursday nights from 6pm to 10pm.",
-    imageUrl: "/event-dj-fridays.png",
+      "You're really in for a treat! Enjoy a night filled with music and trivia. But that's not all. Present your college ID and get 30% off all drinks. Be the winner of our trivia night and receive a CASH prize! No cover charge for this event. But wait, there's more! If it's your college's night, show your college ID and get 50% off all drinks!",
+    schedule: [
+      "1st Thursday - Unity College",
+      "2nd Thursday - HiLCoE College",
+      "3rd Thursday - ACT College",
+      "4th Thursday - St. Mary College",
+    ],
+    imageUrl: "/event-dtt-thursdays.png",
   },
   {
-    name: "Ladies Fridays",
+    name: "Do You Fridays",
     description:
-      "All drinks 50% off for all ladies! Friday nights 8:30pm to 10:30pm.",
+      "Want to host an event? Wolf Den will be happy to have you. Tell us about your event, and let's make it a smash! If your event reaches 50 or more people, you and one companion (girlfriend, friend, etc..) get to drink for free all night! There is no catch and there is no venue fee.",
+    imageUrl: "/event-do-you-fridays.png",
+  },
+  {
+    name: "Ladies Saturdays",
+    description:
+      "All drinks 50% off for all ladies! Saturday nights 8:30pm to 10:30pm.",
     imageUrl: "/event-ladies-night.png",
-  },
-  {
-    name: "College Saturdays",
-    description:
-      "50% off all beers, for all our college students, every Saturday night! Must show your student ID.",
-    imageUrl: "/event-college-nights.png",
   },
 ];
 
@@ -73,18 +80,24 @@ const Events = () => {
               </div>
               <div className="p-6 w-full md:w-1/2">
                 <h3 className="text-2xl font-semibold text-green-600">
-                  {event.hasSmallConnector ? (
-                    <>
-                      Wine <span className="text-[0.65em]">N&apos;</span> Ayib
-                    </>
-                  ) : (
-                    event.name
-                  )}
+                  {event.title ?? event.name}
+                  {event.titleDetail ? (
+                    <span className="ml-2 inline-block text-[0.58em] font-medium text-green-500">
+                      ({event.titleDetail})
+                    </span>
+                  ) : null}
                 </h3>
                 <p className="text-green-500 mt-2 font-bold uppercase tracking-wide">
                   Coming Soon
                 </p>
                 <p className="text-gray-300 mt-4">{event.description}</p>
+                {event.schedule ? (
+                  <ul className="mt-4 space-y-1 text-sm font-medium text-gray-300">
+                    {event.schedule.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                ) : null}
               </div>
             </div>
           ))}
